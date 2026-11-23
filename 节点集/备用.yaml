@@ -1,0 +1,79 @@
+proxies:
+
+# 云洞
+
+
+
+  - { name: '云洞 剩余流量：386.29 GB', type: ss, server: hk3.network-cdn-gw-yd.net, port: 32058, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 云洞 套餐到期：长期有效, type: ss, server: hk3.network-cdn-gw-yd.net, port: 32058, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: '官网入口:k-box.vip', type: ss, server: hk3.network-cdn-gw-yd.net, port: 32058, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 🇭🇰 香港-云洞-Basic-BGP-01, type: ss, server: hk1.network-cdn-gw-yd.net, port: 32060, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 🇭🇰 香港-云洞-Basic-BGP-02, type: ss, server: hk2.network-cdn-gw-yd.net, port: 32063, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 🇭🇰 香港-云洞-Basic-BGP-03, type: ss, server: hk13.network-cdn-gw-yd.net, port: 32061, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 🇭🇰 香港-云洞-Basic-BGP-04, type: ss, server: hk14.network-cdn-gw-yd.net, port: 32062, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 🇭🇰 香港-云洞-Basic-BGP-05, type: ss, server: hk15.network-cdn-gw-yd.net, port: 47705, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 🇭🇰 香港-云洞-Basic-BGP-06, type: ss, server: hk16.network-cdn-gw-yd.net, port: 47706, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 🇭🇰 香港-云洞-Basic-BGP-07, type: ss, server: hk17.network-cdn-gw-yd.net, port: 47707, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 🇭🇰 香港-云洞-Basic-BGP-08, type: ss, server: hk18.network-cdn-gw-yd.net, port: 47708, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 🇭🇰 香港-云洞-Basic-BGP-09, type: ss, server: hk09.network-cdn-gw-yd.net, port: 47709, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 🇭🇰 香港-云洞-Basic-BGP-10, type: ss, server: hk11.network-cdn-gw-yd.net, port: 47711, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 🇭🇰 香港-云洞-Pro专线-01, type: ss, server: hkp1.network-cdn-gw-yd.net, port: 49901, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 🇭🇰 香港-云洞-Pro专线-02, type: ss, server: hkp2.network-cdn-gw-yd.net, port: 49911, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 🇭🇰 香港-云洞-Pro专线-03, type: ss, server: hkp3.network-cdn-gw-yd.net, port: 49913, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 🇭🇰 香港-云洞-Pro专线-04, type: ss, server: hkp4.network-cdn-gw-yd.net, port: 49914, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 🇭🇰 香港-云洞-Pro专线-05, type: ss, server: hkp5.network-cdn-gw-yd.net, port: 49916, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 🇭🇰 香港-云洞-Pro家宽-06, type: ss, server: hkp6.network-cdn-gw-yd.net, port: 48816, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 🇭🇰 香港-云洞-Pro家宽-07, type: ss, server: hkp07.network-cdn-gw-yd.net, port: 49983, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 🇭🇰 香港-云洞-Pro家宽-08, type: ss, server: hkp8.network-cdn-gw-yd.net, port: 48818, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 🇭🇰 香港-云洞-Pro家宽-09, type: ss, server: hkp9.network-cdn-gw-yd.net, port: 48819, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 🇭🇰 香港-云洞-Pro家宽-10, type: ss, server: hkp11.network-cdn-gw-yd.net, port: 48820, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 🇺🇸 美国-云洞-Basic-01, type: ss, server: us06.network-cdn-gw-yd.net, port: 43111, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 🇺🇸 美国-云洞-Basic-02, type: ss, server: us07.network-cdn-gw-yd.net, port: 43211, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 🇺🇸 美国-云洞-Basic-03, type: ss, server: us08.network-cdn-gw-yd.net, port: 43212, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 🇺🇸 美国-云洞-Basic-04, type: ss, server: us9.network-cdn-gw-yd.net, port: 43213, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 🇺🇸 美国-云洞-Basic-05, type: ss, server: us10.network-cdn-gw-yd.net, port: 43215, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 🇯🇵 日本-云洞-Basic-BGP-01, type: ss, server: jp01.network-cdn-gw-yd.net, port: 48801, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 🇯🇵 日本-云洞-Basic-BGP-02, type: ss, server: jp02.network-cdn-gw-yd.net, port: 48802, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 🇯🇵 日本-云洞-Pro家宽-01, type: ss, server: jp3.network-cdn-gw-yd.net, port: 48803, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 🇯🇵 日本-云洞-Pro家宽-02, type: ss, server: jp04.network-cdn-gw-yd.net, port: 48804, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 🇯🇵 日本-云洞-Pro家宽-03, type: ss, server: jp05.network-cdn-gw-yd.net, port: 48805, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 🇹🇼 台湾-云洞-Basic-BGP-01, type: ss, server: tw1.network-cdn-gw-yd.net, port: 46601, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 🇹🇼 台湾-云洞-Basic-BGP-02, type: ss, server: tw02.network-cdn-gw-yd.net, port: 46602, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 🇹🇼 台湾-云洞-Pro家宽-01, type: ss, server: tw03.network-cdn-gw-yd.net, port: 46603, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 🇹🇼 台湾-云洞-Pro家宽-02, type: ss, server: tw04.network-cdn-gw-yd.net, port: 46604, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 🇹🇼 台湾-云洞-Pro家宽-03, type: ss, server: tw05.network-cdn-gw-yd.net, port: 46605, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 🇸🇬 新加坡-云洞-IEPL-Basic专线-01, type: ss, server: sgp01.network-cdn-gw-yd.net, port: 45506, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 🇸🇬 新加坡-云洞-IEPL-Pro专线-01|gpt|线路, type: ss, server: sgp02.network-cdn-gw-yd.net, port: 45507, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 🇸🇬 新加坡-云洞-IEPL-Pro专线-02|gpt|线路, type: ss, server: sgp3.network-cdn-gw-yd.net, port: 45508, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 🇸🇬 新加坡-云洞-IEPL-Pro专线-03|gpt|线路, type: ss, server: sgp4.network-cdn-gw-yd.net, port: 45509, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 🇸🇬 新加坡-云洞-IEPL-Pro专线-04|gpt|线路, type: ss, server: sgp05.network-cdn-gw-yd.net, port: 45510, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 🇺🇸 美国-云洞-IEPL-Pro专线-01|gpt|专用线路, type: ss, server: us01.network-cdn-gw-yd.net, port: 44401, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 🇺🇸 美国-云洞-IEPL-Pro专线-02|gpt|专用线路, type: ss, server: us02.network-cdn-gw-yd.net, port: 44402, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 🇺🇸 美国-云洞-IEPL-Pro专线-03|gpt|专用线路, type: ss, server: us03.network-cdn-gw-yd.net, port: 44403, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 🇺🇸 美国-云洞-IEPL-Pro专线-04|gpt|专用线路, type: ss, server: us04.network-cdn-gw-yd.net, port: 44404, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 🇺🇸 美国-云洞-IEPL-Pro专线-05|gpt|专用线路, type: ss, server: us05.network-cdn-gw-yd.net, port: 44405, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 🇺🇸 美国-云洞-IEPL-Pro专线-06|gpt|专用线路, type: ss, server: usp01.network-cdn-gw-yd.net, port: 44406, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 🇺🇸 美国-云洞-IEPL-Pro专线-07|gpt|专用线路, type: ss, server: usp02.network-cdn-gw-yd.net, port: 44407, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 🇺🇸 美国-云洞-IEPL-Pro专线-08|gpt|专用线路, type: ss, server: usp03.network-cdn-gw-yd.net, port: 44408, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 🇺🇸 美国-云洞-IEPL-Pro专线-09|gpt|专用线路, type: ss, server: usp04.network-cdn-gw-yd.net, port: 44409, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 🇺🇸 美国-云洞-IEPL-Pro专线-10|gpt|专用线路, type: ss, server: usp05.network-cdn-gw-yd.net, port: 44410, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 🇹🇭 泰国-云洞-IEPL-Pro专线-01, type: ss, server: tk.network-cdn-gw-yd.net, port: 41116, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 🇰🇷 韩国-云洞-IEPL-Basic专线-|X2|, type: ss, server: kr03.network-cdn-gw-yd.net, port: 36220, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 🇰🇷 韩国-云洞-EIPL-Pro专线-|X2|, type: ss, server: kr01.network-cdn-gw-yd.net, port: 41117, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 🇩🇪 德国-云洞-IEPL-Pro专线-01, type: ss, server: brd.network-cdn-gw-yd.net, port: 41118, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 🇻🇳 越南-云洞-IEPL-Basic专线-01, type: ss, server: vn01.network-cdn-gw-yd.net, port: 20011, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 🇻🇳 越南-云洞-IEPL-Pro专线-02, type: ss, server: vn02.network-cdn-gw-yd.net, port: 20002, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 🇬🇧 英国-云洞-IEPL-Basic专线-01, type: ss, server: uks1.network-cdn-gw-yd.net, port: 10014, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 🇬🇧 英国-云洞-IEPL-Pro专线-02, type: ss, server: uks2.network-cdn-gw-yd.net, port: 10015, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 🇦🇺 澳大利亚-云洞-IEPL-Pro专线-01, type: ss, server: au.network-cdn-gw-yd.net, port: 21383, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 🇫🇷 法国-云洞-IEPL-Pro专线-01, type: ss, server: fr.network-cdn-gw-yd.net, port: 21384, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 🇵🇭 菲律宾-IEPL-Pro专线-01, type: ss, server: ph.network-cdn-gw-yd.net, port: 21385, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 🇲🇾 马来西亚-IEPL-Pro专线-01, type: ss, server: mas.network-cdn-gw-yd.net, port: 43305, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 🇲🇾 马来西亚-IEPL-Pro专线-02, type: ss, server: mas1.network-cdn-gw-yd.net, port: 43307, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name:  🇮🇳 印度-云洞-IEPL-Pro专线-01|x2|, type: ss, server: in01.network-cdn-gw-yd.net, port: 43304, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 🇹🇷 土耳其-云洞-IEPL-Pro专线-01, type: ss, server: tr03.network-cdn-gw-yd.net, port: 36221, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 🇦🇷 阿根廷-云洞-IEPL-Pro专线-01, type: ss, server: at01.network-cdn-gw-yd.net, port: 50004, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 🇨🇦 加拿大-云洞-IEPL-Pro专线-01, type: ss, server: ca.network-cdn-gw-yd.net, port: 20007, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 🇷🇸 塞尔维亚-云洞-IEPL-Pro专线-01, type: ss, server: dk.network-cdn-gw-yd.net, port: 21388, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 🇮🇹 意大利-云洞-IEPL-Pro专线01, type: ss, server: it.network-cdn-gw-yd.net, port: 21386, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+
