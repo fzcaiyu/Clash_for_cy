@@ -107,30 +107,27 @@ proxy-groups:
     proxies:
      - 🅰️ 【自动 OR 指定】
 #     - 👉🏼 手动指定
-     - ➿️ 【-高级线路-】     #V4
-     - ➿️ 【-中端线路-】     #V3
-     - ➿️ 【-标准线路-】     #V2
-     - ➿️ 【-专属线路-】     #V1
+     - ➿️ 【-专用线路-】     #V3
+     - ➿️ 【-视频线路-】     #V2
+     - ➿️ 【-常规线路-】     #V1
      - ➿️ 【-备用线路-】     #V0
 
   # 手动指定：节点选择入口
 #  - name: 👉🏼 手动指定
 #    type: select
 #    use:
-#     - 高级        #V4
-#     - 中端        #V3
-#     - 标准        #V2
-#     - 专属        #V1
+#     - 专用        #V3
+#     - 视频        #V2
+#     - 常规        #V1
 #     - 备用        #V0
 
   #自动 OR 指定纳入全部 5 个 provider，按延迟选最低
   - name: 🅰️ 【自动 OR 指定】
     type: url-test
     use:
-     - 高级        #V4
-     - 中端        #V3
-     - 标准        #V2
-     - 专属        #V1
+     - 专用        #V3
+     - 视频        #V2
+     - 常规        #V1
      - 备用        #V0
     url: 'https://www.gstatic.com/generate_204'
     interval: 900
@@ -138,41 +135,36 @@ proxy-groups:
     lazy: true 
 
 #---------------------------------------------------------------------------------------------------
-  - name: ➿️ 【-高级线路-】     #V4
+
+  - name: ➿️ 【-专用线路-】     #V3
     type: url-test
     use:
-     - 高级
+     - 专用
     url: 'https://www.gstatic.com/generate_204'
     interval: 900
     tolerance: 50
     lazy: true 
 
-  - name: ➿️ 【-中端线路-】     #V3
+
+  - name: ➿️ 【-视频线路-】     #V2
     type: url-test
     use:
-     - 中端
+     - 视频
     url: 'https://www.gstatic.com/generate_204'
     interval: 900
     tolerance: 50
     lazy: true 
 
-  - name: ➿️ 【-标准线路-】     #V2
+
+  - name: ➿️ 【-常规线路-】     #V1
     type: url-test
     use:
-     - 标准
+     - 常规
     url: 'https://www.gstatic.com/generate_204'
     interval: 900
     tolerance: 50
     lazy: true 
 
-  - name: ➿️ 【-专属线路-】     #V1
-    type: url-test
-    use:
-     - 专属
-    url: 'https://www.gstatic.com/generate_204'
-    interval: 900
-    tolerance: 50
-    lazy: true 
 
   - name: ➿️ 【-备用线路-】     #V0
     type: url-test
@@ -189,14 +181,13 @@ proxy-groups:
   - name: 🧠 | 智能 AI
     type: select
     proxies:
-     - ➿️ 【-专属线路-】
+     - ➿️ 【-专用线路-】
 #     - 👉🏼 手动指定
      - 🌍 默认联网方式
     use:
-     - 高级        #V4
-     - 中端        #V3
-     - 标准        #V2
-     - 专属        #V1
+     - 专用        #V3
+     - 视频        #V2
+     - 常规        #V1
      - 备用        #V0
     url: 'https://www.gstatic.com/generate_204'
     interval: 900
@@ -206,13 +197,12 @@ proxy-groups:
   - name: ▶️ | YouTube
     type: select
     proxies:
-     - ➿️ 【-专属线路-】
+     - ➿️ 【-常规线路-】
      - 🌍 默认联网方式
     use:
-     - 高级        #V4
-     - 中端        #V3
-     - 标准        #V2
-     - 专属        #V1
+     - 专用        #V3
+     - 视频        #V2
+     - 常规        #V1
      - 备用        #V0
     url: 'https://www.gstatic.com/generate_204'
     interval: 900
@@ -224,10 +214,9 @@ proxy-groups:
     proxies:
      - 🌍 默认联网方式
     use:
-     - 高级        #V4
-     - 中端        #V3
-     - 标准        #V2
-     - 专属        #V1
+     - 专用        #V3
+     - 视频        #V2
+     - 常规        #V1
      - 备用        #V0
     url: 'https://www.gstatic.com/generate_204'
     interval: 900
@@ -239,10 +228,9 @@ proxy-groups:
     proxies:
      - 🌍 默认联网方式
     use:
-     - 高级        #V4
-     - 中端        #V3
-     - 标准        #V2
-     - 专属        #V1
+     - 专用        #V3
+     - 视频        #V2
+     - 常规        #V1
      - 备用        #V0
     url: 'https://www.gstatic.com/generate_204'
     interval: 900
@@ -254,10 +242,9 @@ proxy-groups:
     proxies:
      - 🌍 默认联网方式
     use:
-     - 高级        #V4
-     - 中端        #V3
-     - 标准        #V2
-     - 专属        #V1
+     - 专用        #V3
+     - 视频        #V2
+     - 常规        #V1
      - 备用        #V0
     url: 'https://www.gstatic.com/generate_204'
     interval: 900
@@ -269,10 +256,9 @@ proxy-groups:
     proxies:
      - 🌍 默认联网方式
     use:
-     - 高级        #V4
-     - 中端        #V3
-     - 标准        #V2
-     - 专属        #V1
+     - 专用        #V3
+     - 视频        #V2
+     - 常规        #V1
      - 备用        #V0
     url: 'https://www.gstatic.com/generate_204'
     interval: 900
@@ -284,10 +270,9 @@ proxy-groups:
     proxies:
      - 🌍 默认联网方式
     use:
-     - 高级        #V4
-     - 中端        #V3
-     - 标准        #V2
-     - 专属        #V1
+     - 专用        #V3
+     - 视频        #V2
+     - 常规        #V1
      - 备用        #V0
     url: 'https://www.gstatic.com/generate_204'
     interval: 900
@@ -299,10 +284,9 @@ proxy-groups:
     proxies:
      - 🌍 默认联网方式
     use:
-     - 高级        #V4
-     - 中端        #V3
-     - 标准        #V2
-     - 专属        #V1
+     - 专用        #V3
+     - 视频        #V2
+     - 常规        #V1
      - 备用        #V0
     url: 'https://www.gstatic.com/generate_204'
     interval: 900
@@ -314,95 +298,93 @@ proxy-groups:
     proxies:
      - 🌍 默认联网方式
     use:
-     - 高级        #V4
-     - 中端        #V3
-     - 标准        #V2
-     - 专属        #V1
+     - 专用        #V3
+     - 视频        #V2
+     - 常规        #V1
      - 备用        #V0
     url: 'https://www.gstatic.com/generate_204'
     interval: 900
     tolerance: 50
     lazy: true 
 
-
   - name: 🕹︎ | 巴哈姆特
     type: select
     proxies:
      - 🌍 默认联网方式
+    use:
+     - 专用        #V3
+     - 视频        #V2
+     - 常规        #V1
+     - 备用        #V0
+    url: 'https://www.gstatic.com/generate_204'
+    interval: 900
+    tolerance: 50
+    lazy: true 
 
   - name: 🇫 | Facebook
     type: select
     proxies:
      - 🌍 默认联网方式
     use:
-     - 高级        #V4
-     - 中端        #V3
-     - 标准        #V2
-     - 专属        #V1
+     - 专用        #V3
+     - 视频        #V2
+     - 常规        #V1
      - 备用        #V0
     url: 'https://www.gstatic.com/generate_204'
     interval: 900
     tolerance: 50
     lazy: true 
-
 
   - name: 📷 | Instagram
     type: select
     proxies:
      - 🌍 默认联网方式
     use:
-     - 高级        #V4
-     - 中端        #V3
-     - 标准        #V2
-     - 专属        #V1
+     - 专用        #V3
+     - 视频        #V2
+     - 常规        #V1
      - 备用        #V0
     url: 'https://www.gstatic.com/generate_204'
     interval: 900
     tolerance: 50
     lazy: true 
-
 
   - name: 🗨 | Line
     type: select
     proxies:
      - 🌍 默认联网方式
     use:
-     - 高级        #V4
-     - 中端        #V3
-     - 标准        #V2
-     - 专属        #V1
+     - 专用        #V3
+     - 视频        #V2
+     - 常规        #V1
      - 备用        #V0
     url: 'https://www.gstatic.com/generate_204'
     interval: 900
     tolerance: 50
     lazy: true 
-
 
   - name: 💬 | Telegram
     type: select
     proxies:
      - 🌍 默认联网方式
     use:
-     - 高级        #V4
-     - 中端        #V3
-     - 标准        #V2
-     - 专属        #V1
+     - 专用        #V3
+     - 视频        #V2
+     - 常规        #V1
      - 备用        #V0
     url: 'https://www.gstatic.com/generate_204'
     interval: 900
     tolerance: 50
     lazy: true 
 
-
   - name: 🎵 | TikTko
     type: select
     proxies:
      - 🌍 默认联网方式
     use:
-     - 高级        #V4
-     - 中端        #V3
-     - 标准        #V2
-     - 专属        #V1
+     - 专用        #V3
+     - 视频        #V2
+     - 常规        #V1
      - 备用        #V0
     url: 'https://www.gstatic.com/generate_204'
     interval: 900
@@ -415,10 +397,9 @@ proxy-groups:
     proxies:
      - 🌍 默认联网方式
     use:
-     - 高级        #V4
-     - 中端        #V3
-     - 标准        #V2
-     - 专属        #V1
+     - 专用        #V3
+     - 视频        #V2
+     - 常规        #V1
      - 备用        #V0
     url: 'https://www.gstatic.com/generate_204'
     interval: 900
@@ -431,10 +412,23 @@ proxy-groups:
     proxies:
      - 🌍 默认联网方式
     use:
-     - 高级        #V4
-     - 中端        #V3
-     - 标准        #V2
-     - 专属        #V1
+     - 专用        #V3
+     - 视频        #V2
+     - 常规        #V1
+     - 备用        #V0
+    url: 'https://www.gstatic.com/generate_204'
+    interval: 900
+    tolerance: 50
+    lazy: true 
+
+  - name: 🇬 | 谷歌服务
+    type: select
+    proxies:
+     - 🌍 默认联网方式
+    use:
+     - 专用        #V3
+     - 视频        #V2
+     - 常规        #V1
      - 备用        #V0
     url: 'https://www.gstatic.com/generate_204'
     interval: 900
@@ -447,50 +441,29 @@ proxy-groups:
      - ➡️ [ 直连 ]
      - 🌍 默认联网方式
     use:
-     - 高级        #V4
-     - 中端        #V3
-     - 标准        #V2
-     - 专属        #V1
+     - 专用        #V3
+     - 视频        #V2
+     - 常规        #V1
      - 备用        #V0
     url: 'https://www.gstatic.com/generate_204'
     interval: 900
     tolerance: 50
     lazy: true 
-
 
   - name: 🍎 | 苹果服务
     type: select
     proxies:
-     - 🌍 默认联网方式
      - ➡️ [ 直连 ]
+     - 🌍 默认联网方式
     use:
-     - 高级        #V4
-     - 中端        #V3
-     - 标准        #V2
-     - 专属        #V1
+     - 专用        #V3
+     - 视频        #V2
+     - 常规        #V1
      - 备用        #V0
     url: 'https://www.gstatic.com/generate_204'
     interval: 900
     tolerance: 50
     lazy: true 
-
-
-  - name: 🇬 | 谷歌服务
-    type: select
-    proxies:
-     - 🌍 默认联网方式
-     - ➡️ [ 直连 ]
-    use:
-     - 高级        #V4
-     - 中端        #V3
-     - 标准        #V2
-     - 专属        #V1
-     - 备用        #V0
-    url: 'https://www.gstatic.com/generate_204'
-    interval: 900
-    tolerance: 50
-    lazy: true 
-
 
   - name: ➡️ [ 直连 ]
     type: select
@@ -498,26 +471,23 @@ proxy-groups:
      - DIRECT
      - 🌍 默认联网方式
     use:
-     - 高级        #V4
-     - 中端        #V3
-     - 标准        #V2
-     - 专属        #V1
+     - 专用        #V3
+     - 视频        #V2
+     - 常规        #V1
      - 备用        #V0
     url: 'https://www.gstatic.com/generate_204'
     interval: 900
     tolerance: 50
     lazy: true 
 
-
   - name: ⛔ [ 拦截 ]
     type: select
     proxies:
      - REJECT
     use:
-     - 高级        #V4
-     - 中端        #V3
-     - 标准        #V2
-     - 专属        #V1
+     - 专用        #V3
+     - 视频        #V2
+     - 常规        #V1
      - 备用        #V0
     url: 'https://www.gstatic.com/generate_204'
     interval: 900
@@ -530,40 +500,30 @@ proxy-groups:
 # 节点集
 proxy-providers:
 
-  高级:          #V4
+  专用:          #V3
     type: http
-    url: https://sourl.cn/v8ycrV
-    path: Scannet/高级.yaml
+    url: "https://raw.githubusercontent.com/fzcaiyu/Clash_for_cy/refs/heads/main/%E8%8A%82%E7%82%B9%E9%9B%86/%E4%B8%93%E7%94%A8.yaml"
+    path: Scannet/专用.yaml
     interval: 3600
     health-check:
       enable: true
       interval: 900
       url: https://www.gstatic.com/generate_204
 
-  中端:          #V3
+  视频:          #V2
     type: http
-    url: https://sourl.cn/Wuq4Zs
-    path: Scannet/中端.yaml
+    url: "https://raw.githubusercontent.com/fzcaiyu/Clash_for_cy/refs/heads/main/%E8%8A%82%E7%82%B9%E9%9B%86/%E8%A7%86%E9%A2%91.yaml"
+    path: Scannet/视频.yaml
     interval: 3600
     health-check:
       enable: true
       interval: 900
       url: https://www.gstatic.com/generate_204
 
-  标准:          #V2
+  常规:          #V1
     type: http
-    url: https://sourl.cn/fQL6jR
-    path: Scannet/标准.yaml
-    interval: 3600
-    health-check:
-      enable: true
-      interval: 900
-      url: https://www.gstatic.com/generate_204
-
-  专属:          #V1
-    type: http
-    url: https://sourl.cn/FvspLn
-    path: Scannet/专属.yaml
+    url: "https://raw.githubusercontent.com/fzcaiyu/Clash_for_cy/refs/heads/main/%E8%8A%82%E7%82%B9%E9%9B%86/%E5%B8%B8%E8%A7%84.yaml"
+    path: Scannet/常规.yaml
     interval: 3600
     health-check:
       enable: true
@@ -572,7 +532,7 @@ proxy-providers:
 
   备用:          #V0
     type: http
-    url: https://sourl.cn/LP9WKg
+    url: "https://raw.githubusercontent.com/fzcaiyu/Clash_for_cy/refs/heads/main/%E8%8A%82%E7%82%B9%E9%9B%86/%E5%A4%87%E7%94%A8.yaml"
     path: Scannet/备用.yaml
     interval: 3600
     health-check:
@@ -590,56 +550,56 @@ rule-providers:
   BiliBili:
     behavior: classical
     type: http
-    url: "https://sourl.cn/p7BPCt"
+    url: "https://raw.githubusercontent.com/fzcaiyu/Clash_for_cy/refs/heads/main/%E8%A7%84%E5%88%99%E9%9B%86/BiliBili.yaml"
     path: Scannet/规则集/BiliBili.yaml
     interval: 86400
 
   Disney:
     behavior: classical
     type: http
-    url: "https://sourl.cn/4LAmFN"
+    url: "https://raw.githubusercontent.com/fzcaiyu/Clash_for_cy/refs/heads/main/%E8%A7%84%E5%88%99%E9%9B%86/Disney.yaml"
     path: Scannet/规则集/Disney.yaml
     interval: 86400
 
   Emby:
     behavior: classical
     type: http
-    url: "https://sourl.cn/7yuU2a"
+    url: "https://raw.githubusercontent.com/fzcaiyu/Clash_for_cy/refs/heads/main/%E8%A7%84%E5%88%99%E9%9B%86/Emby.yaml"
     path: Scannet/规则集/Emby.yaml
     interval: 86400
 
   HBO:
     behavior: classical
     type: http
-    url: "https://sourl.cn/4TRg8E"
+    url: "https://raw.githubusercontent.com/fzcaiyu/Clash_for_cy/refs/heads/main/%E8%A7%84%E5%88%99%E9%9B%86/HBO.yaml"
     path: Scannet/规则集/HBO.yaml
     interval: 86400
 
   Netflix:
     behavior: classical
     type: http
-    url: "https://sourl.cn/W8eBCG"
+    url: "https://raw.githubusercontent.com/fzcaiyu/Clash_for_cy/refs/heads/main/%E8%A7%84%E5%88%99%E9%9B%86/Netflix.yaml"
     path: Scannet/规则集/Netflix.yaml
     interval: 86400
 
   YouTube:
     behavior: classical
     type: http
-    url: "https://sourl.cn/DY487c"  
+    url: "https://raw.githubusercontent.com/fzcaiyu/Clash_for_cy/refs/heads/main/%E8%A7%84%E5%88%99%E9%9B%86/YouTube.yaml"  
     path: Scannet/规则集/YouTube.yaml
     interval: 86400
 
   其他外媒:
     behavior: classical
     type: http
-    url: "https://sourl.cn/nN4ZcP"
+    url: "https://raw.githubusercontent.com/fzcaiyu/Clash_for_cy/refs/heads/main/%E8%A7%84%E5%88%99%E9%9B%86/%E5%85%B6%E4%BB%96%E5%A4%96%E5%AA%92.yaml"
     path: Scannet/规则集/其他外媒.yaml
     interval: 86400
 
   智能AI:
     behavior: classical
     type: http
-    url: "https://sourl.cn/48UEFK"
+    url: "https://raw.githubusercontent.com/fzcaiyu/Clash_for_cy/refs/heads/main/%E8%A7%84%E5%88%99%E9%9B%86/%E6%99%BA%E8%83%BDAI.yaml"
     path: Scannet/规则集/智能AI.yaml
     interval: 86400
 
@@ -648,14 +608,14 @@ rule-providers:
   Steam:
     behavior: classical
     type: http
-    url: "https://sourl.cn/LGDcV9"
+    url: "https://raw.githubusercontent.com/fzcaiyu/Clash_for_cy/refs/heads/main/%E8%A7%84%E5%88%99%E9%9B%86/Steam.yaml"
     path: Scannet/规则集/Steam.yaml
     interval: 86400
 
   巴哈姆特:
     behavior: classical
     type: http
-    url: "https://sourl.cn/SaK8Dh"
+    url: "https://raw.githubusercontent.com/fzcaiyu/Clash_for_cy/refs/heads/main/%E8%A7%84%E5%88%99%E9%9B%86/%E5%B7%B4%E5%93%88%E5%A7%86%E7%89%B9.yaml"
     path: Scannet/规则集/巴哈姆特.yaml
     interval: 86400
 
@@ -664,49 +624,49 @@ rule-providers:
   Facebook:
     behavior: classical
     type: http
-    url: "https://sourl.cn/4k79uq"
+    url: "https://raw.githubusercontent.com/fzcaiyu/Clash_for_cy/refs/heads/main/%E8%A7%84%E5%88%99%E9%9B%86/Facebook.yaml"
     path: Scannet/规则集/Facebook.yaml
     interval: 86400
 
   Instagram:
     behavior: classical
     type: http
-    url: "https://sourl.cn/3zY7sq"
+    url: "https://raw.githubusercontent.com/fzcaiyu/Clash_for_cy/refs/heads/main/%E8%A7%84%E5%88%99%E9%9B%86/Instagram.yaml"
     path: Scannet/规则集/Instagram.yaml
     interval: 86400
 
   Line:
     behavior: classical
     type: http
-    url: "https://sourl.cn/VsuhBU"
+    url: "https://raw.githubusercontent.com/fzcaiyu/Clash_for_cy/refs/heads/main/%E8%A7%84%E5%88%99%E9%9B%86/Line.yaml"
     path: Scannet/规则集/Line.yaml
     interval: 86400
 
   Telegram:
     behavior: classical
     type: http
-    url: "https://sourl.cn/uDpYEg"
+    url: "https://raw.githubusercontent.com/fzcaiyu/Clash_for_cy/refs/heads/main/%E8%A7%84%E5%88%99%E9%9B%86/Telegram.yaml"
     path: Scannet/规则集/Telegram.yaml
     interval: 86400
 
   TikTko:
     behavior: classical
     type: http
-    url: "https://sourl.cn/rSExum"
+    url: "https://raw.githubusercontent.com/fzcaiyu/Clash_for_cy/refs/heads/main/%E8%A7%84%E5%88%99%E9%9B%86/TikTko.yaml"
     path: Scannet/规则集/TikTko.yaml
     interval: 86400
 
   Twitter:
     behavior: classical
     type: http
-    url: "https://sourl.cn/RR3cX6"
+    url: "https://raw.githubusercontent.com/fzcaiyu/Clash_for_cy/refs/heads/main/%E8%A7%84%E5%88%99%E9%9B%86/Twitter.yaml"
     path: Scannet/规则集/Twitter.yaml
     interval: 86400
 
   WhatsApp:
     behavior: classical
     type: http
-    url: "https://sourl.cn/4BYehs"
+    url: "https://raw.githubusercontent.com/fzcaiyu/Clash_for_cy/refs/heads/main/%E8%A7%84%E5%88%99%E9%9B%86/WhatsApp.yaml"
     path: Scannet/规则集/WhatsApp.yaml
     interval: 86400
 
@@ -715,21 +675,21 @@ rule-providers:
   海外云服:
     behavior: classical
     type: http
-    url: "https://sourl.cn/7zK6Yd"
+    url: "https://raw.githubusercontent.com/fzcaiyu/Clash_for_cy/refs/heads/main/%E8%A7%84%E5%88%99%E9%9B%86/%E6%B5%B7%E5%A4%96%E4%BA%91%E6%9C%8D.yaml"
     path: Scannet/规则集/海外云服.yaml
     interval: 86400
 
   海外媒体:
     behavior: classical
     type: http
-    url: "https://sourl.cn/GndfmD"
+    url: "https://raw.githubusercontent.com/fzcaiyu/Clash_for_cy/refs/heads/main/%E8%A7%84%E5%88%99%E9%9B%86/%E6%B5%B7%E5%A4%96%E5%AA%92%E4%BD%93.yaml"
     path: Scannet/规则集/海外媒体.yaml
     interval: 86400
 
   海外网址:
     behavior: classical
     type: http
-    url: "https://sourl.cn/DC3uch"
+    url: "https://raw.githubusercontent.com/fzcaiyu/Clash_for_cy/refs/heads/main/%E8%A7%84%E5%88%99%E9%9B%86/%E6%B5%B7%E5%A4%96%E7%BD%91%E5%9D%80.yaml"
     path: Scannet/规则集/海外网址.yaml
     interval: 86400
 
@@ -738,21 +698,21 @@ rule-providers:
   恶意劫持:
     behavior: classical
     type: http
-    url: "https://sourl.cn/SuWXiR"
+    url: "https://raw.githubusercontent.com/fzcaiyu/Clash_for_cy/refs/heads/main/%E8%A7%84%E5%88%99%E9%9B%86/%E6%81%B6%E6%84%8F%E5%8A%AB%E6%8C%81.yaml"
     path: Scannet/规则集/恶意劫持.yaml
     interval: 86400
 
   恶意广告:
     behavior: classical
     type: http
-    url: "https://sourl.cn/BndhX2"
+    url: "https://raw.githubusercontent.com/fzcaiyu/Clash_for_cy/refs/heads/main/%E8%A7%84%E5%88%99%E9%9B%86/%E6%81%B6%E6%84%8F%E5%B9%BF%E5%91%8A.yaml"
     path: Scannet/规则集/恶意广告.yaml
     interval: 86400
 
   恶意网址:
     behavior: classical
     type: http
-    url: "https://sourl.cn/srB4xy"
+    url: "https://raw.githubusercontent.com/fzcaiyu/Clash_for_cy/refs/heads/main/%E8%A7%84%E5%88%99%E9%9B%86/%E6%81%B6%E6%84%8F%E7%BD%91%E5%9D%80.yaml"
     path: Scannet/规则集/恶意网址.yaml
     interval: 86400
 
@@ -761,49 +721,49 @@ rule-providers:
   国内云服:
     behavior: classical
     type: http
-    url: "https://sourl.cn/gnSAHm"
+    url: "https://raw.githubusercontent.com/fzcaiyu/Clash_for_cy/refs/heads/main/%E8%A7%84%E5%88%99%E9%9B%86/%E5%9B%BD%E5%86%85%E4%BA%91%E6%9C%8D.yaml"
     path: Scannet/规则集/国内云服.yaml
     interval: 86400
 
   国内程序:
     behavior: classical
     type: http
-    url: "https://sourl.cn/PjysZR"
+    url: "https://raw.githubusercontent.com/fzcaiyu/Clash_for_cy/refs/heads/main/%E8%A7%84%E5%88%99%E9%9B%86/%E5%9B%BD%E5%86%85%E7%A8%8B%E5%BA%8F.yaml"
     path: Scannet/规则集/国内程序.yaml
     interval: 86400
 
   国内网址:
     behavior: classical
     type: http
-    url: "https://sourl.cn/ZYFBhJ"
+    url: "https://raw.githubusercontent.com/fzcaiyu/Clash_for_cy/refs/heads/main/%E8%A7%84%E5%88%99%E9%9B%86/%E5%9B%BD%E5%86%85%E7%BD%91%E5%9D%80.yaml"
     path: Scannet/规则集/网址.yaml
     interval: 86400
 
   局域网IP:
     behavior: classical
     type: http
-    url: "https://sourl.cn/tFkUkp"
+    url: "https://raw.githubusercontent.com/fzcaiyu/Clash_for_cy/refs/heads/main/%E8%A7%84%E5%88%99%E9%9B%86/%E5%B1%80%E5%9F%9F%E7%BD%91IP.yaml"
     path: Scannet/规则集/局域网IP.yaml
     interval: 86400
 
   微软服务:
     behavior: classical
     type: http
-    url: "https://sourl.cn/7kamYT"
+    url: "https://raw.githubusercontent.com/fzcaiyu/Clash_for_cy/refs/heads/main/%E8%A7%84%E5%88%99%E9%9B%86/%E5%BE%AE%E8%BD%AF%E6%9C%8D%E5%8A%A1.yaml"
     path: Scannet/规则集/微软服务.yaml
     interval: 86400
 
   苹果服务:
     behavior: classical
     type: http
-    url: "https://sourl.cn/3UR5GH"
+    url: "https://raw.githubusercontent.com/fzcaiyu/Clash_for_cy/refs/heads/main/%E8%A7%84%E5%88%99%E9%9B%86/%E8%8B%B9%E6%9E%9C%E6%9C%8D%E5%8A%A1.yaml"
     path: Scannet/规则集/苹果服务.yaml
     interval: 86400
 
   谷歌服务:
     behavior: classical
     type: http
-    url: "https://sourl.cn/PWsx7x"
+    url: "https://raw.githubusercontent.com/fzcaiyu/Clash_for_cy/refs/heads/main/%E8%A7%84%E5%88%99%E9%9B%86/%E8%B0%B7%E6%AD%8C%E6%9C%8D%E5%8A%A1.yaml"
     path: Scannet/规则集/谷歌服务.yaml
     interval: 86400
 
