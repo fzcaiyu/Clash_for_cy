@@ -197,7 +197,7 @@ proxy-groups:
   - name: ▶️ | YouTube
     type: select
     proxies:
-     - ➿️ 【-常规线路-】
+     - ➿️ 【-视频线路-】
      - 🌍 默认联网方式
     use:
      - 专用        #V3
