@@ -1,0 +1,79 @@
+payload:
+  # Steam 全球核心服务域名
+  - DOMAIN-KEYWORD,steam  # Steam 平台关键词匹配
+  - DOMAIN-SUFFIX,steampowered.com  # Steam 官方主站
+  - DOMAIN-SUFFIX,steamcommunity.com  # Steam 社区服务
+  - DOMAIN-SUFFIX,steamstatic.com  # Steam 静态资源
+  - DOMAIN-SUFFIX,steamcontent.com  # Steam 内容分发网络
+
+  # Steam 全球业务域名
+  ## 游戏交易与捆绑平台
+  - DOMAIN-SUFFIX,fanatical.com  # Fanatical 游戏销售平台
+  - DOMAIN-SUFFIX,humblebundle.com  # Humble Bundle 游戏捆绑平台
+  - DOMAIN-SUFFIX,gmg.com  # Green Man Gaming 游戏平台
+  - DOMAIN-SUFFIX,wingamestore.com  # WinGameStore 游戏平台
+
+  # Steam 全球支持服务
+  - DOMAIN-SUFFIX,steamcdn.com  # Steam 内容分发网络
+  - DOMAIN-SUFFIX,steamdb.info  # Steam 数据库信息站
+  - DOMAIN-SUFFIX,steamgames.com  # Steam 游戏域名
+  - DOMAIN-SUFFIX,steamstore.net  # Steam 商店网络服务
+  - DOMAIN-SUFFIX,steambroadcast.akamaihd.net  # Steam 直播 CDN
+
+  # 支付与安全服务
+  - DOMAIN-SUFFIX,valvesoftware.com  # Valve 软件公司官网
+  - DOMAIN-SUFFIX,steamchina.com  # Steam 中国服务
+  - DOMAIN-SUFFIX,steamusercontent.com  # Steam 用户内容
+  - DOMAIN-SUFFIX,steamcommunity.com.mwcloudcdn.com  # Steam 社区 CDN
+
+  # 设备和系统全面支持
+  ## Windows 系统
+  - PROCESS-NAME,steam.exe  # Steam Windows 应用进程
+  - DOMAIN-SUFFIX,windows.com  # Windows 系统域名
+  - DOMAIN-SUFFIX,microsoft.com  # Microsoft 系统域名
+
+  ## MacOS 系统
+  - PROCESS-NAME,Steam.app  # Steam MacOS 应用进程
+  - DOMAIN-SUFFIX,apple.com/mac  # MacOS 系统域名
+
+  ## Linux 系统
+  - PROCESS-NAME,steam-launcher  # Steam Linux 应用进程
+  - DOMAIN-SUFFIX,linux.org  # Linux 系统域名
+
+  ## Android 系统
+  - PROCESS-NAME,com.valvesoftware.android.steam.community  # Steam Android 应用
+  - BUNDLE-ID,com.valvesoftware.android.steam.community  # Steam Android 应用标识
+  - DOMAIN-SUFFIX,android.com  # Android 系统域名
+  - DOMAIN-SUFFIX,googleplay.com  # 应用分发平台
+
+  ## iOS 系统
+  - PROCESS-NAME,Steam  # Steam iOS 应用
+  - BUNDLE-ID,com.valvesoftware.steam.mobile  # Steam iOS 应用标识
+  - DOMAIN-SUFFIX,apple.com  # Apple 系统域名
+  - DOMAIN-SUFFIX,icloud.com  # 云服务域名
+
+  ## 鸿蒙系统
+  - PROCESS-NAME,com.huawei.steam  # 鸿蒙 Steam 应用
+  - BUNDLE-ID,com.huawei.steam  # 鸿蒙 Steam 应用标识
+  - DOMAIN-SUFFIX,harmonyos.com  # 鸿蒙系统域名
+
+  ## 智能电视和游戏主机
+  - PROCESS-NAME,steam.tv  # Steam TV 应用
+  - PROCESS-NAME,steam.playstation  # Steam PlayStation 应用
+  - PROCESS-NAME,steam.xbox  # Steam Xbox 应用
+  - DOMAIN-SUFFIX,smart-tv.com  # 智能电视域名
+  - DOMAIN-SUFFIX,playstation.com  # PlayStation 域名
+  - DOMAIN-SUFFIX,xbox.com  # Xbox 域名
+
+  # 额外支持服务
+  ## 支付服务
+  - DOMAIN-SUFFIX,paypal.com  # PayPal 支付服务
+  - DOMAIN-SUFFIX,stripe.com  # Stripe 支付服务
+
+  ## CDN 和性能服务
+  - DOMAIN-SUFFIX,akamai.net  # Akamai CDN
+  - DOMAIN-SUFFIX,cloudflare.com  # Cloudflare CDN
+
+  # 额外匹配
+  - DOMAIN-KEYWORD,steam-cdn
+  - DOMAIN-KEYWORD,steamglobal

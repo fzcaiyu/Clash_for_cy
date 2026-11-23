@@ -1,0 +1,137 @@
+payload:
+  # YouTube 全球核心域名 - 基础服务标识
+  - DOMAIN-KEYWORD,youtube  # 匹配所有 YouTube 相关域名
+  - DOMAIN-SUFFIX,youtube.com  # 全球主站点域名
+  - DOMAIN-SUFFIX,youtu.be  # 短链接服务域名
+  - DOMAIN-SUFFIX,ytimg.com  # YouTube 图像资源域名
+  - DOMAIN-SUFFIX,googlevideo.com  # Google 视频流媒体域名
+  - DOMAIN-SUFFIX,gvt2.com  # Google 视频技术服务域名
+
+  # 全球业务域名 - 国际区域覆盖
+  ## 北美洲业务域名
+  - DOMAIN-SUFFIX,youtube.ca  # 加拿大业务域名
+  - DOMAIN-SUFFIX,youtube.us  # 美国业务域名
+  - DOMAIN-SUFFIX,youtube.com.mx  # 墨西哥业务域名
+  - DOMAIN-SUFFIX,youtube.pr  # 波多黎各业务域名
+  - DOMAIN-SUFFIX,youtube.vi  # 美属维尔京群岛业务域名
+
+  ## 南美洲业务域名
+  - DOMAIN-SUFFIX,youtube.com.br  # 巴西业务域名
+  - DOMAIN-SUFFIX,youtube.cl  # 智利业务域名
+  - DOMAIN-SUFFIX,youtube.co  # 哥伦比亚业务域名
+  - DOMAIN-SUFFIX,youtube.com.ar  # 阿根廷业务域名
+  - DOMAIN-SUFFIX,youtube.pe  # 秘鲁业务域名
+  - DOMAIN-SUFFIX,youtube.com.uy  # 乌拉圭业务域名
+  - DOMAIN-SUFFIX,youtube.ve  # 委内瑞拉业务域名
+  - DOMAIN-SUFFIX,youtube.bo  # 玻利维亚业务域名
+  - DOMAIN-SUFFIX,youtube.py  # 巴拉圭业务域名
+
+  ## 欧洲业务域名
+  - DOMAIN-SUFFIX,youtube.co.uk  # 英国业务域名
+  - DOMAIN-SUFFIX,youtube.de  # 德国业务域名
+  - DOMAIN-SUFFIX,youtube.fr  # 法国业务域名
+  - DOMAIN-SUFFIX,youtube.es  # 西班牙业务域名
+  - DOMAIN-SUFFIX,youtube.it  # 意大利业务域名
+  - DOMAIN-SUFFIX,youtube.nl  # 荷兰业务域名
+  - DOMAIN-SUFFIX,youtube.pl  # 波兰业务域名
+  - DOMAIN-SUFFIX,youtube.ru  # 俄罗斯业务域名
+  - DOMAIN-SUFFIX,youtube.be  # 比利时业务域名
+  - DOMAIN-SUFFIX,youtube.ch  # 瑞士业务域名
+  - DOMAIN-SUFFIX,youtube.at  # 奥地利业务域名
+  - DOMAIN-SUFFIX,youtube.se  # 瑞典业务域名
+  - DOMAIN-SUFFIX,youtube.no  # 挪威业务域名
+  - DOMAIN-SUFFIX,youtube.dk  # 丹麦业务域名
+  - DOMAIN-SUFFIX,youtube.fi  # 芬兰业务域名
+  - DOMAIN-SUFFIX,youtube.pt  # 葡萄牙业务域名
+  - DOMAIN-SUFFIX,youtube.gr  # 希腊业务域名
+  - DOMAIN-SUFFIX,youtube.cz  # 捷克业务域名
+  - DOMAIN-SUFFIX,youtube.ro  # 罗马尼亚业务域名
+  - DOMAIN-SUFFIX,youtube.hu  # 匈牙利业务域名
+  - DOMAIN-SUFFIX,youtube.ie  # 爱尔兰业务域名
+
+  ## 亚洲业务域名
+  - DOMAIN-SUFFIX,youtube.co.jp  # 日本业务域名
+  - DOMAIN-SUFFIX,youtube.co.kr  # 韩国业务域名
+  - DOMAIN-SUFFIX,youtube.com.tw  # 台湾业务域名
+  - DOMAIN-SUFFIX,youtube.com.hk  # 香港业务域名
+  - DOMAIN-SUFFIX,youtube.co.in  # 印度业务域名
+  - DOMAIN-SUFFIX,youtube.com.sg  # 新加坡业务域名
+  - DOMAIN-SUFFIX,youtube.ae  # 阿联酋业务域名
+  - DOMAIN-SUFFIX,youtube.com.sa  # 沙特阿拉伯业务域名
+  - DOMAIN-SUFFIX,youtube.com.pk  # 巴基斯坦业务域名
+  - DOMAIN-SUFFIX,youtube.com.bd  # 孟加拉国业务域名
+  - DOMAIN-SUFFIX,youtube.co.th  # 泰国业务域名
+  - DOMAIN-SUFFIX,youtube.com.my  # 马来西亚业务域名
+  - DOMAIN-SUFFIX,youtube.co.id  # 印尼业务域名
+  - DOMAIN-SUFFIX,youtube.com.ph  # 菲律宾业务域名
+  - DOMAIN-SUFFIX,youtube.com.vn  # 越南业务域名
+  - DOMAIN-SUFFIX,youtube.cn  # 中国业务域名
+  - DOMAIN-SUFFIX,youtube.ir  # 伊朗业务域名
+  - DOMAIN-SUFFIX,youtube.il  # 以色列业务域名
+
+  # 设备和系统全面支持
+  ## Android 系统支持
+  - PROCESS-NAME,com.google.android.youtube  # Android 主应用进程
+  - PROCESS-NAME,com.google.android.youtube.tv  # Android TV 应用进程
+  - PROCESS-NAME,com.google.android.apps.youtube.music  # YouTube Music 应用进程
+  - BUNDLE-ID,com.google.android.youtube  # Android 应用标识
+  - DOMAIN-SUFFIX,android.com  # Android 系统域名
+  - DOMAIN-SUFFIX,googleplay.com  # 应用分发平台域名
+
+  ## iOS 系统支持
+  - PROCESS-NAME,YouTube  # iOS YouTube 应用进程
+  - PROCESS-NAME,YouTubeMusic  # iOS YouTube Music 应用进程
+  - BUNDLE-ID,com.google.ios.youtube  # iOS YouTube 应用标识
+  - DOMAIN-SUFFIX,apple.com  # Apple 系统域名
+  - DOMAIN-SUFFIX,icloud.com  # 云服务域名
+
+  ## 鸿蒙系统支持
+  - PROCESS-NAME,com.huawei.youtube  # 鸿蒙 YouTube 应用进程
+  - PROCESS-NAME,com.huawei.youtubemusic  # 鸿蒙 YouTube Music 应用进程
+  - BUNDLE-ID,com.huawei.youtube  # 鸿蒙 YouTube 应用标识
+  - DOMAIN-SUFFIX,harmonyos.com  # 鸿蒙系统域名
+  - DOMAIN-SUFFIX,hwcloudlink.com  # 华为云服务域名
+
+  ## 电视和机顶盒支持
+  - PROCESS-NAME,com.youtube.tv  # YouTube TV 应用进程
+  - PROCESS-NAME,youtube.androidtv  # Android TV YouTube 应用进程
+  - PROCESS-NAME,com.google.android.youtube.tv  # Google Android TV YouTube 应用进程
+  - PROCESS-NAME,com.apple.tv.youtube  # Apple TV YouTube 应用进程
+  - PROCESS-NAME,com.samsung.tv.youtube  # Samsung TV YouTube 应用进程
+  - PROCESS-NAME,com.lg.tv.youtube  # LG TV YouTube 应用进程
+  - DOMAIN-SUFFIX,youtube.com/tv  # YouTube TV 专用域名
+  - DOMAIN-SUFFIX,youtubetv.com  # YouTube TV 服务域名
+  - DOMAIN-SUFFIX,smart-tv.com  # 智能电视通用域名
+
+  ## 电脑端系统支持
+  - PROCESS-NAME,youtube.windowsapp  # Windows YouTube 应用进程
+  - PROCESS-NAME,youtube.macapp  # MacOS YouTube 应用进程
+  - PROCESS-NAME,youtube.linuxapp  # Linux YouTube 应用进程
+  - DOMAIN-SUFFIX,windows.com  # Windows 系统域名
+  - DOMAIN-SUFFIX,apple.com/mac  # MacOS 系统域名
+  - DOMAIN-SUFFIX,linux.org  # Linux 系统域名
+
+  # 通用服务和技术支持
+  ## CDN 和 API 服务
+  - DOMAIN,youtubei.googleapis.com  # YouTube API 服务
+  - DOMAIN,yt3.ggpht.com  # 图像资源 CDN
+  - DOMAIN,redirector.googlevideo.com  # 视频重定向服务
+  - DOMAIN,manifest.googlevideo.com  # 视频清单服务
+
+  ## 全球通用服务域名
+  - DOMAIN-SUFFIX,yt.be  # 短链接服务
+  - DOMAIN-SUFFIX,youtube-nocookie.com  # 无 Cookie 域名
+  - DOMAIN-SUFFIX,youtubeeducation.com  # 教育版域名
+  - DOMAIN-SUFFIX,youtubegaming.com  # 游戏版域名
+  - DOMAIN-SUFFIX,youtubekids.com  # 儿童版域名
+
+  # IP 段支持
+  - IP-CIDR,172.217.0.0/16  # Google IP 段
+  - IP-CIDR,74.125.0.0/16  # YouTube IP 段
+  - IP-CIDR,173.194.0.0/16  # YouTube IP 段
+  - IP-CIDR,216.58.0.0/16  # Google IP 段
+
+  # 额外安全和性能域名
+  - DOMAIN-SUFFIX,googleapis.com  # Google API 服务
+  - DOMAIN-SUFFIX,googleusercontent.com  # Google 用户内容
+  - DOMAIN-SUFFIX,gstatic.com  # Google 静态资源

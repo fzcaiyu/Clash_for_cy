@@ -1,0 +1,98 @@
+payload:
+  # WhatsApp 全球核心服务域名
+  ## 主要服务域名
+  - DOMAIN-KEYWORD,whatsapp  # WhatsApp 平台关键词匹配
+  - DOMAIN-SUFFIX,whatsapp.com  # WhatsApp 主站点域名
+  - DOMAIN-SUFFIX,whatsapp.net  # WhatsApp 网络服务域名
+  - DOMAIN-SUFFIX,whatsapp.org  # WhatsApp 组织域名
+  - DOMAIN-SUFFIX,whatsappbusiness.com  # WhatsApp 商业版域名
+
+  # WhatsApp 全球业务域名
+  ## 北美洲业务
+  - DOMAIN-SUFFIX,whatsapp.ca  # 加拿大业务
+  - DOMAIN-SUFFIX,whatsapp.us  # 美国业务
+  - DOMAIN-SUFFIX,whatsapp.com.mx  # 墨西哥业务
+
+  ## 南美洲业务
+  - DOMAIN-SUFFIX,whatsapp.com.br  # 巴西业务
+  - DOMAIN-SUFFIX,whatsapp.cl  # 智利业务
+  - DOMAIN-SUFFIX,whatsapp.com.ar  # 阿根廷业务
+
+  ## 欧洲业务
+  - DOMAIN-SUFFIX,whatsapp.de  # 德国业务
+  - DOMAIN-SUFFIX,whatsapp.fr  # 法国业务
+  - DOMAIN-SUFFIX,whatsapp.co.uk  # 英国业务
+  - DOMAIN-SUFFIX,whatsapp.es  # 西班牙业务
+  - DOMAIN-SUFFIX,whatsapp.it  # 意大利业务
+  - DOMAIN-SUFFIX,whatsapp.nl  # 荷兰业务
+  - DOMAIN-SUFFIX,whatsapp.pl  # 波兰业务
+  - DOMAIN-SUFFIX,whatsapp.ru  # 俄罗斯业务
+
+  ## 亚洲业务
+  - DOMAIN-SUFFIX,whatsapp.co.jp  # 日本业务
+  - DOMAIN-SUFFIX,whatsapp.co.kr  # 韩国业务
+  - DOMAIN-SUFFIX,whatsapp.com.tw  # 台湾业务
+  - DOMAIN-SUFFIX,whatsapp.com.hk  # 香港业务
+  - DOMAIN-SUFFIX,whatsapp.co.in  # 印度业务
+  - DOMAIN-SUFFIX,whatsapp.com.sg  # 新加坡业务
+  - DOMAIN-SUFFIX,whatsapp.ae  # 阿联酋业务
+  - DOMAIN-SUFFIX,whatsapp.com.sa  # 沙特阿拉伯业务
+
+  ## 大洋洲业务
+  - DOMAIN-SUFFIX,whatsapp.com.au  # 澳大利亚业务
+  - DOMAIN-SUFFIX,whatsapp.co.nz  # 新西兰业务
+
+  ## 非洲业务
+  - DOMAIN-SUFFIX,whatsapp.co.za  # 南非业务
+  - DOMAIN-SUFFIX,whatsapp.com.eg  # 埃及业务
+
+  # 设备和系统全面支持
+  ## Android 系统
+  - PROCESS-NAME,com.whatsapp  # WhatsApp Android 主应用
+  - PROCESS-NAME,com.whatsapp.w4b  # WhatsApp 商业版 Android 应用
+  - BUNDLE-ID,com.whatsapp.android  # Android 应用标识
+  - DOMAIN-SUFFIX,android.com  # Android 系统域名
+  - DOMAIN-SUFFIX,googleplay.com  # 应用分发平台
+
+  ## iOS 系统
+  - PROCESS-NAME,WhatsApp  # WhatsApp iOS 应用
+  - BUNDLE-ID,com.whatsapp.ios  # iOS 应用标识
+  - DOMAIN-SUFFIX,apple.com  # Apple 系统域名
+  - DOMAIN-SUFFIX,icloud.com  # 云服务域名
+
+  ## 鸿蒙系统
+  - PROCESS-NAME,com.huawei.whatsapp  # 鸿蒙 WhatsApp 应用
+  - BUNDLE-ID,com.huawei.whatsapp  # 鸿蒙应用标识
+  - DOMAIN-SUFFIX,harmonyos.com  # 鸿蒙系统域名
+
+  ## 电视和机顶盒
+  - PROCESS-NAME,com.whatsapp.tv  # WhatsApp TV 应用
+  - PROCESS-NAME,com.whatsapp.androidtv  # WhatsApp Android TV 应用
+  - DOMAIN-SUFFIX,whatsapp.com/tv  # WhatsApp TV 专用域名
+  - DOMAIN-SUFFIX,smart-tv.com  # 智能电视域名
+
+  ## 电脑端系统
+  - PROCESS-NAME,whatsapp.windows  # Windows WhatsApp 应用
+  - PROCESS-NAME,whatsapp.macos  # MacOS WhatsApp 应用
+  - PROCESS-NAME,whatsapp.linux  # Linux WhatsApp 应用
+  - DOMAIN-SUFFIX,windows.com  # Windows 系统域名
+  - DOMAIN-SUFFIX,apple.com/mac  # MacOS 系统域名
+  - DOMAIN-SUFFIX,linux.org  # Linux 系统域名
+
+  # WhatsApp 子服务和平台
+  - DOMAIN-SUFFIX,whatsapp.media  # WhatsApp 媒体服务
+  - DOMAIN-SUFFIX,whatsapp.chat  # WhatsApp 聊天服务
+  - DOMAIN-SUFFIX,whatsapp.cloud  # WhatsApp 云服务
+
+  # 技术和支持服务
+  - DOMAIN-SUFFIX,facebook.com  # Facebook 母公司域名
+  - DOMAIN-SUFFIX,fbcdn.net  # Facebook CDN
+  - DOMAIN-SUFFIX,whatsapp.biz  # WhatsApp 商业服务
+
+  # CDN 和性能服务
+  - DOMAIN-SUFFIX,akamai.net  # CDN 服务
+  - DOMAIN-SUFFIX,cloudflare.com  # CDN 服务
+
+  # 额外匹配
+  - DOMAIN-KEYWORD,whatsapp-cdn
+  - DOMAIN-KEYWORD,whatsapp-global

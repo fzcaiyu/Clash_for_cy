@@ -1,0 +1,117 @@
+# 使用特定程序的流量直接连接，不通过代理
+# 如“程序名为 v2ray 的流量直接连接
+
+payload:
+
+# =========================
+# 代理配置文件：直连规则（扩展版）
+# =========================
+
+# 代理工具
+  - PROCESS-NAME,privoxy,DIRECT             # HTTP 过滤代理
+  - PROCESS-NAME,ss-local,DIRECT            # Shadowsocks 本地代理
+  - PROCESS-NAME,Surge%203,DIRECT           # Surge 3 配置工具
+  - PROCESS-NAME,trojan-go,DIRECT           # Trojan-Go 代理
+  - PROCESS-NAME,trojan,DIRECT              # Trojan 代理
+  - PROCESS-NAME,v2ray,DIRECT               # V2Ray 代理
+  - PROCESS-NAME,naive,DIRECT               # NaïveProxy 代理
+
+# 下载工具
+  - PROCESS-NAME,aria2c,DIRECT              # 高速下载工具
+  - PROCESS-NAME,baidunetdisk,DIRECT        # 百度网盘
+  - PROCESS-NAME,DownloadService,DIRECT     # 通用下载服务
+  - PROCESS-NAME,fdm,DIRECT                 # Free Download Manager
+  - PROCESS-NAME,Folx,DIRECT                # macOS 下载工具
+  - PROCESS-NAME,NetTransport,DIRECT        # 网络传输工具
+  - PROCESS-NAME,Thunder,DIRECT             # 迅雷
+  - PROCESS-NAME,Weiyun,DIRECT              # 腾讯微云
+
+# BT / P2P 工具
+  - PROCESS-NAME,qBittorrent,DIRECT         # 开源 BT 客户端
+  - PROCESS-NAME,Transmission,DIRECT        # 轻量级 BT 工具
+  - PROCESS-NAME,uTorrent,DIRECT            # uTorrent 客户端
+  - PROCESS-NAME,WebTorrent Helper,DIRECT   # WebTorrent 辅助进程
+  - PROCESS-NAME,WebTorrent,DIRECT          # WebTorrent 客户端
+
+# 办公与通讯工具
+  - PROCESS-NAME,WeChat,DIRECT              # 微信
+  - PROCESS-NAME,QQ,DIRECT                  # 腾讯 QQ
+  - PROCESS-NAME,DingTalk,DIRECT            # 钉钉
+  - PROCESS-NAME,Feishu,DIRECT              # 飞书
+  - PROCESS-NAME,WPS,DIRECT                 # WPS Office
+  - PROCESS-NAME,YoudaoNote,DIRECT          # 有道云笔记
+  - PROCESS-NAME,Evernote,DIRECT            # 印象笔记
+
+# 视频播放软件
+  - PROCESS-NAME,iQIYI,DIRECT               # 爱奇艺
+  - PROCESS-NAME,Youku,DIRECT               # 优酷
+  - PROCESS-NAME,TencentVideo,DIRECT        # 腾讯视频
+  - PROCESS-NAME,MangoTV,DIRECT             # 芒果 TV
+  - PROCESS-NAME,Bilibili,DIRECT            # 哔哩哔哩
+  - PROCESS-NAME,Kuaishou,DIRECT            # 快手
+  - PROCESS-NAME,Douyin,DIRECT              # 抖音
+
+# 音乐播放软件
+  - PROCESS-NAME,NeteaseMusic,DIRECT        # 网易云音乐
+  - PROCESS-NAME,TencentMusic,DIRECT        # 腾讯音乐
+  - PROCESS-NAME,KuGou,DIRECT               # 酷狗音乐
+  - PROCESS-NAME,KuWo,DIRECT                # 酷我音乐
+  - PROCESS-NAME,QianQian,DIRECT            # 千千静听
+
+# 社交与生活服务
+  - PROCESS-NAME,Taobao,DIRECT              # 淘宝
+  - PROCESS-NAME,Jingdong,DIRECT            # 京东
+  - PROCESS-NAME,Alipay,DIRECT              # 支付宝
+  - PROCESS-NAME,Meituan,DIRECT             # 美团
+  - PROCESS-NAME,Dianping,DIRECT            # 大众点评
+  - PROCESS-NAME,Pinduoduo,DIRECT           # 拼多多
+  - PROCESS-NAME,Eleme,DIRECT               # 饿了么
+
+# 游戏类程序
+  - PROCESS-NAME,WeGame,DIRECT              # 腾讯 WeGame 平台
+  - PROCESS-NAME,SteamClient,DIRECT         # Steam 客户端（中国版）
+  - PROCESS-NAME,NetEaseGames,DIRECT        # 网易游戏客户端
+  - PROCESS-NAME,TencentGames,DIRECT        # 腾讯游戏客户端
+
+# 新闻与资讯
+  - PROCESS-NAME,Toutiao,DIRECT             # 今日头条
+  - PROCESS-NAME,SinaNews,DIRECT            # 新浪新闻
+  - PROCESS-NAME,NetEaseNews,DIRECT         # 网易新闻
+  - PROCESS-NAME,PeopleNews,DIRECT          # 人民日报客户端
+  - PROCESS-NAME,ThePaper,DIRECT            # 澎湃新闻
+  - PROCESS-NAME,GuoTaiJinFu,DIRECT         # 国泰金融
+
+# 金融与股票
+  - PROCESS-NAME,AlipayFinance,DIRECT       # 支付宝理财
+  - PROCESS-NAME,HuataiApp,DIRECT           # 华泰证券
+  - PROCESS-NAME,EastMoney,DIRECT           # 东方财富网
+  - PROCESS-NAME,SZSE,DIRECT                # 深圳证券交易所
+  - PROCESS-NAME,SHSE,DIRECT                # 上海证券交易所
+  - PROCESS-NAME,StockMaster,DIRECT         # 股票大师
+
+# 教育与学习
+  - PROCESS-NAME,VIPKid,DIRECT              # VIPKid 英语
+  - PROCESS-NAME,Duolingo,DIRECT             # Duolingo (中文)
+  - PROCESS-NAME,网易云课堂,DIRECT          # 网易云课堂
+  - PROCESS-NAME,MOOC,DIRECT                # 慕课网
+  - PROCESS-NAME,掌中宝,DIRECT              # 掌中宝学习平台
+
+# 生活服务与工具
+  - PROCESS-NAME,Meitu,DIRECT               # 美图秀秀
+  - PROCESS-NAME,百度地图,DIRECT            # 百度地图
+  - PROCESS-NAME,高德地图,DIRECT            # 高德地图
+  - PROCESS-NAME,滴滴出行,DIRECT            # 滴滴出行
+  - PROCESS-NAME,顺丰速运,DIRECT            # 顺丰快递
+  - PROCESS-NAME,飞猪,DIRECT                # 飞猪旅行
+
+# 其他工具
+  - PROCESS-NAME,360Safe,DIRECT             # 360 安全卫士
+  - PROCESS-NAME,QQBrowser,DIRECT           # QQ 浏览器
+  - PROCESS-NAME,UCWeb,DIRECT               # UC 浏览器
+  - PROCESS-NAME,SogouExplorer,DIRECT       # 搜狗浏览器
+  - PROCESS-NAME,BaiduBrowser,DIRECT        # 百度浏览器
+  - PROCESS-NAME,WPSCloud,DIRECT            # WPS 云服务
+  - PROCESS-NAME,XunleiKanKan,DIRECT        # 迅雷看看
+
+# 其他
+# 可以在此添加更多程序...

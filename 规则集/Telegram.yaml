@@ -1,0 +1,113 @@
+payload:
+  # Telegram 全球核心服务域名
+  - DOMAIN-KEYWORD,telegram  # Telegram 平台关键词匹配
+  - DOMAIN-SUFFIX,t.me  # Telegram 短链接服务
+  - DOMAIN-SUFFIX,tdesktop.com  # Telegram 桌面应用域名
+  - DOMAIN-SUFFIX,telegra.ph  # Telegram 图片服务
+  - DOMAIN-SUFFIX,telegram.me  # Telegram 备用域名
+  - DOMAIN-SUFFIX,telegram.org  # Telegram 官方组织域名
+  - DOMAIN-SUFFIX,telesco.pe  # Telegram 短链接服务
+  - DOMAIN-SUFFIX,telegram.dog  # Telegram 备用域名
+  - DOMAIN-SUFFIX,telegramdownload.com  # Telegram 下载服务
+  - DOMAIN-SUFFIX,telegraph.co.uk  # Telegram 备用域名
+  - DOMAIN-SUFFIX,t.co  # 短链接服务
+
+  # Telegram 全球业务域名
+  ## 北美洲业务
+  - DOMAIN-SUFFIX,telegram.ca  # 加拿大业务
+  - DOMAIN-SUFFIX,telegram.us  # 美国业务
+
+  ## 南美洲业务
+  - DOMAIN-SUFFIX,telegram.com.br  # 巴西业务
+  - DOMAIN-SUFFIX,telegram.cl  # 智利业务
+  - DOMAIN-SUFFIX,telegram.com.ar  # 阿根廷业务
+
+  ## 欧洲业务
+  - DOMAIN-SUFFIX,telegram.de  # 德国业务
+  - DOMAIN-SUFFIX,telegram.fr  # 法国业务
+  - DOMAIN-SUFFIX,telegram.co.uk  # 英国业务
+  - DOMAIN-SUFFIX,telegram.es  # 西班牙业务
+  - DOMAIN-SUFFIX,telegram.it  # 意大利业务
+  - DOMAIN-SUFFIX,telegram.nl  # 荷兰业务
+  - DOMAIN-SUFFIX,telegram.pl  # 波兰业务
+  - DOMAIN-SUFFIX,telegram.ru  # 俄罗斯业务
+
+  ## 亚洲业务
+  - DOMAIN-SUFFIX,telegram.co.jp  # 日本业务
+  - DOMAIN-SUFFIX,telegram.co.kr  # 韩国业务
+  - DOMAIN-SUFFIX,telegram.com.tw  # 台湾业务
+  - DOMAIN-SUFFIX,telegram.com.hk  # 香港业务
+  - DOMAIN-SUFFIX,telegram.co.in  # 印度业务
+  - DOMAIN-SUFFIX,telegram.com.sg  # 新加坡业务
+  - DOMAIN-SUFFIX,telegram.ae  # 阿联酋业务
+  - DOMAIN-SUFFIX,telegram.com.sa  # 沙特阿拉伯业务
+
+  ## 大洋洲业务
+  - DOMAIN-SUFFIX,telegram.com.au  # 澳大利亚业务
+  - DOMAIN-SUFFIX,telegram.co.nz  # 新西兰业务
+
+  ## 非洲业务
+  - DOMAIN-SUFFIX,telegram.co.za  # 南非业务
+  - DOMAIN-SUFFIX,telegram.com.eg  # 埃及业务
+
+  # 设备和系统全面支持
+  ## Android 系统
+  - PROCESS-NAME,org.telegram.messenger  # Telegram Android 主应用
+  - PROCESS-NAME,org.telegram.plus  # Telegram Plus Android 应用
+  - BUNDLE-ID,org.telegram.messenger  # Android 应用标识
+  - DOMAIN-SUFFIX,android.com  # Android 系统域名
+  - DOMAIN-SUFFIX,googleplay.com  # 应用分发平台
+
+  ## iOS 系统
+  - PROCESS-NAME,Telegram  # Telegram iOS 应用
+  - BUNDLE-ID,org.telegram.messenger.ios  # iOS 应用标识
+  - DOMAIN-SUFFIX,apple.com  # Apple 系统域名
+  - DOMAIN-SUFFIX,icloud.com  # 云服务域名
+
+  ## 鸿蒙系统
+  - PROCESS-NAME,com.huawei.telegram  # 鸿蒙 Telegram 应用
+  - BUNDLE-ID,com.huawei.telegram  # 鸿蒙应用标识
+  - DOMAIN-SUFFIX,harmonyos.com  # 鸿蒙系统域名
+
+  ## 电视和机顶盒
+  - PROCESS-NAME,com.telegram.tv  # Telegram TV 应用
+  - PROCESS-NAME,com.telegram.androidtv  # Telegram Android TV 应用
+  - DOMAIN-SUFFIX,telegram.com/tv  # Telegram TV 专用域名
+  - DOMAIN-SUFFIX,smart-tv.com  # 智能电视域名
+
+  ## 电脑端系统
+  - PROCESS-NAME,telegram.windows  # Windows Telegram 应用
+  - PROCESS-NAME,telegram.macos  # MacOS Telegram 应用
+  - PROCESS-NAME,telegram.linux  # Linux Telegram 应用
+  - DOMAIN-SUFFIX,windows.com  # Windows 系统域名
+  - DOMAIN-SUFFIX,apple.com/mac  # MacOS 系统域名
+  - DOMAIN-SUFFIX,linux.org  # Linux 系统域名
+
+  # Telegram 子服务和平台
+  - DOMAIN-SUFFIX,telegram.cloud  # Telegram 云服务
+  - DOMAIN-SUFFIX,telegram.chat  # Telegram 聊天服务
+  - DOMAIN-SUFFIX,telegram.network  # Telegram 网络服务
+
+  # 技术和支持服务
+  - DOMAIN-SUFFIX,telegram.net  # Telegram 网络服务
+  - DOMAIN-SUFFIX,telegraf.org  # Telegram 开源框架
+
+  # CDN 和性能服务
+  - DOMAIN-SUFFIX,akamai.net  # CDN 服务
+  - DOMAIN-SUFFIX,cloudflare.com  # CDN 服务
+
+  # IP 段支持
+  - IP-CIDR,91.108.0.0/16,no-resolve
+  - IP-CIDR,109.239.140.0/24,no-resolve
+  - IP-CIDR,91.108.4.0/22,no-resolve
+  - IP-CIDR,91.108.8.0/21,no-resolve
+  - IP-CIDR,91.108.16.0/22,no-resolve
+  - IP-CIDR,91.108.56.0/22,no-resolve
+  - IP-CIDR,149.154.160.0/20,no-resolve
+  - IP-CIDR6,2001:67c:4e8::/48,no-resolve
+  - IP-CIDR6,2001:b28:f23d::/48,no-resolve
+  - IP-CIDR6,2001:b28:f23f::/48,no-resolve
+
+  # 额外匹配
+  - DOMAIN-KEYWORD,telegram-cdn
+  - DOMAIN-KEYWORD,telegram-global

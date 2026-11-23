@@ -1,0 +1,46 @@
+payload:
+
+# 私有地址段（局域网IP段）
+  - IP-CIDR,10.0.0.0/8,no-resolve  # 私有地址（局域网专用，广泛用于企业和组织内部网络）
+  - IP-CIDR,172.16.0.0/12,no-resolve  # 私有地址（局域网专用，常用于中大型网络设计）
+  - IP-CIDR,192.168.0.0/16,no-resolve  # 私有地址（局域网专用，常用于家庭和小型企业网络）
+  - IP-CIDR,192.168.1.0/24,no-resolve  # 常见家庭路由器默认地址段
+  - IP-CIDR,192.168.2.0/24,no-resolve  # 二级局域网常见地址段
+  - IP-CIDR,172.20.0.0/16,no-resolve  # 私有地址，常用于企业内网
+
+# 特殊用途地址段（非公网路由）
+  - IP-CIDR,0.0.0.0/8,no-resolve  # 保留地址，用于指定默认路由
+  - IP-CIDR,127.0.0.0/8,no-resolve  # 本地回环地址（仅用于本地主机通信）
+  - IP-CIDR,169.254.0.0/16,no-resolve  # 链路本地地址（自动分配，通常在没有DHCP时使用）
+  - IP-CIDR,100.64.0.0/10,no-resolve  # CGNAT（运营商级网络地址转换保留地址）
+  - IP-CIDR,192.0.0.0/24,no-resolve  # 特殊用途保留地址（IANA保留）
+  - IP-CIDR,192.0.2.0/24,no-resolve  # 文档示例地址（RFC 5737定义，用于文档和示例）
+  - IP-CIDR,198.18.0.0/15,no-resolve  # 性能测试地址（用于网络设备测试和基准测试）
+  - IP-CIDR,198.51.100.0/24,no-resolve  # 文档示例地址（RFC 5737定义，用于文档和示例）
+  - IP-CIDR,203.0.113.0/24,no-resolve  # 文档示例地址（RFC 5737定义，用于文档和示例）
+  - IP-CIDR,255.255.255.255/32,no-resolve  # 广播地址（局域网层面广播）
+
+# IPv6 私有和特殊用途地址段
+  - IP-CIDR,::/127,no-resolve  # IPv6起始默认路由（全部地址范围）
+  - IP-CIDR,fc00::/7,no-resolve  # 私有地址（Unique Local Address，类似于IPv4的私有地址）
+  - IP-CIDR,fe80::/10,no-resolve  # 链路本地地址（用于本地通信，例如自动配置）
+  - IP-CIDR,ff00::/8,no-resolve  # 多播地址（IPv6多播通信范围）
+
+# IPv4多播和保留地址段
+  - IP-CIDR,224.0.0.0/3,no-resolve  # 多播地址和未来用途（类D和类E地址，用于特殊网络通信）
+
+# 教育网IP段（非公网）
+  - IP-CIDR,202.112.0.0/13,no-resolve  # 中国教育网主干网
+  - IP-CIDR,202.120.0.0/15,no-resolve  # 教育网上海节点
+  - IP-CIDR,210.25.0.0/16,no-resolve   # 教育网北京节点
+
+# 其他非公网IP段（文档示例和测试专用）
+  - IP-CIDR,192.88.99.0/24,no-resolve  # 已废弃的任播地址（IPv6到IPv4中继）
+
+# 私有地址段（局域网IP段）
+  - IP-CIDR,10.0.0.0/8,no-resolve  # 私有地址（局域网专用，广泛用于企业和组织内部网络）
+  - IP-CIDR,172.16.0.0/12,no-resolve  # 私有地址（局域网专用，常用于中大型网络设计）
+  - IP-CIDR,192.168.0.0/16,no-resolve  # 私有地址（局域网专用，常用于家庭和小型企业网络）
+  - IP-CIDR,192.168.1.0/24,no-resolve  # 常见家庭路由器默认地址段
+  - IP-CIDR,192.168.2.0/24,no-resolve  # 二级局域网常见地址段
+  - IP-CIDR,172.20.0.0/16,no-resolve  # 私有地址，常用于企业内网

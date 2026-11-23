@@ -1,0 +1,112 @@
+payload:
+  # Twitter 全球核心服务域名
+  ## 主要服务域名
+  - DOMAIN-SUFFIX,twitter.com  # Twitter 主站点域名
+  - DOMAIN-SUFFIX,t.co  # Twitter 短链接服务
+  - DOMAIN-SUFFIX,twimg.com  # Twitter 图片资源域名
+  - DOMAIN-SUFFIX,twittermail.com  # Twitter 邮件服务
+
+  # Twitter 子服务和平台
+  - DOMAIN-SUFFIX,pscp.tv  # Periscope 直播服务
+  - DOMAIN-SUFFIX,periscope.tv  # Periscope 备用域名
+  - DOMAIN-SUFFIX,vine.co  # Vine 视频服务
+  - DOMAIN-SUFFIX,twitpic.com  # 图片分享服务
+
+  # Twitter 全球业务域名
+  ## 北美洲业务
+  - DOMAIN-SUFFIX,twitter.ca  # 加拿大业务
+  - DOMAIN-SUFFIX,twitter.us  # 美国业务
+  - DOMAIN-SUFFIX,twitter.com.mx  # 墨西哥业务
+
+  ## 南美洲业务
+  - DOMAIN-SUFFIX,twitter.com.br  # 巴西业务
+  - DOMAIN-SUFFIX,twitter.cl  # 智利业务
+  - DOMAIN-SUFFIX,twitter.com.ar  # 阿根廷业务
+
+  ## 欧洲业务
+  - DOMAIN-SUFFIX,twitter.de  # 德国业务
+  - DOMAIN-SUFFIX,twitter.fr  # 法国业务
+  - DOMAIN-SUFFIX,twitter.co.uk  # 英国业务
+  - DOMAIN-SUFFIX,twitter.es  # 西班牙业务
+  - DOMAIN-SUFFIX,twitter.it  # 意大利业务
+  - DOMAIN-SUFFIX,twitter.nl  # 荷兰业务
+  - DOMAIN-SUFFIX,twitter.pl  # 波兰业务
+  - DOMAIN-SUFFIX,twitter.ru  # 俄罗斯业务
+  - DOMAIN-SUFFIX,twitter.jp  # 日本业务
+
+  ## 亚洲业务
+  - DOMAIN-SUFFIX,twitter.co.jp  # 日本业务
+  - DOMAIN-SUFFIX,twitter.co.kr  # 韩国业务
+  - DOMAIN-SUFFIX,twitter.com.tw  # 台湾业务
+  - DOMAIN-SUFFIX,twitter.com.hk  # 香港业务
+  - DOMAIN-SUFFIX,twitter.co.in  # 印度业务
+  - DOMAIN-SUFFIX,twitter.com.sg  # 新加坡业务
+  - DOMAIN-SUFFIX,twitter.ae  # 阿联酋业务
+  - DOMAIN-SUFFIX,twitter.com.sa  # 沙特阿拉伯业务
+
+  ## 大洋洲业务
+  - DOMAIN-SUFFIX,twitter.com.au  # 澳大利亚业务
+  - DOMAIN-SUFFIX,twitter.co.nz  # 新西兰业务
+
+  ## 非洲业务
+  - DOMAIN-SUFFIX,twitter.co.za  # 南非业务
+  - DOMAIN-SUFFIX,twitter.com.eg  # 埃及业务
+
+  # 设备和系统全面支持
+  ## Android 系统
+  - PROCESS-NAME,com.twitter.android  # Twitter Android 主应用
+  - PROCESS-NAME,com.twitter.lite  # Twitter Lite 应用
+  - BUNDLE-ID,com.twitter.android  # Android 应用标识
+  - DOMAIN-SUFFIX,android.com  # Android 系统域名
+  - DOMAIN-SUFFIX,googleplay.com  # 应用分发平台
+
+  ## iOS 系统
+  - PROCESS-NAME,Twitter  # Twitter iOS 应用
+  - BUNDLE-ID,com.twitter.ios  # iOS 应用标识
+  - DOMAIN-SUFFIX,apple.com  # Apple 系统域名
+  - DOMAIN-SUFFIX,icloud.com  # 云服务域名
+
+  ## 鸿蒙系统
+  - PROCESS-NAME,com.huawei.twitter  # 鸿蒙 Twitter 应用
+  - BUNDLE-ID,com.huawei.twitter  # 鸿蒙应用标识
+  - DOMAIN-SUFFIX,harmonyos.com  # 鸿蒙系统域名
+
+  ## 电视和机顶盒
+  - PROCESS-NAME,com.twitter.tv  # Twitter TV 应用
+  - PROCESS-NAME,com.twitter.androidtv  # Twitter Android TV 应用
+  - DOMAIN-SUFFIX,twitter.com/tv  # Twitter TV 专用域名
+  - DOMAIN-SUFFIX,smart-tv.com  # 智能电视域名
+
+  ## 电脑端系统
+  - PROCESS-NAME,twitter.windows  # Windows Twitter 应用
+  - PROCESS-NAME,twitter.macos  # MacOS Twitter 应用
+  - PROCESS-NAME,twitter.linux  # Linux Twitter 应用
+  - DOMAIN-SUFFIX,windows.com  # Windows 系统域名
+  - DOMAIN-SUFFIX,apple.com/mac  # MacOS 系统域名
+  - DOMAIN-SUFFIX,linux.org  # Linux 系统域名
+
+  # 技术和支持服务
+  - DOMAIN-SUFFIX,twimg.co  # Twitter 图片服务
+  - DOMAIN-SUFFIX,twimg.org  # Twitter 组织域名
+  - DOMAIN-SUFFIX,twitter4j.org  # Twitter Java 库
+  - DOMAIN-SUFFIX,twittercounter.com  # Twitter 统计服务
+  - DOMAIN-SUFFIX,twitterfeed.com  # Twitter 订阅服务
+  - DOMAIN-SUFFIX,twittergadget.com  # Twitter 小工具
+  - DOMAIN-SUFFIX,twitterkr.com  # Twitter 韩国服务
+  - DOMAIN-SUFFIX,twitterrific.com  # Twitter 客户端
+  - DOMAIN-SUFFIX,twittertim.es  # Twitter 时间服务
+
+  # 广告和分析服务
+  - DOMAIN-SUFFIX,ads-twitter.com  # Twitter 广告服务
+  - DOMAIN-SUFFIX,berlintwitterwall.com  # Twitter 特殊服务
+  - DOMAIN-SUFFIX,financetwitter.com  # Twitter 金融服务
+  - DOMAIN-SUFFIX,simbolostwitter.com  # Twitter 符号服务
+  - DOMAIN-SUFFIX,turbotwitter.com  # Twitter 加速服务
+
+  # CDN 和性能服务
+  - DOMAIN-SUFFIX,akamai.net  # CDN 服务
+  - DOMAIN-SUFFIX,cloudflare.com  # CDN 服务
+
+  # 额外匹配
+  - DOMAIN-KEYWORD,twitter
+  - DOMAIN-KEYWORD,twitter-cdn

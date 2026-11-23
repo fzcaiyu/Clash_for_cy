@@ -1,0 +1,150 @@
+payload:
+  # Apple 全球核心服务域名
+  ## 主要服务域名
+  - DOMAIN-SUFFIX,apple.com  # Apple 主站
+  - DOMAIN-SUFFIX,icloud.com  # iCloud 服务
+  - DOMAIN-SUFFIX,itunes.com  # iTunes 服务
+  - DOMAIN-SUFFIX,mzstatic.com  # App Store 资源
+
+  # 全球业务域名
+  ## 北美洲业务
+  - DOMAIN-SUFFIX,apple.ca  # 加拿大业务
+  - DOMAIN-SUFFIX,apple.us  # 美国业务
+  - DOMAIN-SUFFIX,apple.com.mx  # 墨西哥业务
+  - DOMAIN-SUFFIX,apple.pr  # 波多黎各业务
+
+  ## 南美洲业务
+  - DOMAIN-SUFFIX,apple.com.br  # 巴西业务
+  - DOMAIN-SUFFIX,apple.cl  # 智利业务
+  - DOMAIN-SUFFIX,apple.com.ar  # 阿根廷业务
+  - DOMAIN-SUFFIX,apple.co  # 哥伦比亚业务
+  - DOMAIN-SUFFIX,apple.pe  # 秘鲁业务
+  - DOMAIN-SUFFIX,apple.com.uy  # 乌拉圭业务
+  - DOMAIN-SUFFIX,apple.ve  # 委内瑞拉业务
+  - DOMAIN-SUFFIX,apple.bo  # 玻利维亚业务
+
+  ## 欧洲业务
+  - DOMAIN-SUFFIX,apple.de  # 德国业务
+  - DOMAIN-SUFFIX,apple.fr  # 法国业务
+  - DOMAIN-SUFFIX,apple.co.uk  # 英国业务
+  - DOMAIN-SUFFIX,apple.es  # 西班牙业务
+  - DOMAIN-SUFFIX,apple.it  # 意大利业务
+  - DOMAIN-SUFFIX,apple.nl  # 荷兰业务
+  - DOMAIN-SUFFIX,apple.pl  # 波兰业务
+  - DOMAIN-SUFFIX,apple.ru  # 俄罗斯业务
+  - DOMAIN-SUFFIX,apple.be  # 比利时业务
+  - DOMAIN-SUFFIX,apple.ch  # 瑞士业务
+  - DOMAIN-SUFFIX,apple.at  # 奥地利业务
+  - DOMAIN-SUFFIX,apple.se  # 瑞典业务
+  - DOMAIN-SUFFIX,apple.no  # 挪威业务
+  - DOMAIN-SUFFIX,apple.dk  # 丹麦业务
+  - DOMAIN-SUFFIX,apple.fi  # 芬兰业务
+  - DOMAIN-SUFFIX,apple.pt  # 葡萄牙业务
+  - DOMAIN-SUFFIX,apple.gr  # 希腊业务
+  - DOMAIN-SUFFIX,apple.cz  # 捷克业务
+  - DOMAIN-SUFFIX,apple.ro  # 罗马尼亚业务
+  - DOMAIN-SUFFIX,apple.hu  # 匈牙利业务
+  - DOMAIN-SUFFIX,apple.ie  # 爱尔兰业务
+  - DOMAIN-SUFFIX,apple.sk  # 斯洛伐克业务
+  - DOMAIN-SUFFIX,apple.si  # 斯洛文尼亚业务
+  - DOMAIN-SUFFIX,apple.hr  # 克罗地亚业务
+
+  ## 亚洲业务
+  - DOMAIN-SUFFIX,apple.co.jp  # 日本业务
+  - DOMAIN-SUFFIX,apple.co.kr  # 韩国业务
+  - DOMAIN-SUFFIX,apple.com.tw  # 台湾业务
+  - DOMAIN-SUFFIX,apple.com.hk  # 香港业务
+  - DOMAIN-SUFFIX,apple.co.in  # 印度业务
+  - DOMAIN-SUFFIX,apple.com.sg  # 新加坡业务
+  - DOMAIN-SUFFIX,apple.ae  # 阿联酋业务
+  - DOMAIN-SUFFIX,apple.com.sa  # 沙特阿拉伯业务
+  - DOMAIN-SUFFIX,apple.com.pk  # 巴基斯坦业务
+  - DOMAIN-SUFFIX,apple.com.bd  # 孟加拉国业务
+  - DOMAIN-SUFFIX,apple.co.th  # 泰国业务
+  - DOMAIN-SUFFIX,apple.com.my  # 马来西亚业务
+  - DOMAIN-SUFFIX,apple.co.id  # 印度尼西亚业务
+  - DOMAIN-SUFFIX,apple.com.ph  # 菲律宾业务
+  - DOMAIN-SUFFIX,apple.com.vn  # 越南业务
+  - DOMAIN-SUFFIX,apple.cn  # 中国业务
+  - DOMAIN-SUFFIX,apple.ir  # 伊朗业务
+  - DOMAIN-SUFFIX,apple.il  # 以色列业务
+  - DOMAIN-SUFFIX,apple.kw  # 科威特业务
+  - DOMAIN-SUFFIX,apple.lb  # 黎巴嫩业务
+  - DOMAIN-SUFFIX,apple.jo  # 约旦业务
+  - DOMAIN-SUFFIX,apple.bh  # 巴林业务
+  - DOMAIN-SUFFIX,apple.qa  # 卡塔尔业务
+  - DOMAIN-SUFFIX,apple.om  # 阿曼业务
+  - DOMAIN-SUFFIX,apple.iq  # 伊拉克业务
+  - DOMAIN-SUFFIX,apple.sy  # 叙利亚业务
+
+  ## 大洋洲业务
+  - DOMAIN-SUFFIX,apple.com.au  # 澳大利亚业务
+  - DOMAIN-SUFFIX,apple.co.nz  # 新西兰业务
+  - DOMAIN-SUFFIX,apple.com.fj  # 斐济业务
+  - DOMAIN-SUFFIX,apple.com.pg  # 巴布亚新几内亚业务
+
+  ## 非洲和中东业务
+  - DOMAIN-SUFFIX,apple.co.za  # 南非业务
+  - DOMAIN-SUFFIX,apple.com.eg  # 埃及业务
+  - DOMAIN-SUFFIX,apple.ma  # 摩洛哥业务
+  - DOMAIN-SUFFIX,apple.dz  # 阿尔及利亚业务
+  - DOMAIN-SUFFIX,apple.ng  # 尼日利亚业务
+  - DOMAIN-SUFFIX,apple.ke  # 肯尼亚业务
+  - DOMAIN-SUFFIX,apple.ci  # 科特迪瓦业务
+  - DOMAIN-SUFFIX,apple.cm  # 喀麦隆业务
+  - DOMAIN-SUFFIX,apple.gh  # 加纳业务
+  - DOMAIN-SUFFIX,apple.tz  # 坦桑尼亚业务
+  - DOMAIN-SUFFIX,apple.ug  # 乌干达业务
+
+  # 设备和系统全面支持
+  ## iOS 系统
+  - PROCESS-NAME,News  # iOS News 应用
+  - PROCESS-NAME,trustd  # iOS 系统进程
+  - DOMAIN-SUFFIX,apps.apple.com  # App Store
+  - DOMAIN-SUFFIX,testflight.apple.com  # 测试版应用
+
+  ## 鸿蒙系统兼容
+  - DOMAIN-SUFFIX,apple-mapkit.com  # 地图服务
+  - DOMAIN-SUFFIX,apple-cloudkit.com  # 云服务
+
+  ## 电视和机顶盒
+  - DOMAIN-SUFFIX,tv.apple.com  # Apple TV 服务
+  - DOMAIN-SUFFIX,apple.com/tv  # Apple TV 域名
+
+  # 核心服务域名
+  ## 云服务
+  - DOMAIN-SUFFIX,icloud.com  # iCloud 主服务
+  - DOMAIN-SUFFIX,icloud-content.com  # iCloud 内容分发
+  - DOMAIN-SUFFIX,me.com  # Apple 通讯服务
+
+  ## 开发者服务
+  - DOMAIN-SUFFIX,developer.apple.com  # 开发者平台
+  - DOMAIN-SUFFIX,appstore.com  # App Store
+
+  ## 媒体服务
+  - DOMAIN-SUFFIX,music.apple.com  # Apple Music
+  - DOMAIN-SUFFIX,apple.news  # Apple News
+
+  # CDN 和内容分发
+  - DOMAIN-SUFFIX,aaplimg.com  # Apple 图像资源
+  - DOMAIN-SUFFIX,cdn-apple.com  # Apple CDN
+  - DOMAIN-SUFFIX,akadns.net  # Akamai DNS
+
+  # 安全和性能服务
+  - DOMAIN-SUFFIX,crashlytics.com  # 崩溃报告服务
+  - DOMAIN-SUFFIX,digicert.com  # 安全证书服务
+
+  # IP 段支持
+  ## 主要服务 IP 段
+  - IP-CIDR,17.0.0.0/8,no-resolve  # Apple 核心网段
+  - IP-CIDR,63.92.224.0/19,no-resolve  # 北美服务网段
+  - IP-CIDR,65.199.22.0/23,no-resolve  # 服务网段
+  - IP-CIDR,139.178.128.0/18,no-resolve  # 全球服务网段
+  - IP-CIDR,144.178.0.0/19,no-resolve  # 内容分发网段
+  - IP-CIDR,192.35.50.0/24,no-resolve  # 安全服务网段
+  - IP-CIDR,198.183.17.0/24,no-resolve  # 性能服务网段
+  - IP-CIDR,205.180.175.0/24,no-resolve  # 网络服务网段
+
+  # 额外匹配
+  - DOMAIN-KEYWORD,apple
+  - DOMAIN-KEYWORD,icloud

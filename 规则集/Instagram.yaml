@@ -1,0 +1,100 @@
+payload:
+  # Instagram 全球核心服务域名
+  - DOMAIN-KEYWORD,instagram  # Instagram 平台关键词匹配
+  - DOMAIN-SUFFIX,instagram.com  # Instagram 主站点域名
+  - DOMAIN-SUFFIX,cdninstagram.com  # Instagram 内容分发网络
+  - DOMAIN-SUFFIX,instagramstatic.com  # Instagram 静态资源域名
+
+  # Instagram 全球业务域名
+  ## 北美洲业务
+  - DOMAIN-SUFFIX,instagram.ca  # 加拿大业务
+  - DOMAIN-SUFFIX,instagram.us  # 美国业务
+  - DOMAIN-SUFFIX,instagram.com.mx  # 墨西哥业务
+
+  ## 南美洲业务
+  - DOMAIN-SUFFIX,instagram.com.br  # 巴西业务
+  - DOMAIN-SUFFIX,instagram.cl  # 智利业务
+  - DOMAIN-SUFFIX,instagram.com.ar  # 阿根廷业务
+  - DOMAIN-SUFFIX,instagram.co  # 哥伦比亚业务
+
+  ## 欧洲业务
+  - DOMAIN-SUFFIX,instagram.de  # 德国业务
+  - DOMAIN-SUFFIX,instagram.fr  # 法国业务
+  - DOMAIN-SUFFIX,instagram.co.uk  # 英国业务
+  - DOMAIN-SUFFIX,instagram.es  # 西班牙业务
+  - DOMAIN-SUFFIX,instagram.it  # 意大利业务
+  - DOMAIN-SUFFIX,instagram.nl  # 荷兰业务
+  - DOMAIN-SUFFIX,instagram.pl  # 波兰业务
+  - DOMAIN-SUFFIX,instagram.ru  # 俄罗斯业务
+
+  ## 亚洲业务
+  - DOMAIN-SUFFIX,instagram.co.jp  # 日本业务
+  - DOMAIN-SUFFIX,instagram.co.kr  # 韩国业务
+  - DOMAIN-SUFFIX,instagram.com.tw  # 台湾业务
+  - DOMAIN-SUFFIX,instagram.com.hk  # 香港业务
+  - DOMAIN-SUFFIX,instagram.co.in  # 印度业务
+  - DOMAIN-SUFFIX,instagram.com.sg  # 新加坡业务
+  - DOMAIN-SUFFIX,instagram.ae  # 阿联酋业务
+  - DOMAIN-SUFFIX,instagram.com.sa  # 沙特阿拉伯业务
+
+  ## 大洋洲业务
+  - DOMAIN-SUFFIX,instagram.com.au  # 澳大利亚业务
+  - DOMAIN-SUFFIX,instagram.co.nz  # 新西兰业务
+
+  ## 非洲业务
+  - DOMAIN-SUFFIX,instagram.co.za  # 南非业务
+  - DOMAIN-SUFFIX,instagram.com.eg  # 埃及业务
+
+  # 设备和系统全面支持
+  ## Android 系统
+  - PROCESS-NAME,com.instagram.android  # Instagram Android 主应用
+  - BUNDLE-ID,com.instagram.android  # Android 应用标识
+  - DOMAIN-SUFFIX,android.com  # Android 系统域名
+  - DOMAIN-SUFFIX,googleplay.com  # 应用分发平台
+
+  ## iOS 系统
+  - PROCESS-NAME,Instagram  # Instagram iOS 应用
+  - BUNDLE-ID,com.instagram.ios  # iOS 应用标识
+  - DOMAIN-SUFFIX,apple.com  # Apple 系统域名
+  - DOMAIN-SUFFIX,icloud.com  # 云服务域名
+
+  ## 鸿蒙系统
+  - PROCESS-NAME,com.huawei.instagram  # 鸿蒙 Instagram 应用
+  - BUNDLE-ID,com.huawei.instagram  # 鸿蒙应用标识
+  - DOMAIN-SUFFIX,harmonyos.com  # 鸿蒙系统域名
+
+  ## 电视和机顶盒
+  - PROCESS-NAME,com.instagram.tv  # Instagram TV 应用
+  - PROCESS-NAME,com.instagram.androidtv  # Instagram Android TV 应用
+  - DOMAIN-SUFFIX,instagram.com/tv  # Instagram TV 专用域名
+  - DOMAIN-SUFFIX,smart-tv.com  # 智能电视域名
+
+  ## 电脑端系统
+  - PROCESS-NAME,instagram.windows  # Windows Instagram 应用
+  - PROCESS-NAME,instagram.macos  # MacOS Instagram 应用
+  - PROCESS-NAME,instagram.linux  # Linux Instagram 应用
+  - DOMAIN-SUFFIX,windows.com  # Windows 系统域名
+  - DOMAIN-SUFFIX,apple.com/mac  # MacOS 系统域名
+  - DOMAIN-SUFFIX,linux.org  # Linux 系统域名
+
+  # Instagram 子服务和平台
+  - DOMAIN-SUFFIX,threads.net  # Threads 社交平台
+  - DOMAIN-SUFFIX,messenger.com  # Messenger 通讯服务
+
+  # 技术和支持服务
+  - DOMAIN-SUFFIX,instagram.net  # Instagram 网络服务
+  - DOMAIN-SUFFIX,instagrammail.com  # Instagram 邮件服务
+
+  # CDN 和性能服务
+  - DOMAIN-SUFFIX,facebook.com  # Facebook 母公司域名
+  - DOMAIN-SUFFIX,fbcdn.net  # Facebook CDN
+  - DOMAIN-SUFFIX,akamai.net  # CDN 服务
+  - DOMAIN-SUFFIX,cloudflare.com  # CDN 服务
+
+  # 额外支持服务
+  - DOMAIN-SUFFIX,facebook.design  # Facebook 设计资源
+  - DOMAIN-SUFFIX,facebook.engineering  # Facebook 工程资源
+
+  # 额外匹配
+  - DOMAIN-KEYWORD,instagram-cdn
+  - DOMAIN-KEYWORD,ig-global

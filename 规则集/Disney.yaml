@@ -1,0 +1,124 @@
+payload:
+  # Disney 全球核心服务域名
+  - DOMAIN-SUFFIX,disney.com  # 全球主域名
+  - DOMAIN-SUFFIX,disneyplus.com  # 流媒体核心服务
+  - DOMAIN-SUFFIX,disneycareers.com  # 职业网站
+
+  # 全球业务域名扩展
+  ## 北美洲业务域名
+  - DOMAIN-SUFFIX,disney.ca  # 加拿大业务
+  - DOMAIN-SUFFIX,disney.us  # 美国业务
+  - DOMAIN-SUFFIX,disney.com.mx  # 墨西哥业务
+  - DOMAIN-SUFFIX,disney.pr  # 波多黎各业务
+
+  ## 南美洲业务域名
+  - DOMAIN-SUFFIX,disney.com.br  # 巴西业务
+  - DOMAIN-SUFFIX,disney.cl  # 智利业务
+  - DOMAIN-SUFFIX,disney.com.ar  # 阿根廷业务
+  - DOMAIN-SUFFIX,disney.co  # 哥伦比亚业务
+  - DOMAIN-SUFFIX,disney.pe  # 秘鲁业务
+  - DOMAIN-SUFFIX,disney.com.uy  # 乌拉圭业务
+  - DOMAIN-SUFFIX,disney.ve  # 委内瑞拉业务
+
+  ## 欧洲业务域名
+  - DOMAIN-SUFFIX,disney.co.uk  # 英国业务
+  - DOMAIN-SUFFIX,disney.de  # 德国业务
+  - DOMAIN-SUFFIX,disney.fr  # 法国业务
+  - DOMAIN-SUFFIX,disney.es  # 西班牙业务
+  - DOMAIN-SUFFIX,disney.it  # 意大利业务
+  - DOMAIN-SUFFIX,disney.nl  # 荷兰业务
+  - DOMAIN-SUFFIX,disney.se  # 瑞典业务
+  - DOMAIN-SUFFIX,disney.no  # 挪威业务
+  - DOMAIN-SUFFIX,disney.dk  # 丹麦业务
+  - DOMAIN-SUFFIX,disney.fi  # 芬兰业务
+  - DOMAIN-SUFFIX,disney.pl  # 波兰业务
+  - DOMAIN-SUFFIX,disney.be  # 比利时业务
+  - DOMAIN-SUFFIX,disney.ch  # 瑞士业务
+  - DOMAIN-SUFFIX,disney.at  # 奥地利业务
+
+  ## 亚洲业务域名
+  - DOMAIN-SUFFIX,disney.co.jp  # 日本业务
+  - DOMAIN-SUFFIX,disney.co.kr  # 韩国业务
+  - DOMAIN-SUFFIX,disney.com.tw  # 台湾业务
+  - DOMAIN-SUFFIX,disney.com.hk  # 香港业务
+  - DOMAIN-SUFFIX,disney.co.th  # 泰国业务
+  - DOMAIN-SUFFIX,disney.co.in  # 印度业务
+  - DOMAIN-SUFFIX,disney.com.sg  # 新加坡业务
+  - DOMAIN-SUFFIX,disney.com.ph  # 菲律宾业务
+  - DOMAIN-SUFFIX,disney.com.my  # 马来西亚业务
+  - DOMAIN-SUFFIX,disney.cn  # 中国业务
+  - DOMAIN-SUFFIX,disney.ae  # 阿联酋业务
+  - DOMAIN-SUFFIX,disney.com.sa  # 沙特阿拉伯业务
+
+  ## 大洋洲业务域名
+  - DOMAIN-SUFFIX,disney.com.au  # 澳大利亚业务
+  - DOMAIN-SUFFIX,disney.co.nz  # 新西兰业务
+  - DOMAIN-SUFFIX,disney.com.fj  # 斐济业务
+
+  ## 非洲业务域名
+  - DOMAIN-SUFFIX,disney.co.za  # 南非业务
+  - DOMAIN-SUFFIX,disney.com.eg  # 埃及业务
+
+  # 设备和系统全面支持
+  ## Android 系统支持
+  - PROCESS-NAME,com.disney.disneyplus  # Disney+ Android应用进程
+  - PROCESS-NAME,com.disney.datg.videoplatforms.android.abc  # ABC Android应用进程
+  - BUNDLE-ID,com.disney.disneyplus  # Android 应用标识
+  - DOMAIN-SUFFIX,android.com  # Android 系统域名
+  - DOMAIN-SUFFIX,googleplay.com  # 应用分发平台域名
+
+  ## iOS 系统支持
+  - PROCESS-NAME,com.disney.disneyplus.ios  # Disney+ iOS应用进程
+  - BUNDLE-ID,com.disney.disneyplus.ios  # iOS 应用标识
+  - DOMAIN-SUFFIX,apple.com  # Apple 系统域名
+  - DOMAIN-SUFFIX,icloud.com  # 云服务域名
+
+  ## 鸿蒙系统支持
+  - PROCESS-NAME,com.huawei.disney  # 鸿蒙 Disney 应用进程
+  - BUNDLE-ID,com.huawei.disney  # 鸿蒙应用标识
+  - DOMAIN-SUFFIX,harmonyos.com  # 鸿蒙系统域名
+
+  ## 电视和机顶盒支持
+  - PROCESS-NAME,com.disney.disneyplus.tv  # Disney+ TV应用进程
+  - PROCESS-NAME,com.disney.androidtv  # Android TV应用进程
+  - PROCESS-NAME,com.disney.appletv  # Apple TV应用进程
+  - PROCESS-NAME,com.disney.samsungtv  # Samsung TV应用进程
+  - PROCESS-NAME,com.disney.lgtv  # LG TV应用进程
+  - DOMAIN-SUFFIX,disney-tv.com  # 电视服务域名
+  - DOMAIN-SUFFIX,smart-tv.com  # 智能电视域名
+
+  ## 电脑端系统支持
+  - PROCESS-NAME,disney.windows  # Windows应用进程
+  - PROCESS-NAME,disney.macos  # MacOS应用进程
+  - PROCESS-NAME,disney.linux  # Linux应用进程
+  - DOMAIN-SUFFIX,windows.com  # Windows系统域名
+  - DOMAIN-SUFFIX,apple.com/mac  # MacOS系统域名
+  - DOMAIN-SUFFIX,linux.org  # Linux系统域名
+
+  # 子品牌和服务域名
+  - DOMAIN-SUFFIX,disneystreaming.com  # 流媒体服务
+  - DOMAIN-SUFFIX,espn.com  # 体育频道
+  - DOMAIN-SUFFIX,marvel.com  # Marvel品牌
+  - DOMAIN-SUFFIX,starwars.com  # 星球大战品牌
+  - DOMAIN-SUFFIX,nationalgeographic.com  # 国家地理频道
+
+  # 技术和支持服务
+  - DOMAIN-SUFFIX,disneyplus.bn5x.net  # 网络服务
+  - DOMAIN-SUFFIX,dssott.com  # 技术支持
+  - DOMAIN-SUFFIX,disney.demdex.net  # 数据管理
+  - DOMAIN-SUFFIX,disneystreaming.net  # 流媒体技术
+
+  # 其他服务域名
+  - DOMAIN-SUFFIX,dilcdn.com  # 内容分发网络
+  - DOMAIN-SUFFIX,edgedatg.com  # 内容分发服务
+  - DOMAIN-SUFFIX,disneysubscription.com  # 订阅服务
+  - DOMAIN-SUFFIX,disneyredirects.com  # 支付重定向
+
+  # 额外支持服务
+  - DOMAIN-SUFFIX,adobedtm.com  # Adobe标签管理
+  - DOMAIN-SUFFIX,conviva.com  # 视频性能分析
+  - DOMAIN-SUFFIX,optimizely.com  # 网站优化
+
+  # 额外匹配
+  - DOMAIN-KEYWORD,disney-cdn
+  - DOMAIN-KEYWORD,disneyplus-cdn

@@ -1,0 +1,144 @@
+payload:
+  # Google 全球核心服务域名
+  ## 主要服务域名
+  - DOMAIN-SUFFIX,google.com  # Google 主站
+  - DOMAIN-SUFFIX,googleapis.com  # Google API 服务
+  - DOMAIN-SUFFIX,googleusercontent.com  # Google 用户内容
+  - DOMAIN-SUFFIX,gstatic.com  # Google 静态资源
+
+  # 全球业务域名
+  ## 北美洲业务
+  - DOMAIN-SUFFIX,google.ca  # 加拿大业务
+  - DOMAIN-SUFFIX,google.us  # 美国业务
+
+  ## 南美洲业务
+  - DOMAIN-SUFFIX,google.com.br  # 巴西业务
+  - DOMAIN-SUFFIX,google.cl  # 智利业务
+  - DOMAIN-SUFFIX,google.com.ar  # 阿根廷业务
+
+  ## 欧洲业务
+  - DOMAIN-SUFFIX,google.de  # 德国业务
+  - DOMAIN-SUFFIX,google.fr  # 法国业务
+  - DOMAIN-SUFFIX,google.co.uk  # 英国业务
+  - DOMAIN-SUFFIX,google.es  # 西班牙业务
+  - DOMAIN-SUFFIX,google.it  # 意大利业务
+  - DOMAIN-SUFFIX,google.nl  # 荷兰业务
+  - DOMAIN-SUFFIX,google.pl  # 波兰业务
+  - DOMAIN-SUFFIX,google.ru  # 俄罗斯业务
+
+  ## 亚洲业务
+  - DOMAIN-SUFFIX,google.co.jp  # 日本业务
+  - DOMAIN-SUFFIX,google.co.kr  # 韩国业务
+  - DOMAIN-SUFFIX,google.com.tw  # 台湾业务
+  - DOMAIN-SUFFIX,google.com.hk  # 香港业务
+  - DOMAIN-SUFFIX,google.co.in  # 印度业务
+  - DOMAIN-SUFFIX,google.com.sg  # 新加坡业务
+  - DOMAIN-SUFFIX,google.ae  # 阿联酋业务
+
+  ## 大洋洲业务
+  - DOMAIN-SUFFIX,google.com.au  # 澳大利亚业务
+  - DOMAIN-SUFFIX,google.co.nz  # 新西兰业务
+
+  # 设备和系统全面支持
+  ## Android 系统
+  - DOMAIN-SUFFIX,android.com  # Android 系统主域名
+  - PROCESS-NAME,com.google.android.gms  # Google 移动服务
+  - DOMAIN-SUFFIX,googleplay.com  # Google Play 商店
+
+  ## iOS 系统
+  - DOMAIN-SUFFIX,apple.com  # Apple 系统域名
+  - DOMAIN-SUFFIX,icloud.com  # iCloud 服务域名
+
+  ## 鸿蒙系统
+  - DOMAIN-SUFFIX,harmonyos.com  # 鸿蒙系统域名
+
+  ## 电视和机顶盒
+  - DOMAIN-SUFFIX,googletv.com  # Google TV 服务
+  - DOMAIN-SUFFIX,smart-tv.com  # 智能电视通用域名
+
+  # 核心服务域名
+  ## 开发和技术服务
+  - DOMAIN-SUFFIX,tensorflow.org  # 机器学习框架
+  - DOMAIN-SUFFIX,chromium.org  # 开源浏览器项目
+  - DOMAIN-SUFFIX,webrtc.org  # 实时通讯技术
+
+  ## 广告和分析服务
+  - DOMAIN-SUFFIX,doubleclick.net  # 广告服务
+  - DOMAIN-SUFFIX,google-analytics.com  # 网站分析
+  - DOMAIN-SUFFIX,googletagmanager.com  # 标签管理
+
+  ## 安全和性能服务
+  - DOMAIN-SUFFIX,recaptcha.net  # 人机验证服务
+  - DOMAIN-SUFFIX,safebrowsing.googleapis.com  # 安全浏览服务
+
+  # 媒体和内容服务
+  - DOMAIN-SUFFIX,youtube.com  # YouTube 视频平台
+  - DOMAIN-SUFFIX,ytimg.com  # YouTube 图片资源
+  - DOMAIN-SUFFIX,youtu.be  # YouTube 短链接
+
+  # CDN 和网络服务
+  - DOMAIN-SUFFIX,gvt1.com  # Google 视频技术
+  - DOMAIN-SUFFIX,gvt2.com  # Google 视频技术
+  - DOMAIN-SUFFIX,googlesyndication.com  # 广告联盟
+
+  # 额外匹配
+  - DOMAIN-KEYWORD,google
+  - DOMAIN-KEYWORD,googleapis
+
+
+  # Google IP 段 - 全球主要网段
+
+  ## 主要 IP 段
+  - IP-CIDR,64.233.160.0/19,no-resolve  # Google 主要 IP 段
+  - IP-CIDR,66.102.0.0/20,no-resolve  # Google 通信网段
+  - IP-CIDR,66.249.80.0/20,no-resolve  # Google 搜索网段
+  - IP-CIDR,72.14.192.0/18,no-resolve  # Google 全球服务网段
+  - IP-CIDR,74.125.0.0/16,no-resolve  # Google 核心网段
+  - IP-CIDR,108.177.8.0/21,no-resolve  # Google 全球服务
+  - IP-CIDR,172.217.0.0/16,no-resolve  # Google 主要服务网段
+  - IP-CIDR,173.194.0.0/16,no-resolve  # Google 内容分发网段
+  - IP-CIDR,209.85.128.0/17,no-resolve  # Google 广告和分析网段
+
+  ## 北美洲 IP 段
+  - IP-CIDR,64.233.160.0/19,no-resolve  # 北美通信网段
+  - IP-CIDR,108.177.0.0/17,no-resolve  # 北美服务网段
+  - IP-CIDR,142.250.0.0/15,no-resolve  # 北美扩展网段
+
+  ## 欧洲 IP 段
+  - IP-CIDR,172.253.56.0/21,no-resolve  # 欧洲服务网段
+  - IP-CIDR,209.85.200.0/21,no-resolve  # 欧洲通信网段
+
+  ## 亚洲 IP 段
+  - IP-CIDR,203.208.40.0/23,no-resolve  # 亚洲服务网段
+  - IP-CIDR,223.252.192.0/19,no-resolve  # 亚洲内容分发
+
+  ## 大洋洲 IP 段
+  - IP-CIDR,35.184.0.0/13,no-resolve  # 大洋洲服务网段
+
+  # 全球特定服务 IP 段
+  ## YouTube 视频 IP 段
+  - IP-CIDR,64.233.160.0/19,no-resolve
+  - IP-CIDR,74.125.24.0/24,no-resolve
+  - IP-CIDR,172.217.0.0/16,no-resolve
+
+  ## Google Cloud IP 段
+  - IP-CIDR,8.8.4.0/24,no-resolve  # DNS 服务
+  - IP-CIDR,8.8.8.0/24,no-resolve  # DNS 服务
+  - IP-CIDR,35.184.0.0/13,no-resolve  # 云服务网段
+
+  ## Google Play 服务 IP 段
+  - IP-CIDR,172.217.16.0/21,no-resolve
+  - IP-CIDR,173.194.112.0/21,no-resolve
+
+  # 特殊服务 IP 段
+  ## Google Analytics
+  - IP-CIDR,173.194.222.0/24,no-resolve
+  - IP-CIDR,209.85.238.0/24,no-resolve
+
+  ## AdSense
+  - IP-CIDR,66.102.0.0/20,no-resolve
+  - IP-CIDR,172.217.16.0/21,no-resolve
+
+  # 额外全球网段
+  - IP-CIDR,172.253.0.0/16,no-resolve  # Google 全球网络
+  - IP-CIDR,209.85.128.0/17,no-resolve  # Google 广告网络

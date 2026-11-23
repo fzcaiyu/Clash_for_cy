@@ -1,0 +1,152 @@
+payload:
+
+  # 第一类：智能AI服务域名
+  ## 第 1 部分 语言类AI服务域名
+
+  # OpenAI 全球服务域名 （归属公司：OpenAI）
+  - DOMAIN-KEYWORD,openai  # OpenAI 关键词匹配
+  - DOMAIN-SUFFIX,chatgpt.com  # ChatGPT 官方域名
+  - DOMAIN-SUFFIX,openai.com  # OpenAI 官方主域名
+  - DOMAIN-SUFFIX,oaistatic.com  # OpenAI 静态资源域名
+  - DOMAIN-SUFFIX,oaiusercontent.com  # OpenAI 用户内容域名
+  # OpenAI 全球支持服务
+  - DOMAIN-SUFFIX,auth0.com  # 身份认证服务
+  - DOMAIN-SUFFIX,sentry.io  # 错误监控与日志服务
+  - DOMAIN-SUFFIX,challenges.cloudflare.com  # Cloudflare 安全挑战
+  - DOMAIN-SUFFIX,events.statsigapi.net  # 事件分析服务
+  - DOMAIN-SUFFIX,featuregates.org  # 功能管理服务
+  - DOMAIN-SUFFIX,identrust.com  # 安全证书服务
+  - DOMAIN-SUFFIX,intercom.io  # 客户支持聊天平台
+  - DOMAIN-SUFFIX,intercomcdn.com  # Intercom CDN
+
+  # Claude AI 全球服务域名 （归属公司：Anthropic）
+  - DOMAIN-KEYWORD,claude  # Claude AI 关键词匹配
+  - DOMAIN-SUFFIX,claude.ai  # Claude AI 服务
+  - DOMAIN-SUFFIX,anthropic.com  # Anthropic 公司主域名
+  - DOMAIN-SUFFIX,claudiousercontent.com  # Claude 用户内容
+  - DOMAIN-SUFFIX,claudestatic.com  # Claude 静态资源
+  # Claude AI 全球支持服务
+  - DOMAIN-SUFFIX,cloudfront.net  # CDN 服务
+  - DOMAIN-SUFFIX,amazonaws.com  # AWS 云服务
+  - DOMAIN-SUFFIX,auth0.com  # 身份认证服务
+  - DOMAIN-SUFFIX,sentry.io  # 错误日志监控
+  - DOMAIN-SUFFIX,intercom.io  # 客户支持服务
+  - DOMAIN-SUFFIX,stripe.com  # 支付服务
+  - DOMAIN-SUFFIX,anthropic.cloud  # Anthropic 云服务
+
+  # Google AI 全球服务域名  （归属公司：Google）
+  - DOMAIN-KEYWORD,google  # Google AI 关键词匹配
+  - DOMAIN,bard.google.com  # Google Bard 服务
+  - DOMAIN,gemini.google.com  # Google Gemini 服务
+  # Google AI 全球支持服务
+  - DOMAIN-SUFFIX,googleapis.com  # Google API 服务
+  - DOMAIN-SUFFIX,googleusercontent.com  # Google 用户内容
+  - DOMAIN-SUFFIX,gstatic.com  # Google 静态资源
+  - DOMAIN-SUFFIX,google.com  # Google 主域
+  - DOMAIN-SUFFIX,firebase.com  # Google 开发平台
+  - DOMAIN-SUFFIX,cloudfunctions.net  # Google 云函数
+  - DOMAIN-SUFFIX,appspot.com  # Google 应用托管
+  - DOMAIN-SUFFIX,recaptcha.net  # Google 安全验证
+  - DOMAIN-SUFFIX,googleadservices.com  # Google 广告服务
+
+  # GitHub Copilot AI 服务 （归属公司：GitHub/Microsoft）
+  - DOMAIN-KEYWORD,copilot  # Copilot 关键词匹配
+  - DOMAIN-SUFFIX,github.com  # GitHub 主域名
+  - DOMAIN-SUFFIX,copilot.github.com  # GitHub Copilot 服务
+  # Copilot 支持服务
+  - DOMAIN-SUFFIX,githubapp.com  # GitHub 应用服务
+  - DOMAIN-SUFFIX,githubassets.com  # GitHub 静态资源
+  - DOMAIN-SUFFIX,githubusercontent.com  # GitHub 用户内容
+  - DOMAIN-SUFFIX,azure.com  # Microsoft Azure 云服务
+  - DOMAIN-SUFFIX,auth0.com  # 身份认证服务
+  - DOMAIN-SUFFIX,sentry.io  # 错误监控与日志服务
+
+  # 微软 Bing 和 Edge 服务 （归属公司：Microsoft）
+  - DOMAIN-KEYWORD,bing.com  # Bing 关键词匹配
+  - DOMAIN-SUFFIX,bing.com  # Bing 搜索引擎
+  - DOMAIN-SUFFIX,live.com  # Microsoft Live 服务
+  - DOMAIN-SUFFIX,bing.net  # Bing 网络服务
+  - DOMAIN-SUFFIX,bingapis.com  # Bing API 服务
+  # Bing 支持服务
+  - DOMAIN,edgeservices.bing.com  # Bing 边缘服务
+  - DOMAIN,www.bing.com  # Bing 官方网站
+  - DOMAIN,assets.msn.cn  # MSN China 资产
+  - DOMAIN,sydney.bing.com  # Bing 区域服务 - Sydney
+  - DOMAIN,functional.events.data.microsoft.com  # Microsoft 数据事件收集
+
+  # XAI 全球服务域名 （归属公司：X.AI）
+  - DOMAIN-KEYWORD,x.ai  # XAI 关键词匹配
+  - DOMAIN-SUFFIX,x.ai  # XAI 主域名
+  - DOMAIN-SUFFIX,xai.com  # XAI 备选域名
+  - DOMAIN-SUFFIX,xai.app  # XAI 应用服务
+  # XAI 基础资源类
+  - DOMAIN-SUFFIX,xaistatic.com  # XAI 静态资源域名
+  - DOMAIN-SUFFIX,xaicdn.com  # XAI 内容分发网络(CDN)域名
+  - DOMAIN-SUFFIX,xaiusercontent.com  # XAI 用户生成内容域名
+  # XAI 技术服务类
+  - DOMAIN-SUFFIX,api.x.ai  # XAI 主要API服务
+  - DOMAIN-SUFFIX,api.xai.com  # XAI 备用API服务
+  - DOMAIN-SUFFIX,dev.x.ai  # XAI 开发测试环境
+  - DOMAIN-SUFFIX,staging.x.ai  # XAI 预发布环境
+  - DOMAIN-SUFFIX,spaces.x.ai  # XAI 项目协作空间
+  # XAI 安全认证类
+  - DOMAIN-SUFFIX,auth.x.ai  # XAI 身份认证服务
+  - DOMAIN-SUFFIX,security.x.ai  # XAI 安全防护服务
+  # XAI 数据分析类
+  - DOMAIN-SUFFIX,analytics.x.ai  # XAI 数据分析服务
+  - DOMAIN-SUFFIX,metrics.x.ai  # XAI 性能指标监控
+  # XAI 关联平台类
+  - DOMAIN-SUFFIX,twitter.com  # Elon Musk 社交媒体平台
+  - DOMAIN-SUFFIX,x.com  # X 社交平台主域名
+  - DOMAIN-SUFFIX,tesla.com  # 关联技术公司域名
+
+  ## 第 2 部分 智能AI通用技术支持
+  # 身份认证服务
+  - DOMAIN-SUFFIX,auth0.com  # 通用身份认证服务
+
+  # 错误监控与日志服务
+  - DOMAIN-SUFFIX,sentry.io  # 通用错误监控与日志服务
+
+  # 客户支持服务
+  - DOMAIN-SUFFIX,intercom.io  # 通用客户支持聊天平台
+  - DOMAIN-SUFFIX,intercomcdn.com  # Intercom 内容分发网络
+
+  # 第二类：翻译AI服务域名
+  ## 第 1 部分 境外翻译AI
+
+  # DeepL 翻译服务 （归属公司：DeepL）
+  - DOMAIN-KEYWORD,deepl  # DeepL 关键词匹配
+  - DOMAIN-SUFFIX,deepl.com  # DeepL 翻译服务
+  # DeepL 支持服务
+  - DOMAIN-SUFFIX,deeplcdn.com  # DeepL 内容分发网络
+  - DOMAIN-SUFFIX,deeplapi.com  # DeepL API 服务
+  - DOMAIN-SUFFIX,auth.deepl.com  # DeepL 身份认证服务
+  - DOMAIN-SUFFIX,deeplusercontent.com  # DeepL 用户内容
+  # DeepL 监控与分析
+  - DOMAIN-SUFFIX,sentry.deepl.com  # DeepL 错误监控与日志服务
+  - DOMAIN-SUFFIX,analytics.deepl.com  # DeepL 分析服务
+
+  # 微软翻译服务 （归属公司：Microsoft）
+  - DOMAIN-KEYWORD,microsofttranslator  # Microsoft Translator 关键词匹配
+  - DOMAIN-SUFFIX,microsofttranslator.com  # Microsoft Translator 服务主域名
+  - DOMAIN-SUFFIX,api.cognitive.microsofttranslator.com  # Microsoft Translator API 服务
+  - DOMAIN-SUFFIX,azure.microsoft.com  # Azure 平台支持
+
+  # 谷歌翻译服务 （归属公司：Google）
+  - DOMAIN-SUFFIX,translate.google.com  # 谷歌翻译服务
+  - DOMAIN-SUFFIX,googleapis.com  # Google API 服务
+
+  ## 第 2 部分 翻译AI通用技术支持
+  # 云服务支持
+  - DOMAIN-SUFFIX,cloudfront.net  # 通用CDN服务
+  - DOMAIN-SUFFIX,amazonaws.com  # 通用云服务
+
+  # 身份认证服务
+  - DOMAIN-SUFFIX,auth0.com  # 通用身份认证服务
+
+  # 错误监控与日志服务
+  - DOMAIN-SUFFIX,sentry.io  # 通用错误监控与日志服务
+
+  # 客户支持服务
+  - DOMAIN-SUFFIX,intercom.io  # 通用客户支持聊天平台
+  - DOMAIN-SUFFIX,intercomcdn.com  # Intercom 内容分发网络

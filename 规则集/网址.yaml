@@ -1,0 +1,144 @@
+payload:
+# > News & Media 新闻与媒体
+- DOMAIN-SUFFIX,126.com                     # 网易邮箱
+- DOMAIN-SUFFIX,163.com                     # 网易主站
+- DOMAIN-SUFFIX,baidu.com                   # 百度
+- DOMAIN-SUFFIX,chinadaily.com.cn           # 中国日报
+- DOMAIN-SUFFIX,huanqiu.com                 # 环球网
+- DOMAIN-SUFFIX,ifeng.com                   # 凤凰网
+- DOMAIN-SUFFIX,index.cn                    # 中文新闻索引
+- DOMAIN-SUFFIX,jxnews.com.cn               # 江西新闻网
+- DOMAIN-SUFFIX,people.com.cn               # 人民网
+- DOMAIN-SUFFIX,sina.com                    # 新浪
+- DOMAIN-SUFFIX,sina.com.cn                 # 新浪中国
+- DOMAIN-SUFFIX,sinaimg.cn                  # 新浪图片
+- DOMAIN-SUFFIX,sohu.com                    # 搜狐
+- DOMAIN-SUFFIX,thepaper.cn                 # 澎湃新闻
+- DOMAIN-SUFFIX,toutiao.com                 # 今日头条
+- DOMAIN-SUFFIX,xinhuanet.com               # 新华网
+- DOMAIN-SUFFIX,yidianzixun.com             # 一点资讯
+- DOMAIN-SUFFIX,zhihu.com                   # 知乎 (资讯类)
+
+# > Video & Streaming Media 视频与流媒体服务
+- DOMAIN-SUFFIX,bilibili.com                # 哔哩哔哩
+- DOMAIN-SUFFIX,bilivideo.com               # 哔哩哔哩视频
+- DOMAIN-SUFFIX,cntv.cn                     # 中国网络电视台
+- DOMAIN-SUFFIX,douyin.com                  # 抖音
+- DOMAIN-SUFFIX,hunantv.com                 # 芒果TV
+- DOMAIN-SUFFIX,iqiyi.com                   # 爱奇艺
+- DOMAIN-SUFFIX,kuaishou.com                # 快手
+- DOMAIN-SUFFIX,letv.com                    # 乐视
+- DOMAIN-SUFFIX,mgtv.com                    # 芒果TV
+- DOMAIN-SUFFIX,pptv.com                    # PPTV网络电视
+- DOMAIN-SUFFIX,qq.com                      # 腾讯视频
+- DOMAIN-SUFFIX,qiyi.com                    # 爱奇艺域名
+- DOMAIN-SUFFIX,tencentvideo.com            # 腾讯视频
+- DOMAIN-SUFFIX,tudou.com                   # 土豆
+- DOMAIN-SUFFIX,v.qq.com                    # 腾讯视频
+- DOMAIN-SUFFIX,wasu.cn                     # 华数TV
+- DOMAIN-SUFFIX,youku.com                   # 优酷
+
+# > Social Media & Communities 社交与社区
+- DOMAIN-SUFFIX,baidutieba.com              # 百度贴吧
+- DOMAIN-SUFFIX,douban.com                  # 豆瓣
+- DOMAIN-SUFFIX,momo.com                    # 陌陌
+- DOMAIN-SUFFIX,pengyou.com                 # 腾讯朋友
+- DOMAIN-SUFFIX,qzone.com                   # QQ空间
+- DOMAIN-SUFFIX,renren.com                  # 人人网
+- DOMAIN-SUFFIX,tianya.cn                   # 天涯社区
+- DOMAIN-SUFFIX,wechat.com                  # 微信
+- DOMAIN-SUFFIX,weibo.com                   # 新浪微博
+- DOMAIN-SUFFIX,xiaohongshu.com             # 小红书
+- DOMAIN-SUFFIX,zhihu.com                   # 知乎
+
+# > E-commerce & Shopping 电商与购物
+- DOMAIN-SUFFIX,1688.com                    # 1688 (阿里巴巴批发)
+- DOMAIN-SUFFIX,51buy.com                   # 易迅网
+- DOMAIN-SUFFIX,dangdang.com                # 当当网
+- DOMAIN-SUFFIX,jd.com                      # 京东
+- DOMAIN-SUFFIX,jd.hk                       # 京东香港
+- DOMAIN-SUFFIX,kaola.com                   # 考拉海购
+- DOMAIN-SUFFIX,meituan.com                 # 美团
+- DOMAIN-SUFFIX,pinduoduo.com               # 拼多多
+- DOMAIN-SUFFIX,suning.com                  # 苏宁易购
+- DOMAIN-SUFFIX,taobao.com                  # 淘宝
+- DOMAIN-SUFFIX,tmall.com                   # 天猫
+- DOMAIN-SUFFIX,vip.com                     # 唯品会
+- DOMAIN-SUFFIX,yhd.com                     # 一号店
+
+# > Finance & Payment 金融与支付
+- DOMAIN-SUFFIX,alipay.com                  # 支付宝
+- DOMAIN-SUFFIX,baidu.com                   # 百度钱包
+- DOMAIN-SUFFIX,bankcomm.com                # 交通银行
+- DOMAIN-SUFFIX,boc.cn                      # 中国银行
+- DOMAIN-SUFFIX,cmbchina.com                # 招商银行
+- DOMAIN-SUFFIX,cpic.com.cn                 # 太平洋保险
+- DOMAIN-SUFFIX,fhb.com.cn                  # 富汇银行
+- DOMAIN-SUFFIX,icbc.com.cn                 # 中国工商银行
+- DOMAIN-SUFFIX,pingan.com                  # 平安银行
+- DOMAIN-SUFFIX,spdb.com.cn                 # 浦发银行
+- DOMAIN-SUFFIX,tianhongfunds.com           # 天弘基金
+- DOMAIN-SUFFIX,unionpay.com                # 中国银联
+- DOMAIN-SUFFIX,wechat.com                  # 微信支付
+- DOMAIN-SUFFIX,zhaoshangyin.com            # 招商银行域名
+
+# > Reading & Education 新闻阅读与学习
+- DOMAIN-SUFFIX,book.qq.com                 # QQ阅读
+- DOMAIN-SUFFIX,cidianwang.com              # 词典网
+- DOMAIN-SUFFIX,douban.com                  # 豆瓣阅读
+- DOMAIN-SUFFIX,icourse163.org              # 网易公开课
+- DOMAIN-SUFFIX,mooc.cn                     # 中国慕课网
+- DOMAIN-SUFFIX,open.163.com                # 网易公开课
+- DOMAIN-SUFFIX,ted.cn                      # TED演讲中国版
+- DOMAIN-SUFFIX,ximalaya.com                # 喜马拉雅FM
+- DOMAIN-SUFFIX,youdao.com                  # 有道词典
+- DOMAIN-SUFFIX,zhihuishu.com               # 知乎书
+
+# > Logistics & Transportation 物流与出行
+- DOMAIN-SUFFIX,12306.cn                    # 中国铁路12306
+- DOMAIN-SUFFIX,baidu.com                   # 百度地图
+- DOMAIN-SUFFIX,didi.com                    # 滴滴出行
+- DOMAIN-SUFFIX,ele.me                      # 饿了么
+- DOMAIN-SUFFIX,meituan.com                 # 美团
+- DOMAIN-SUFFIX,sto.cn                      # 申通快递
+- DOMAIN-SUFFIX,taobao.com                  # 淘宝物流
+- DOMAIN-SUFFIX,ytong.com                   # 圆通物流
+- DOMAIN-SUFFIX,zto.cn                      # 中通快递
+
+# > Tech & Internet Services 科技与互联网服务
+- DOMAIN-SUFFIX,aliyun.com                  # 阿里云
+- DOMAIN-SUFFIX,huawei.com                  # 华为官网
+- DOMAIN-SUFFIX,mi.com                      # 小米官网
+- DOMAIN-SUFFIX,oppo.com                    # OPPO官网
+- DOMAIN-SUFFIX,tencent.com                 # 腾讯官网
+- DOMAIN-SUFFIX,vivo.com                    # Vivo官网
+- DOMAIN-SUFFIX,xiaomi.com                  # 小米官网
+
+# > Health & Medical 健康与医疗
+- DOMAIN-SUFFIX,120ask.com                  # 百姓健康
+- DOMAIN-SUFFIX,39.net                      # 39健康网
+- DOMAIN-SUFFIX,dxy.cn                      # 丁香园
+- DOMAIN-SUFFIX,haodf.com                   # 好大夫在线
+- DOMAIN-SUFFIX,jianke.com                  # 健客网
+
+# > Gaming & Entertainment 游戏与娱乐
+- DOMAIN-SUFFIX,biligame.com                # 哔哩哔哩游戏
+- DOMAIN-SUFFIX,douyu.com                   # 斗鱼直播
+- DOMAIN-SUFFIX,huya.com                    # 虎牙直播
+- DOMAIN-SUFFIX,netease.com                 # 网易
+- DOMAIN-SUFFIX,panda.tv                    # 熊猫TV
+- DOMAIN-SUFFIX,pepper.com.cn               # 游戏加速器
+- DOMAIN-SUFFIX,qq.com                      # 腾讯游戏
+
+# > Government & Public Services 政府与公共服务
+- DOMAIN-SUFFIX,beijing.gov.cn              # 北京政府网
+- DOMAIN-SUFFIX,chinatax.gov.cn             # 国家税务总局
+- DOMAIN-SUFFIX,gov.cn                      # 中国政府网
+- DOMAIN-SUFFIX,mohrss.gov.cn               # 人力资源和社会保障部
+- DOMAIN-SUFFIX,weather.com.cn              # 中国天气
+
+# > Business & Career 企业与职业服务
+- DOMAIN-SUFFIX,51job.com                   # 前程无忧
+- DOMAIN-SUFFIX,chinahr.com                 # 中华英才网
+- DOMAIN-SUFFIX,lagou.com                   # 拉勾网
+- DOMAIN-SUFFIX,zhaopin.com                 # 智联招聘

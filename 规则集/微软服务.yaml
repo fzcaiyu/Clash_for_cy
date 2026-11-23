@@ -1,0 +1,99 @@
+payload:
+  # Microsoft 全球核心服务域名
+  ## 主要服务域名 - 保留原有
+  - DOMAIN-SUFFIX,microsoft.com  # 主站点
+  - DOMAIN-SUFFIX,microsoftonline.com  # 在线服务
+  - DOMAIN-SUFFIX,windows.com  # Windows 系统
+  - DOMAIN-SUFFIX,live.com  # Live 服务
+
+  # 新增国际业务域名
+  ## 北美洲
+  - DOMAIN-SUFFIX,microsoft.ca  # 加拿大业务
+  - DOMAIN-SUFFIX,microsoft.us  # 美国业务
+  - DOMAIN-SUFFIX,microsoft.com.mx  # 墨西哥业务
+
+  ## 南美洲
+  - DOMAIN-SUFFIX,microsoft.com.br  # 巴西业务
+  - DOMAIN-SUFFIX,microsoft.cl  # 智利业务
+  - DOMAIN-SUFFIX,microsoft.com.ar  # 阿根廷业务
+  - DOMAIN-SUFFIX,microsoft.co  # 哥伦比亚业务
+
+  ## 欧洲
+  - DOMAIN-SUFFIX,microsoft.de  # 德国业务
+  - DOMAIN-SUFFIX,microsoft.fr  # 法国业务
+  - DOMAIN-SUFFIX,microsoft.co.uk  # 英国业务
+  - DOMAIN-SUFFIX,microsoft.es  # 西班牙业务
+  - DOMAIN-SUFFIX,microsoft.it  # 意大利业务
+  - DOMAIN-SUFFIX,microsoft.nl  # 荷兰业务
+  - DOMAIN-SUFFIX,microsoft.pl  # 波兰业务
+  - DOMAIN-SUFFIX,microsoft.se  # 瑞典业务
+  - DOMAIN-SUFFIX,microsoft.no  # 挪威业务
+  - DOMAIN-SUFFIX,microsoft.dk  # 丹麦业务
+  - DOMAIN-SUFFIX,microsoft.fi  # 芬兰业务
+  - DOMAIN-SUFFIX,microsoft.ch  # 瑞士业务
+  - DOMAIN-SUFFIX,microsoft.at  # 奥地利业务
+
+  ## 亚洲
+  - DOMAIN-SUFFIX,microsoft.co.jp  # 日本业务
+  - DOMAIN-SUFFIX,microsoft.co.kr  # 韩国业务
+  - DOMAIN-SUFFIX,microsoft.com.tw  # 台湾业务
+  - DOMAIN-SUFFIX,microsoft.com.hk  # 香港业务
+  - DOMAIN-SUFFIX,microsoft.co.in  # 印度业务
+  - DOMAIN-SUFFIX,microsoft.com.sg  # 新加坡业务
+  - DOMAIN-SUFFIX,microsoft.ae  # 阿联酋业务
+  - DOMAIN-SUFFIX,microsoft.com.sa  # 沙特阿拉伯业务
+  - DOMAIN-SUFFIX,microsoft.com.pk  # 巴基斯坦业务
+  - DOMAIN-SUFFIX,microsoft.com.bd  # 孟加拉国业务
+
+  ## 大洋洲
+  - DOMAIN-SUFFIX,microsoft.com.au  # 澳大利亚业务
+  - DOMAIN-SUFFIX,microsoft.co.nz  # 新西兰业务
+
+  ## 非洲和中东
+  - DOMAIN-SUFFIX,microsoft.co.za  # 南非业务
+  - DOMAIN-SUFFIX,microsoft.com.eg  # 埃及业务
+
+  # 重要服务域名 - 补充和保留原有
+  ## 云服务
+  - DOMAIN-SUFFIX,azure.com  # Azure 云服务
+  - DOMAIN-SUFFIX,azureedge.net  # Azure CDN
+  - DOMAIN-SUFFIX,windowsazure.com  # Windows Azure
+  - DOMAIN-SUFFIX,cloudapp.net  # 云应用服务
+
+  ## 办公服务
+  - DOMAIN-SUFFIX,office.com  # Office 主站
+  - DOMAIN-SUFFIX,office365.com  # Office 365
+  - DOMAIN-SUFFIX,sharepoint.com  # SharePoint
+  - DOMAIN-SUFFIX,sharepointonline.com  # SharePoint Online
+  - DOMAIN-SUFFIX,outlook.com  # Outlook 邮件
+  - DOMAIN-SUFFIX,onenote.com  # OneNote
+  - DOMAIN-SUFFIX,yammer.com  # 企业社交
+
+  ## 开发者服务
+  - DOMAIN-SUFFIX,visualstudio.com  # Visual Studio
+  - DOMAIN-SUFFIX,asp.net  # ASP.NET
+  - DOMAIN-SUFFIX,msdn.com  # 开发者网络
+
+  ## 身份和安全服务
+  - DOMAIN-SUFFIX,msidentity.com  # 身份服务
+  - DOMAIN-SUFFIX,msauth.net  # 身份认证
+  - DOMAIN-SUFFIX,phonefactor.net  # 多因素认证
+
+  ## 通讯服务
+  - DOMAIN-SUFFIX,skype.com  # Skype
+  - DOMAIN-SUFFIX,teams.com  # Teams
+
+  ## 游戏服务
+  - DOMAIN-SUFFIX,xbox.com  # Xbox 主站
+  - DOMAIN-SUFFIX,xboxlive.com  # Xbox 在线服务
+
+  # 保留原有的关键词和特殊域名
+  - DOMAIN-KEYWORD,1drv
+  - DOMAIN-KEYWORD,microsoft
+  - DOMAIN-KEYWORD,onedrive
+  - DOMAIN-KEYWORD,skydrive
+
+  # 其他原有重要域名保持不变
+  - DOMAIN-SUFFIX,windows.net
+  - DOMAIN-SUFFIX,windowsupdate.com
+  - DOMAIN-SUFFIX,trafficmanager.net

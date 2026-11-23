@@ -1,0 +1,127 @@
+payload:
+  # HBO 全球核心服务域名
+  - DOMAIN-SUFFIX,hbo.com  # 全球主域名
+  - DOMAIN-SUFFIX,hbogo.com  # HBO GO 服务
+  - DOMAIN-SUFFIX,hbonow.com  # HBO NOW 服务
+  - DOMAIN-SUFFIX,hbomax.com  # HBO Max 服务
+  - DOMAIN-SUFFIX,hbomaxcdn.com  # HBO Max CDN服务
+
+  # 全球业务域名扩展
+  ## 北美洲业务域名
+  - DOMAIN-SUFFIX,hbo.ca  # 加拿大业务
+  - DOMAIN-SUFFIX,hbo.us  # 美国业务
+  - DOMAIN-SUFFIX,hbo.com.mx  # 墨西哥业务
+  - DOMAIN-SUFFIX,hbo.pr  # 波多黎各业务
+
+  ## 南美洲业务域名
+  - DOMAIN-SUFFIX,hbo.com.br  # 巴西业务
+  - DOMAIN-SUFFIX,hbo.com.co  # 哥伦比亚业务
+  - DOMAIN-SUFFIX,hbo.com.ar  # 阿根廷业务
+  - DOMAIN-SUFFIX,hbo.cl  # 智利业务
+  - DOMAIN-SUFFIX,hbo.pe  # 秘鲁业务
+  - DOMAIN-SUFFIX,hbo.com.uy  # 乌拉圭业务
+
+  ## 欧洲业务域名
+  - DOMAIN-SUFFIX,hbo.de  # 德国业务
+  - DOMAIN-SUFFIX,hbo.fr  # 法国业务
+  - DOMAIN-SUFFIX,hbo.co.uk  # 英国业务
+  - DOMAIN-SUFFIX,hbo.es  # 西班牙业务
+  - DOMAIN-SUFFIX,hbo.pl  # 波兰业务
+  - DOMAIN-SUFFIX,hbo.nl  # 荷兰业务
+  - DOMAIN-SUFFIX,hbo.se  # 瑞典业务
+  - DOMAIN-SUFFIX,hbo.no  # 挪威业务
+  - DOMAIN-SUFFIX,hbo.dk  # 丹麦业务
+  - DOMAIN-SUFFIX,hbo.fi  # 芬兰业务
+  - DOMAIN-SUFFIX,hbo.be  # 比利时业务
+  - DOMAIN-SUFFIX,hbo.ch  # 瑞士业务
+  - DOMAIN-SUFFIX,hbo.at  # 奥地利业务
+
+  ## 亚洲业务域名
+  - DOMAIN-SUFFIX,hbogoasia.com  # 泛亚服务
+  - DOMAIN-SUFFIX,hbogoasia.hk  # 香港服务
+  - DOMAIN-SUFFIX,hbogoasia.sg  # 新加坡服务
+  - DOMAIN-SUFFIX,hbogoasia.com.ph  # 菲律宾服务
+  - DOMAIN-SUFFIX,hbogoasia.my  # 马来西亚服务
+  - DOMAIN-SUFFIX,hbogoasia.co.id  # 印尼服务
+  - DOMAIN-SUFFIX,hboasia.com  # 泛亚地区服务
+  - DOMAIN-SUFFIX,hbogoasia.com.tw  # 台湾服务
+
+  ## 大洋洲业务域名
+  - DOMAIN-SUFFIX,hbo.com.au  # 澳大利亚业务
+  - DOMAIN-SUFFIX,hbo.co.nz  # 新西兰业务
+
+  ## 中东和非洲业务域名
+  - DOMAIN-SUFFIX,hbo.ae  # 阿联酋业务
+  - DOMAIN-SUFFIX,hbo.sa  # 沙特阿拉伯业务
+  - DOMAIN-SUFFIX,hbo.co.za  # 南非业务
+
+  # 设备和系统全面支持
+  ## Android 系统支持
+  - PROCESS-NAME,com.hbo.hbonow  # Android 主应用进程
+  - PROCESS-NAME,com.hbo.android  # Android 备用应用进程
+  - BUNDLE-ID,com.hbo.hbonow  # Android 应用标识
+  - DOMAIN-SUFFIX,android.com  # Android 系统域名
+  - DOMAIN-SUFFIX,googleplay.com  # 应用分发平台域名
+
+  ## iOS 系统支持
+  - PROCESS-NAME,com.hbo.hbogo  # iOS 主应用进程
+  - BUNDLE-ID,com.hbo.hbogo  # iOS 应用标识
+  - DOMAIN-SUFFIX,apple.com  # Apple 系统域名
+  - DOMAIN-SUFFIX,icloud.com  # 云服务域名
+
+  ## 鸿蒙系统支持
+  - PROCESS-NAME,com.huawei.hbo  # 鸿蒙 HBO 应用进程
+  - BUNDLE-ID,com.huawei.hbo  # 鸿蒙应用标识
+  - DOMAIN-SUFFIX,harmonyos.com  # 鸿蒙系统域名
+
+  ## 电视和机顶盒支持
+  - PROCESS-NAME,com.hbo.smarttv  # 智能电视应用进程
+  - PROCESS-NAME,com.hbo.androidtv  # Android TV 应用进程
+  - PROCESS-NAME,com.hbo.appletv  # Apple TV 应用进程
+  - PROCESS-NAME,com.hbo.samsungtv  # Samsung TV 应用进程
+  - PROCESS-NAME,com.hbo.lgtv  # LG TV 应用进程
+  - DOMAIN-SUFFIX,hbotv.com  # 电视服务域名
+  - DOMAIN-SUFFIX,smart-tv.com  # 智能电视域名
+
+  ## 电脑端系统支持
+  - PROCESS-NAME,hbo.windows  # Windows 应用进程
+  - PROCESS-NAME,hbo.macos  # MacOS 应用进程
+  - PROCESS-NAME,hbo.linux  # Linux 应用进程
+  - DOMAIN-SUFFIX,windows.com  # Windows 系统域名
+  - DOMAIN-SUFFIX,apple.com/mac  # MacOS 系统域名
+  - DOMAIN-SUFFIX,linux.org  # Linux 系统域名
+
+  # 内容分发网络(CDN)
+  ## 全球 CDN
+  - DOMAIN,bcbolthboa-a.akamaihd.net  # 全球内容分发
+  - DOMAIN,cf-images.ap-southeast-1.prod.boltdns.net  # 东南亚 CDN
+  - DOMAIN,dai3fd1oh325y.cloudfront.net  # CloudFront CDN
+
+  ## HBO Asia CDN
+  - DOMAIN,hboasia1-i.akamaihd.net  # HBO Asia CDN 节点1
+  - DOMAIN,hboasia2-i.akamaihd.net  # HBO Asia CDN 节点2
+  - DOMAIN,hboasia3-i.akamaihd.net  # HBO Asia CDN 节点3
+  - DOMAIN,hboasia4-i.akamaihd.net  # HBO Asia CDN 节点4
+  - DOMAIN,hboasia5-i.akamaihd.net  # HBO Asia CDN 节点5
+  - DOMAIN,hboasialive.akamaized.net  # HBO Asia 直播 CDN
+  - DOMAIN,hbogoprod-vod.akamaized.net  # HBO Asia 点播 CDN
+
+  # 支持服务
+  ## 云服务和 API
+  - DOMAIN,44wilhpljf.execute-api.ap-southeast-1.amazonaws.com  # AWS API 服务
+  - DOMAIN,s3-ap-southeast-1.amazonaws.com  # AWS S3 存储
+  - DOMAIN,hbounify-prod.evergent.com  # 统一认证服务
+
+  # 支付和安全服务
+  - DOMAIN-SUFFIX,paypal.com  # 支付服务
+  - DOMAIN-SUFFIX,stripe.com  # 支付处理
+  - DOMAIN-SUFFIX,braintreegateway.com  # 支付网关
+
+  # 技术支持
+  - DOMAIN-SUFFIX,akamai.net  # CDN 提供商
+  - DOMAIN-SUFFIX,cloudfront.net  # AWS CDN 服务
+  - DOMAIN-SUFFIX,amazonaws.com  # AWS 云服务
+
+  # 额外匹配
+  - DOMAIN-KEYWORD,hbogoasia  # HBO Asia 关键词
+  - DOMAIN-KEYWORD,hbo-cdn  # HBO CDN 关键词

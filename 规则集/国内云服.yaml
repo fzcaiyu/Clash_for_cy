@@ -1,0 +1,86 @@
+payload:
+
+# 阿里云服务器IP段（仅中国大陆）
+  - IP-CIDR,47.80.0.0/12,no-resolve  # 阿里云华东1区（杭州）
+  - IP-CIDR,47.236.0.0/14,no-resolve # 阿里云华北（北京）
+  - IP-CIDR,47.240.0.0/14,no-resolve # 阿里云华南（深圳）
+  - IP-CIDR,47.244.0.0/15,no-resolve # 阿里云华东2区（上海）
+  - IP-CIDR,47.246.0.0/16,no-resolve # 阿里云华北2区（北京）
+  - IP-CIDR,47.250.0.0/15,no-resolve # 阿里云华南1区（深圳）
+  - IP-CIDR,47.252.0.0/15,no-resolve # 阿里云华东1区（杭州）
+  - IP-CIDR,140.205.0.0/16,no-resolve # 阿里云经典网络
+
+# 腾讯云服务器IP段（仅中国大陆）
+  - IP-CIDR,129.28.0.0/16,no-resolve  # 腾讯云上海
+  - IP-CIDR,129.204.0.0/16,no-resolve # 腾讯云广州
+  - IP-CIDR,129.211.0.0/16,no-resolve # 腾讯云北京
+  - IP-CIDR,132.232.0.0/16,no-resolve # 腾讯云成都
+  - IP-CIDR,134.175.0.0/16,no-resolve # 腾讯云重庆
+
+# 华为云服务器IP段（仅中国大陆）
+  - IP-CIDR,139.9.0.0/18,no-resolve    # 华为云华东区（上海）
+  - IP-CIDR,139.159.0.0/19,no-resolve  # 华为云华中区（武汉）
+  - IP-CIDR,114.116.0.0/16,no-resolve  # 华为云华北区（北京）
+  - IP-CIDR,121.37.0.0/17,no-resolve   # 华为云华南区（广州）
+
+# 百度智能云IP段
+  - IP-CIDR,180.76.0.0/16,no-resolve  # 百度云华北区（北京）
+  - IP-CIDR,182.61.0.0/16,no-resolve  # 百度云华南区（广州）
+
+# 字节跳动云服务IP段
+  - IP-CIDR,123.58.160.0/19,no-resolve # 火山引擎（北京）
+  - IP-CIDR,101.124.0.0/15,no-resolve  # 火山引擎（杭州）
+
+# 京东云服务器IP段
+  - IP-CIDR,106.12.0.0/15,no-resolve   # 京东云华北区（北京）
+  - IP-CIDR,114.67.128.0/17,no-resolve # 京东云华东区（宿迁）
+
+# 网易云服务器IP段
+  - IP-CIDR,59.111.0.0/20,no-resolve   # 网易云华东区（杭州）
+  - IP-CIDR,59.111.128.0/17,no-resolve # 网易云华北区（北京）
+
+# 金山云服务器IP段
+  - IP-CIDR,116.196.0.0/16,no-resolve  # 金山云华北区（北京）
+  - IP-CIDR,117.71.128.0/17,no-resolve # 金山云华东区（上海）
+
+# 青云服务器IP段
+  - IP-CIDR,139.198.0.0/16,no-resolve  # 青云华北区（北京）
+  - IP-CIDR,139.199.0.0/16,no-resolve  # 青云华南区（广州）
+
+# UCloud服务器IP段
+  - IP-CIDR,106.75.0.0/16,no-resolve   # UCloud华北区（北京）
+  - IP-CIDR,120.132.0.0/17,no-resolve  # UCloud华东区（上海）
+
+# 中国移动IP段
+  - IP-CIDR,117.136.0.0/14,no-resolve  # 中国移动
+  - IP-CIDR,120.204.0.0/15,no-resolve  # 中国移动 4G
+  - IP-CIDR,183.221.0.0/16,no-resolve  # 中国移动 5G
+  - IP-CIDR,211.136.0.0/14,no-resolve  # 中国移动骨干网
+
+# 中国电信IP段
+  - IP-CIDR,116.116.0.0/16,no-resolve  # 中国电信
+  - IP-CIDR,171.8.0.0/14,no-resolve    # 中国电信 4G
+  - IP-CIDR,183.192.0.0/12,no-resolve  # 中国电信 5G
+  - IP-CIDR,219.152.0.0/14,no-resolve  # 中国电信骨干网
+
+# 中国联通IP段
+  - IP-CIDR,114.84.0.0/15,no-resolve   # 中国联通
+  - IP-CIDR,115.168.0.0/15,no-resolve  # 中国联通 4G/5G
+  - IP-CIDR,210.22.0.0/16,no-resolve   # 中国联通骨干网
+
+# 中国大陆IDC服务商IP段
+  - IP-CIDR,103.44.56.0/22,no-resolve  # 世纪互联
+  - IP-CIDR,59.82.0.0/20,no-resolve    # 网宿科技
+  - IP-CIDR,222.186.0.0/16,no-resolve  # 快网CDN
+  - IP-CIDR,101.227.0.0/16,no-resolve  # 蓝汛CDN
+  - IP-CIDR,180.97.0.0/16,no-resolve   # 帝联科技
+  - IP-CIDR,116.128.128.0/17,no-resolve # 同兴万点
+  - IP-CIDR,220.181.0.0/16,no-resolve  # 首都在线
+
+# 教育网IP段
+  - IP-CIDR,202.112.0.0/13,no-resolve  # 教育网主干
+  - IP-CIDR,202.120.0.0/15,no-resolve  # 教育网上海
+  - IP-CIDR,210.25.0.0/16,no-resolve   # 教育网北京
+
+# 地理位置分类
+  - GEOIP,CN,  # 中国大陆IP地址池

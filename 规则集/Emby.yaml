@@ -1,0 +1,122 @@
+payload:
+  # Emby 全球核心服务域名
+  - DOMAIN-SUFFIX,emby.media  # 全球官方主站点
+  - DOMAIN-SUFFIX,mb3admin.com  # 管理服务专用域名
+  - DOMAIN-SUFFIX,emby.club  # 国际社区域名
+
+  # 全球业务域名扩展
+  ## 北美洲业务域名
+  - DOMAIN-SUFFIX,emby.ca  # 加拿大业务
+  - DOMAIN-SUFFIX,emby.us  # 美国业务
+  - DOMAIN-SUFFIX,emby.com.mx  # 墨西哥业务
+  - DOMAIN-SUFFIX,emby.pr  # 波多黎各业务
+
+  ## 南美洲业务域名
+  - DOMAIN-SUFFIX,emby.com.br  # 巴西业务
+  - DOMAIN-SUFFIX,emby.cl  # 智利业务
+  - DOMAIN-SUFFIX,emby.com.ar  # 阿根廷业务
+  - DOMAIN-SUFFIX,emby.co  # 哥伦比亚业务
+  - DOMAIN-SUFFIX,emby.pe  # 秘鲁业务
+  - DOMAIN-SUFFIX,emby.com.uy  # 乌拉圭业务
+
+  ## 欧洲业务域名
+  - DOMAIN-SUFFIX,emby.de  # 德国业务
+  - DOMAIN-SUFFIX,emby.fr  # 法国业务
+  - DOMAIN-SUFFIX,emby.co.uk  # 英国业务
+  - DOMAIN-SUFFIX,emby.es  # 西班牙业务
+  - DOMAIN-SUFFIX,emby.nl  # 荷兰业务
+  - DOMAIN-SUFFIX,emby.se  # 瑞典业务
+  - DOMAIN-SUFFIX,emby.no  # 挪威业务
+  - DOMAIN-SUFFIX,emby.dk  # 丹麦业务
+  - DOMAIN-SUFFIX,emby.pl  # 波兰业务
+  - DOMAIN-SUFFIX,emby.it  # 意大利业务
+  - DOMAIN-SUFFIX,emby.ru  # 俄罗斯业务
+  - DOMAIN-SUFFIX,emby.ch  # 瑞士业务
+  - DOMAIN-SUFFIX,emby.at  # 奥地利业务
+
+  ## 亚洲业务域名
+  - DOMAIN-SUFFIX,emby.jp  # 日本业务
+  - DOMAIN-SUFFIX,emby.kr  # 韩国业务
+  - DOMAIN-SUFFIX,emby.tw  # 台湾业务
+  - DOMAIN-SUFFIX,emby.hk  # 香港业务
+  - DOMAIN-SUFFIX,emby.sg  # 新加坡业务
+  - DOMAIN-SUFFIX,emby.in  # 印度业务
+  - DOMAIN-SUFFIX,emby.com.ph  # 菲律宾业务
+  - DOMAIN-SUFFIX,emby.com.my  # 马来西亚业务
+  - DOMAIN-SUFFIX,emby.co.id  # 印尼业务
+  - DOMAIN-SUFFIX,emby.cn  # 中国业务
+  - DOMAIN-SUFFIX,emby.vn  # 越南业务
+
+  ## 大洋洲业务域名
+  - DOMAIN-SUFFIX,emby.com.au  # 澳大利亚业务
+  - DOMAIN-SUFFIX,emby.co.nz  # 新西兰业务
+  - DOMAIN-SUFFIX,emby.com.fj  # 斐济业务
+
+  # 设备和系统全面支持
+  ## Android 系统支持
+  - PROCESS-NAME,com.mb.android  # Android 主应用进程
+  - PROCESS-NAME,com.emby.mobile  # 移动版应用进程
+  - BUNDLE-ID,com.mb.android  # Android 应用标识
+  - DOMAIN-SUFFIX,android.com  # Android 系统域名
+  - DOMAIN-SUFFIX,googleplay.com  # 应用分发平台域名
+
+  ## iOS 系统支持
+  - PROCESS-NAME,com.emby.ios  # iOS 应用进程
+  - BUNDLE-ID,com.emby.ios  # iOS 应用标识
+  - DOMAIN-SUFFIX,apple.com  # Apple 系统域名
+  - DOMAIN-SUFFIX,icloud.com  # 云服务域名
+
+  ## 鸿蒙系统支持
+  - PROCESS-NAME,com.huawei.emby  # 鸿蒙 Emby 应用进程
+  - BUNDLE-ID,com.huawei.emby  # 鸿蒙应用标识
+  - DOMAIN-SUFFIX,harmonyos.com  # 鸿蒙系统域名
+
+  ## 电视和机顶盒支持
+  - PROCESS-NAME,com.emby.tv  # 电视应用进程
+  - PROCESS-NAME,com.emby.androidtv  # Android TV 应用进程
+  - PROCESS-NAME,com.emby.appletv  # Apple TV 应用进程
+  - PROCESS-NAME,com.emby.samsungtv  # Samsung TV 应用进程
+  - PROCESS-NAME,com.emby.lgtv  # LG TV 应用进程
+  - DOMAIN-SUFFIX,emby-tv.com  # 电视服务域名
+  - DOMAIN-SUFFIX,smart-tv.com  # 智能电视域名
+
+  ## 电脑端系统支持
+  - PROCESS-NAME,emby.windows  # Windows 应用进程
+  - PROCESS-NAME,emby.macos  # MacOS 应用进程
+  - PROCESS-NAME,emby.linux  # Linux 应用进程
+  - DOMAIN-SUFFIX,windows.com  # Windows 系统域名
+  - DOMAIN-SUFFIX,apple.com/mac  # MacOS 系统域名
+  - DOMAIN-SUFFIX,linux.org  # Linux 系统域名
+
+  # 技术支持和服务域名
+  - DOMAIN-SUFFIX,emby.wtf  # 技术服务域名
+  - DOMAIN-SUFFIX,embyserver.com  # 服务器专用域名
+  - DOMAIN-SUFFIX,jellyfin.org  # 开源项目域名
+
+  # 内容分发网络(CDN)
+  - DOMAIN-SUFFIX,emby-cdn.net  # 国际内容分发网络
+  - DOMAIN-SUFFIX,emby-mirror.org  # 国际镜像服务
+  - DOMAIN-SUFFIX,cloudflare.com  # 主要CDN提供商
+
+  # 认证和安全服务
+  - DOMAIN-SUFFIX,emby-auth.com  # 用户认证服务
+  - DOMAIN-SUFFIX,emby-login.net  # 登录服务域名
+
+  # 开发和技术支持
+  - DOMAIN-SUFFIX,emby-dev.net  # 开发者服务
+  - DOMAIN-SUFFIX,emby-support.com  # 技术支持域名
+  - DOMAIN-SUFFIX,github.com  # 代码托管平台
+
+  # 订阅和支付服务
+  - DOMAIN-SUFFIX,emby-premier.com  # 会员服务
+  - DOMAIN-SUFFIX,emby-billing.net  # 计费服务
+  - DOMAIN-SUFFIX,paypal.com  # 支付服务
+
+  # 社区资源
+  - DOMAIN-SUFFIX,emby-forum.org  # 社区论坛
+  - DOMAIN-SUFFIX,emby-wiki.org  # 技术文档
+  - DOMAIN-SUFFIX,reddit.com  # 用户交流平台
+
+  # 额外匹配规则
+  - DOMAIN-KEYWORD,emby-server  # 服务器关键词
+  - DOMAIN-KEYWORD,emby-cdn  # CDN 关键词

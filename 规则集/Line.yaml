@@ -1,0 +1,86 @@
+payload:
+  # LINE 全球核心服务域名
+  - DOMAIN-KEYWORD,line  # LINE 平台关键词匹配
+  - DOMAIN-SUFFIX,line.me  # LINE 主站点域名
+  - DOMAIN-SUFFIX,line.naver.jp  # LINE 日本站点
+  - DOMAIN-SUFFIX,linecorp.com  # LINE 公司官方域名
+  - DOMAIN-SUFFIX,linemobile.com  # LINE 移动服务域名
+
+  # LINE 全球业务域名
+  ## 亚洲业务
+  - DOMAIN-SUFFIX,line.biz.jp  # LINE 日本商务服务
+  - DOMAIN-SUFFIX,line.me.jp  # LINE 日本站点
+  - DOMAIN-SUFFIX,line.co.kr  # LINE 韩国站点
+  - DOMAIN-SUFFIX,line.com.tw  # LINE 台湾站点
+  - DOMAIN-SUFFIX,line.com.th  # LINE 泰国站点
+  - DOMAIN-SUFFIX,line.com.id  # LINE 印尼站点
+  - DOMAIN-SUFFIX,line.com.my  # LINE 马来西亚站点
+  - DOMAIN-SUFFIX,line.com.ph  # LINE 菲律宾站点
+  - DOMAIN-SUFFIX,line.com.vn  # LINE 越南站点
+
+  ## 北美洲业务
+  - DOMAIN-SUFFIX,line.me.us  # LINE 美国站点
+  - DOMAIN-SUFFIX,line.me.ca  # LINE 加拿大站点
+
+  ## 欧洲业务
+  - DOMAIN-SUFFIX,line.me.uk  # LINE 英国站点
+  - DOMAIN-SUFFIX,line.me.de  # LINE 德国站点
+  - DOMAIN-SUFFIX,line.me.fr  # LINE 法国站点
+
+  # 设备和系统全面支持
+  ## Android 系统
+  - PROCESS-NAME,jp.naver.line.android  # LINE Android 主应用
+  - PROCESS-NAME,com.linecorp.linelite  # LINE Lite Android 应用
+  - BUNDLE-ID,jp.naver.line.android  # Android 应用标识
+  - DOMAIN-SUFFIX,android.com  # Android 系统域名
+  - DOMAIN-SUFFIX,googleplay.com  # 应用分发平台
+
+  ## iOS 系统
+  - PROCESS-NAME,LINE  # LINE iOS 应用
+  - BUNDLE-ID,jp.naver.line.ios  # iOS 应用标识
+  - DOMAIN-SUFFIX,apple.com  # Apple 系统域名
+  - DOMAIN-SUFFIX,icloud.com  # 云服务域名
+
+  ## 鸿蒙系统
+  - PROCESS-NAME,com.huawei.line  # 鸿蒙 LINE 应用
+  - BUNDLE-ID,com.huawei.line  # 鸿蒙应用标识
+  - DOMAIN-SUFFIX,harmonyos.com  # 鸿蒙系统域名
+
+  ## 电视和机顶盒
+  - PROCESS-NAME,com.line.tv  # LINE TV 应用
+  - PROCESS-NAME,com.line.androidtv  # LINE Android TV 应用
+  - DOMAIN-SUFFIX,line.com/tv  # LINE TV 专用域名
+  - DOMAIN-SUFFIX,smart-tv.com  # 智能电视域名
+
+  ## 电脑端系统
+  - PROCESS-NAME,line.windows  # Windows LINE 应用
+  - PROCESS-NAME,line.macos  # MacOS LINE 应用
+  - PROCESS-NAME,line.linux  # Linux LINE 应用
+  - DOMAIN-SUFFIX,windows.com  # Windows 系统域名
+  - DOMAIN-SUFFIX,apple.com/mac  # MacOS 系统域名
+  - DOMAIN-SUFFIX,linux.org  # Linux 系统域名
+
+  # LINE 子服务和平台
+  - DOMAIN-SUFFIX,linemsg.com  # LINE 消息服务
+  - DOMAIN-SUFFIX,lineplay.com  # LINE Play 游戏平台
+  - DOMAIN-SUFFIX,linestatic.com  # LINE 静态资源
+  - DOMAIN-SUFFIX,linetv.tw  # LINE TV 台湾站点
+
+  # 技术和支持服务
+  - DOMAIN-SUFFIX,line.net  # LINE 网络服务
+  - DOMAIN-SUFFIX,linecorp.net  # LINE 公司网络服务
+  - DOMAIN-SUFFIX,linemobile.net  # LINE 移动网络服务
+
+  # CDN 和性能服务
+  - DOMAIN-SUFFIX,naver.jp  # NAVER 日本 CDN
+  - DOMAIN-SUFFIX,akamai.net  # CDN 服务
+  - DOMAIN-SUFFIX,cloudflare.com  # CDN 服务
+
+  # 支付和安全服务
+  - DOMAIN-SUFFIX,line-apps.com  # LINE 应用服务
+  - DOMAIN-SUFFIX,line-scdn.net  # LINE 安全 CDN
+  - DOMAIN-SUFFIX,line.me/pay  # LINE 支付服务
+
+  # 额外匹配
+  - DOMAIN-KEYWORD,line-cdn
+  - DOMAIN-KEYWORD,line-global
