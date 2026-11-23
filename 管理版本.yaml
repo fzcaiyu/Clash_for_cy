@@ -1,0 +1,880 @@
+port: 7890
+socks-port: 7891
+mixed-port: 7892
+allow-lan: false
+bind-address: '*'
+mode: rule
+log-level: info
+ipv6: false
+find-process-mode: strict
+external-controller: '127.0.0.1:9090'
+profile:
+  store-selected: true
+  store-fake-ip: true
+unified-delay: true
+tcp-concurrent: true
+global-client-fingerprint: chrome
+ntp:
+  enable: true
+  write-to-system: false
+  server: ntp.aliyun.com
+  port: 123
+  interval: 30
+sniffer:
+  enable: true
+  force-dns-mapping: true
+  parse-pure-ip: true
+dns:
+  enable: true
+  listen: ':53'
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  fake-ip-filter-mode: blacklist
+  prefer-h3: false
+  respect-rules: true
+  use-hosts: false
+  use-system-hosts: false
+  ipv6: true
+  fake-ip-filter:
+    - '*.lan'
+    - '*.local'
+    - '*.arpa'
+    - 'time.*.com'
+    - 'ntp.*.com'
+    - +.market.xiaomi.com
+    - localhost.ptlogin2.qq.com
+    - '*.msftncsi.com'
+    - www.msftconnecttest.com
+  default-nameserver:
+    - system
+    - 223.6.6.6
+    - 8.8.8.8
+    - '2400:3200::1'
+    - '2001:4860:4860::8888'
+  nameserver:
+    - 'https://doh.pub/dns-query'
+    - 'https://dns.alidns.com/dns-query'
+    - 8.8.8.8
+  direct-nameserver:
+    - 'https://doh.pub/dns-query'
+    - 'https://dns.alidns.com/dns-query'
+    - 223.5.5.5
+    - 119.29.29.29
+  direct-nameserver-follow-policy: true
+  fallback:
+    - 'https://1.1.1.1/dns-query'
+    - 'https://8.8.8.8/dns-query'
+    - 'https://dns.google/dns-query'
+  fallback-filter:
+    geoip: true
+    geoip-code: CN
+    ipcidr:
+      - 240.0.0.0/4
+      - 0.0.0.0/32
+    domain:
+      - +.google.com
+      - +.facebook.com
+      - +.youtube.com
+      - +.twitter.com
+      - +.github.com
+  proxy-server-nameserver:
+    - 'https://doh.pub/dns-query'
+    - 'https://dns.alidns.com/dns-query'
+    - 'tls://223.5.5.5'
+tun:
+  enable: true
+  stack: system
+  auto-route: true
+  auto-detect-interface: true
+  strict-route: true
+  dns-hijack:
+    - 'any:53'
+  device: SakuraiTunnel
+  mtu: 1500
+  endpoint-independent-nat: true
+
+# ===============================================================================================================================================================
+
+# 代理（节点全部来自 proxy-providers，此处留空）
+proxies: []
+
+# 代理集
+proxy-groups:
+
+  # 默认总开关
+  - name: 🌍 默认联网方式
+    type: select
+    proxies:
+     - 🅰️ 【自动 OR 指定】
+#     - 👉🏼 手动指定
+     - ➿️ 【-高级线路-】     #V4
+     - ➿️ 【-中端线路-】     #V3
+     - ➿️ 【-标准线路-】     #V2
+     - ➿️ 【-专属线路-】     #V1
+     - ➿️ 【-备用线路-】     #V0
+
+  # 手动指定：节点选择入口
+#  - name: 👉🏼 手动指定
+#    type: select
+#    use:
+#     - 高级        #V4
+#     - 中端        #V3
+#     - 标准        #V2
+#     - 专属        #V1
+#     - 备用        #V0
+
+  #自动 OR 指定纳入全部 5 个 provider，按延迟选最低
+  - name: 🅰️ 【自动 OR 指定】
+    type: url-test
+    use:
+     - 高级        #V4
+     - 中端        #V3
+     - 标准        #V2
+     - 专属        #V1
+     - 备用        #V0
+    url: 'https://www.gstatic.com/generate_204'
+    interval: 900
+    tolerance: 50
+    lazy: true 
+
+#---------------------------------------------------------------------------------------------------
+  - name: ➿️ 【-高级线路-】     #V4
+    type: url-test
+    use:
+     - 高级
+    url: 'https://www.gstatic.com/generate_204'
+    interval: 900
+    tolerance: 50
+    lazy: true 
+
+  - name: ➿️ 【-中端线路-】     #V3
+    type: url-test
+    use:
+     - 中端
+    url: 'https://www.gstatic.com/generate_204'
+    interval: 900
+    tolerance: 50
+    lazy: true 
+
+  - name: ➿️ 【-标准线路-】     #V2
+    type: url-test
+    use:
+     - 标准
+    url: 'https://www.gstatic.com/generate_204'
+    interval: 900
+    tolerance: 50
+    lazy: true 
+
+  - name: ➿️ 【-专属线路-】     #V1
+    type: url-test
+    use:
+     - 专属
+    url: 'https://www.gstatic.com/generate_204'
+    interval: 900
+    tolerance: 50
+    lazy: true 
+
+  - name: ➿️ 【-备用线路-】     #V0
+    type: url-test
+    use:
+     - 备用
+    url: 'https://www.gstatic.com/generate_204'
+    interval: 900
+    tolerance: 50
+    lazy: true 
+
+#---------------------------------------------------------------------------------------------------
+  # 应用策略组：只引用总开关和必要的直连，避免每个组展开全部节点
+
+  - name: 🧠 | 智能 AI
+    type: select
+    proxies:
+     - ➿️ 【-专属线路-】
+#     - 👉🏼 手动指定
+     - 🌍 默认联网方式
+    use:
+     - 高级        #V4
+     - 中端        #V3
+     - 标准        #V2
+     - 专属        #V1
+     - 备用        #V0
+    url: 'https://www.gstatic.com/generate_204'
+    interval: 900
+    tolerance: 50
+    lazy: true 
+
+  - name: ▶️ | YouTube
+    type: select
+    proxies:
+     - ➿️ 【-专属线路-】
+     - 🌍 默认联网方式
+    use:
+     - 高级        #V4
+     - 中端        #V3
+     - 标准        #V2
+     - 专属        #V1
+     - 备用        #V0
+    url: 'https://www.gstatic.com/generate_204'
+    interval: 900
+    tolerance: 50
+    lazy: true 
+
+  - name: 🎥 | Netflix
+    type: select
+    proxies:
+     - 🌍 默认联网方式
+    use:
+     - 高级        #V4
+     - 中端        #V3
+     - 标准        #V2
+     - 专属        #V1
+     - 备用        #V0
+    url: 'https://www.gstatic.com/generate_204'
+    interval: 900
+    tolerance: 50
+    lazy: true 
+
+  - name: 🅱 | BiliBili
+    type: select
+    proxies:
+     - 🌍 默认联网方式
+    use:
+     - 高级        #V4
+     - 中端        #V3
+     - 标准        #V2
+     - 专属        #V1
+     - 备用        #V0
+    url: 'https://www.gstatic.com/generate_204'
+    interval: 900
+    tolerance: 50
+    lazy: true 
+
+  - name: 🏰 | Disney
+    type: select
+    proxies:
+     - 🌍 默认联网方式
+    use:
+     - 高级        #V4
+     - 中端        #V3
+     - 标准        #V2
+     - 专属        #V1
+     - 备用        #V0
+    url: 'https://www.gstatic.com/generate_204'
+    interval: 900
+    tolerance: 50
+    lazy: true 
+
+  - name: 🎬 | Emby
+    type: select
+    proxies:
+     - 🌍 默认联网方式
+    use:
+     - 高级        #V4
+     - 中端        #V3
+     - 标准        #V2
+     - 专属        #V1
+     - 备用        #V0
+    url: 'https://www.gstatic.com/generate_204'
+    interval: 900
+    tolerance: 50
+    lazy: true 
+
+  - name: 📺 | H B O
+    type: select
+    proxies:
+     - 🌍 默认联网方式
+    use:
+     - 高级        #V4
+     - 中端        #V3
+     - 标准        #V2
+     - 专属        #V1
+     - 备用        #V0
+    url: 'https://www.gstatic.com/generate_204'
+    interval: 900
+    tolerance: 50
+    lazy: true 
+
+  - name: 📀 | 其他外媒
+    type: select
+    proxies:
+     - 🌍 默认联网方式
+    use:
+     - 高级        #V4
+     - 中端        #V3
+     - 标准        #V2
+     - 专属        #V1
+     - 备用        #V0
+    url: 'https://www.gstatic.com/generate_204'
+    interval: 900
+    tolerance: 50
+    lazy: true 
+
+  - name: 🎮 | Steam
+    type: select
+    proxies:
+     - 🌍 默认联网方式
+    use:
+     - 高级        #V4
+     - 中端        #V3
+     - 标准        #V2
+     - 专属        #V1
+     - 备用        #V0
+    url: 'https://www.gstatic.com/generate_204'
+    interval: 900
+    tolerance: 50
+    lazy: true 
+
+
+  - name: 🕹︎ | 巴哈姆特
+    type: select
+    proxies:
+     - 🌍 默认联网方式
+
+  - name: 🇫 | Facebook
+    type: select
+    proxies:
+     - 🌍 默认联网方式
+    use:
+     - 高级        #V4
+     - 中端        #V3
+     - 标准        #V2
+     - 专属        #V1
+     - 备用        #V0
+    url: 'https://www.gstatic.com/generate_204'
+    interval: 900
+    tolerance: 50
+    lazy: true 
+
+
+  - name: 📷 | Instagram
+    type: select
+    proxies:
+     - 🌍 默认联网方式
+    use:
+     - 高级        #V4
+     - 中端        #V3
+     - 标准        #V2
+     - 专属        #V1
+     - 备用        #V0
+    url: 'https://www.gstatic.com/generate_204'
+    interval: 900
+    tolerance: 50
+    lazy: true 
+
+
+  - name: 🗨 | Line
+    type: select
+    proxies:
+     - 🌍 默认联网方式
+    use:
+     - 高级        #V4
+     - 中端        #V3
+     - 标准        #V2
+     - 专属        #V1
+     - 备用        #V0
+    url: 'https://www.gstatic.com/generate_204'
+    interval: 900
+    tolerance: 50
+    lazy: true 
+
+
+  - name: 💬 | Telegram
+    type: select
+    proxies:
+     - 🌍 默认联网方式
+    use:
+     - 高级        #V4
+     - 中端        #V3
+     - 标准        #V2
+     - 专属        #V1
+     - 备用        #V0
+    url: 'https://www.gstatic.com/generate_204'
+    interval: 900
+    tolerance: 50
+    lazy: true 
+
+
+  - name: 🎵 | TikTko
+    type: select
+    proxies:
+     - 🌍 默认联网方式
+    use:
+     - 高级        #V4
+     - 中端        #V3
+     - 标准        #V2
+     - 专属        #V1
+     - 备用        #V0
+    url: 'https://www.gstatic.com/generate_204'
+    interval: 900
+    tolerance: 50
+    lazy: true 
+
+
+  - name: ❌︎ | Twitter (X)
+    type: select
+    proxies:
+     - 🌍 默认联网方式
+    use:
+     - 高级        #V4
+     - 中端        #V3
+     - 标准        #V2
+     - 专属        #V1
+     - 备用        #V0
+    url: 'https://www.gstatic.com/generate_204'
+    interval: 900
+    tolerance: 50
+    lazy: true 
+
+
+  - name: 📞| WhatsApp
+    type: select
+    proxies:
+     - 🌍 默认联网方式
+    use:
+     - 高级        #V4
+     - 中端        #V3
+     - 标准        #V2
+     - 专属        #V1
+     - 备用        #V0
+    url: 'https://www.gstatic.com/generate_204'
+    interval: 900
+    tolerance: 50
+    lazy: true 
+
+  - name: Ⓜ️ | 微软服务
+    type: select
+    proxies:
+     - ➡️ [ 直连 ]
+     - 🌍 默认联网方式
+    use:
+     - 高级        #V4
+     - 中端        #V3
+     - 标准        #V2
+     - 专属        #V1
+     - 备用        #V0
+    url: 'https://www.gstatic.com/generate_204'
+    interval: 900
+    tolerance: 50
+    lazy: true 
+
+
+  - name: 🍎 | 苹果服务
+    type: select
+    proxies:
+     - 🌍 默认联网方式
+     - ➡️ [ 直连 ]
+    use:
+     - 高级        #V4
+     - 中端        #V3
+     - 标准        #V2
+     - 专属        #V1
+     - 备用        #V0
+    url: 'https://www.gstatic.com/generate_204'
+    interval: 900
+    tolerance: 50
+    lazy: true 
+
+
+  - name: 🇬 | 谷歌服务
+    type: select
+    proxies:
+     - 🌍 默认联网方式
+     - ➡️ [ 直连 ]
+    use:
+     - 高级        #V4
+     - 中端        #V3
+     - 标准        #V2
+     - 专属        #V1
+     - 备用        #V0
+    url: 'https://www.gstatic.com/generate_204'
+    interval: 900
+    tolerance: 50
+    lazy: true 
+
+
+  - name: ➡️ [ 直连 ]
+    type: select
+    proxies:
+     - DIRECT
+     - 🌍 默认联网方式
+    use:
+     - 高级        #V4
+     - 中端        #V3
+     - 标准        #V2
+     - 专属        #V1
+     - 备用        #V0
+    url: 'https://www.gstatic.com/generate_204'
+    interval: 900
+    tolerance: 50
+    lazy: true 
+
+
+  - name: ⛔ [ 拦截 ]
+    type: select
+    proxies:
+     - REJECT
+    use:
+     - 高级        #V4
+     - 中端        #V3
+     - 标准        #V2
+     - 专属        #V1
+     - 备用        #V0
+    url: 'https://www.gstatic.com/generate_204'
+    interval: 900
+    tolerance: 50
+    lazy: true 
+
+
+# ==========================================================================================
+
+# 节点集
+proxy-providers:
+
+  高级:          #V4
+    type: http
+    url: https://sourl.cn/v8ycrV
+    path: Scannet/高级.yaml
+    interval: 3600
+    health-check:
+      enable: true
+      interval: 900
+      url: https://www.gstatic.com/generate_204
+
+  中端:          #V3
+    type: http
+    url: https://sourl.cn/Wuq4Zs
+    path: Scannet/中端.yaml
+    interval: 3600
+    health-check:
+      enable: true
+      interval: 900
+      url: https://www.gstatic.com/generate_204
+
+  标准:          #V2
+    type: http
+    url: https://sourl.cn/fQL6jR
+    path: Scannet/标准.yaml
+    interval: 3600
+    health-check:
+      enable: true
+      interval: 900
+      url: https://www.gstatic.com/generate_204
+
+  专属:          #V1
+    type: http
+    url: https://sourl.cn/FvspLn
+    path: Scannet/专属.yaml
+    interval: 3600
+    health-check:
+      enable: true
+      interval: 900
+      url: https://www.gstatic.com/generate_204
+
+  备用:          #V0
+    type: http
+    url: https://sourl.cn/LP9WKg
+    path: Scannet/备用.yaml
+    interval: 3600
+    health-check:
+      enable: true
+      interval: 900
+      url: https://www.gstatic.com/generate_204
+
+# =============================================================================================
+
+# 规则集
+rule-providers:
+
+# 功能-[媒体]
+
+  BiliBili:
+    behavior: classical
+    type: http
+    url: "https://sourl.cn/p7BPCt"
+    path: Scannet/规则集/BiliBili.yaml
+    interval: 86400
+
+  Disney:
+    behavior: classical
+    type: http
+    url: "https://sourl.cn/4LAmFN"
+    path: Scannet/规则集/Disney.yaml
+    interval: 86400
+
+  Emby:
+    behavior: classical
+    type: http
+    url: "https://sourl.cn/7yuU2a"
+    path: Scannet/规则集/Emby.yaml
+    interval: 86400
+
+  HBO:
+    behavior: classical
+    type: http
+    url: "https://sourl.cn/4TRg8E"
+    path: Scannet/规则集/HBO.yaml
+    interval: 86400
+
+  Netflix:
+    behavior: classical
+    type: http
+    url: "https://sourl.cn/W8eBCG"
+    path: Scannet/规则集/Netflix.yaml
+    interval: 86400
+
+  YouTube:
+    behavior: classical
+    type: http
+    url: "https://sourl.cn/DY487c"  
+    path: Scannet/规则集/YouTube.yaml
+    interval: 86400
+
+  其他外媒:
+    behavior: classical
+    type: http
+    url: "https://sourl.cn/nN4ZcP"
+    path: Scannet/规则集/其他外媒.yaml
+    interval: 86400
+
+  智能AI:
+    behavior: classical
+    type: http
+    url: "https://sourl.cn/48UEFK"
+    path: Scannet/规则集/智能AI.yaml
+    interval: 86400
+
+# 功能-[游戏]
+
+  Steam:
+    behavior: classical
+    type: http
+    url: "https://sourl.cn/LGDcV9"
+    path: Scannet/规则集/Steam.yaml
+    interval: 86400
+
+  巴哈姆特:
+    behavior: classical
+    type: http
+    url: "https://sourl.cn/SaK8Dh"
+    path: Scannet/规则集/巴哈姆特.yaml
+    interval: 86400
+
+# 功能-[社交]
+
+  Facebook:
+    behavior: classical
+    type: http
+    url: "https://sourl.cn/4k79uq"
+    path: Scannet/规则集/Facebook.yaml
+    interval: 86400
+
+  Instagram:
+    behavior: classical
+    type: http
+    url: "https://sourl.cn/3zY7sq"
+    path: Scannet/规则集/Instagram.yaml
+    interval: 86400
+
+  Line:
+    behavior: classical
+    type: http
+    url: "https://sourl.cn/VsuhBU"
+    path: Scannet/规则集/Line.yaml
+    interval: 86400
+
+  Telegram:
+    behavior: classical
+    type: http
+    url: "https://sourl.cn/uDpYEg"
+    path: Scannet/规则集/Telegram.yaml
+    interval: 86400
+
+  TikTko:
+    behavior: classical
+    type: http
+    url: "https://sourl.cn/rSExum"
+    path: Scannet/规则集/TikTko.yaml
+    interval: 86400
+
+  Twitter:
+    behavior: classical
+    type: http
+    url: "https://sourl.cn/RR3cX6"
+    path: Scannet/规则集/Twitter.yaml
+    interval: 86400
+
+  WhatsApp:
+    behavior: classical
+    type: http
+    url: "https://sourl.cn/4BYehs"
+    path: Scannet/规则集/WhatsApp.yaml
+    interval: 86400
+
+# 基础-[代理]
+
+  海外云服:
+    behavior: classical
+    type: http
+    url: "https://sourl.cn/7zK6Yd"
+    path: Scannet/规则集/海外云服.yaml
+    interval: 86400
+
+  海外媒体:
+    behavior: classical
+    type: http
+    url: "https://sourl.cn/GndfmD"
+    path: Scannet/规则集/海外媒体.yaml
+    interval: 86400
+
+  海外网址:
+    behavior: classical
+    type: http
+    url: "https://sourl.cn/DC3uch"
+    path: Scannet/规则集/海外网址.yaml
+    interval: 86400
+
+# 基础-[屏蔽]
+
+  恶意劫持:
+    behavior: classical
+    type: http
+    url: "https://sourl.cn/SuWXiR"
+    path: Scannet/规则集/恶意劫持.yaml
+    interval: 86400
+
+  恶意广告:
+    behavior: classical
+    type: http
+    url: "https://sourl.cn/BndhX2"
+    path: Scannet/规则集/恶意广告.yaml
+    interval: 86400
+
+  恶意网址:
+    behavior: classical
+    type: http
+    url: "https://sourl.cn/srB4xy"
+    path: Scannet/规则集/恶意网址.yaml
+    interval: 86400
+
+# 基础-[直连]
+
+  国内云服:
+    behavior: classical
+    type: http
+    url: "https://sourl.cn/gnSAHm"
+    path: Scannet/规则集/国内云服.yaml
+    interval: 86400
+
+  国内程序:
+    behavior: classical
+    type: http
+    url: "https://sourl.cn/PjysZR"
+    path: Scannet/规则集/国内程序.yaml
+    interval: 86400
+
+  国内网址:
+    behavior: classical
+    type: http
+    url: "https://sourl.cn/ZYFBhJ"
+    path: Scannet/规则集/网址.yaml
+    interval: 86400
+
+  局域网IP:
+    behavior: classical
+    type: http
+    url: "https://sourl.cn/tFkUkp"
+    path: Scannet/规则集/局域网IP.yaml
+    interval: 86400
+
+  微软服务:
+    behavior: classical
+    type: http
+    url: "https://sourl.cn/7kamYT"
+    path: Scannet/规则集/微软服务.yaml
+    interval: 86400
+
+  苹果服务:
+    behavior: classical
+    type: http
+    url: "https://sourl.cn/3UR5GH"
+    path: Scannet/规则集/苹果服务.yaml
+    interval: 86400
+
+  谷歌服务:
+    behavior: classical
+    type: http
+    url: "https://sourl.cn/PWsx7x"
+    path: Scannet/规则集/谷歌服务.yaml
+    interval: 86400
+
+# ==========================================================================================
+
+rules:
+
+  # 使用特定程序的流量直接连接，不通过代理
+  - 'PROCESS-NAME,v2ray,DIRECT'
+  - 'PROCESS-NAME,Surge%203,DIRECT'             # 如进程名实际为 Surge 3，可改为 PROCESS-NAME,Surge 3,DIRECT
+  - 'PROCESS-NAME,ss-local,DIRECT'
+  - 'PROCESS-NAME,privoxy,DIRECT'
+  - 'PROCESS-NAME,trojan,DIRECT'
+  - 'PROCESS-NAME,trojan-go,DIRECT'
+  - 'PROCESS-NAME,naive,DIRECT'
+  - 'PROCESS-NAME,Thunder,DIRECT'
+  - 'PROCESS-NAME,DownloadService,DIRECT'
+  - 'PROCESS-NAME,qBittorrent,DIRECT'
+  - 'PROCESS-NAME,Transmission,DIRECT'
+  - 'PROCESS-NAME,fdm,DIRECT'
+  - 'PROCESS-NAME,aria2c,DIRECT'
+  - 'PROCESS-NAME,Folx,DIRECT'
+  - 'PROCESS-NAME,NetTransport,DIRECT'
+  - 'PROCESS-NAME,uTorrent,DIRECT'
+  - 'PROCESS-NAME,WebTorrent,DIRECT'
+
+  # 应用分流
+  - RULE-SET,BiliBili, 🅱 | BiliBili
+  - RULE-SET,Disney, 🏰 | Disney
+  - RULE-SET,Emby, 🎬 | Emby
+  - RULE-SET,HBO, 📺 | H B O
+  - RULE-SET,Netflix, 🎥 | Netflix
+  - RULE-SET,YouTube, ▶️ | YouTube
+  - RULE-SET,其他外媒, 📀 | 其他外媒
+
+  - RULE-SET,智能AI, 🧠 | 智能 AI
+
+  - RULE-SET,Steam, 🎮 | Steam
+  - RULE-SET,巴哈姆特, 🕹︎ | 巴哈姆特
+
+  - RULE-SET,Facebook, 🇫 | Facebook
+  - RULE-SET,Instagram, 📷 | Instagram
+  - RULE-SET,Line, 🗨 | Line
+  - RULE-SET,Telegram, 💬 | Telegram
+  - RULE-SET,TikTko, 🎵 | TikTko
+  - RULE-SET,Twitter, ❌︎ | Twitter (X)
+  - RULE-SET,WhatsApp, 📞| WhatsApp
+
+  - RULE-SET,微软服务, Ⓜ️ | 微软服务
+  - RULE-SET,苹果服务, 🍎 | 苹果服务
+  - RULE-SET,谷歌服务, 🇬 | 谷歌服务
+
+  # 默认海外流量分流
+  - RULE-SET,海外云服,🌍 默认联网方式
+  - RULE-SET,海外媒体,🌍 默认联网方式
+  - RULE-SET,海外网址,🌍 默认联网方式
+
+  # 广告和恶意流量拦截
+  - RULE-SET,恶意劫持,⛔ [ 拦截 ]
+  - RULE-SET,恶意广告,⛔ [ 拦截 ]
+  - RULE-SET,恶意网址,⛔ [ 拦截 ]
+
+  # 默认国内流量直连
+  - RULE-SET,国内云服,➡️ [ 直连 ]
+  - RULE-SET,国内程序,➡️ [ 直连 ]
+  - RULE-SET,国内网址,➡️ [ 直连 ]
+  - RULE-SET,局域网IP,➡️ [ 直连 ]
+
+  # GEOIP 兜底
+  - GEOIP,CN,➡️ [ 直连 ]
+
+  # 其余流量走默认联网方式
+  # 如果你希望强制始终走自动 OR 指定，可改为：- MATCH,🅰️ 【自动 OR 指定】
+  - MATCH,🌍 默认联网方式
