@@ -1,0 +1,79 @@
+
+proxies:
+
+#GW 云洞
+
+  - { name: '剩余流量：355.61 GB', type: ss, server: hk3.network-cdn-gw-yd.net, port: 21388, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 套餐到期：长期有效, type: ss, server: hk3.network-cdn-gw-yd.net, port: 21388, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: '官网导航入口:gw.grrnc.com', type: ss, server: hk3.network-cdn-gw-yd.net, port: 21388, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: VLess测试, type: vless, server: hkcs.network-cdn-gw-yd.net, port: 31188, uuid: a7055004-8413-4fd1-a697-9cebb9b70c84, alterId: 0, cipher: auto, udp: true, flow: xtls-rprx-vision, encryption: none, tls: true, skip-cert-verify: false, servername: www.amazon.science, reality-opts: { public-key: 0YA_R0HCrZoW19n0trw5sLrqbzn6HcGh6IjliSDJd0U, short-id: 9b9f89a95136a48d }, client-fingerprint: chrome, network: tcp }
+  - { name: 香港-Basic-BGP-01, type: ss, server: hk1.network-cdn-gw-yd.net, port: 32060, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 香港-Basic-BGP-02, type: ss, server: hk2.network-cdn-gw-yd.net, port: 32063, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 香港-Basic-BGP-03, type: ss, server: hk13.network-cdn-gw-yd.net, port: 32061, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 香港-Basic-BGP-04, type: ss, server: hk14.network-cdn-gw-yd.net, port: 32062, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 香港-Basic-BGP-05, type: ss, server: hk15.network-cdn-gw-yd.net, port: 47705, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 香港-Basic-BGP-06, type: ss, server: hk16.network-cdn-gw-yd.net, port: 47706, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 香港-Basic-BGP-07, type: ss, server: hk17.network-cdn-gw-yd.net, port: 47707, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 香港-Basic-BGP-08, type: ss, server: hk18.network-cdn-gw-yd.net, port: 41618, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 香港-Basic-BGP-09, type: ss, server: hk09.network-cdn-gw-yd.net, port: 41619, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 香港-Basic-BGP-10, type: ss, server: hk11.network-cdn-gw-yd.net, port: 41610, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 香港-Pro专线-01, type: ss, server: hkp1.network-cdn-gw-yd.net, port: 49911, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 香港-Pro专线-02, type: ss, server: hkp2.network-cdn-gw-yd.net, port: 49912, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 香港-Pro专线-03, type: ss, server: hkp3.network-cdn-gw-yd.net, port: 49913, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 香港-Pro专线-04, type: ss, server: hkp4.network-cdn-gw-yd.net, port: 49904, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 香港-Pro专线-05, type: ss, server: hkp5.network-cdn-gw-yd.net, port: 49905, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 香港-Pro家宽-06, type: ss, server: hkp6.network-cdn-gw-yd.net, port: 48017, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 香港-Pro家宽-07, type: ss, server: hkp07.network-cdn-gw-yd.net, port: 49083, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 香港-Pro家宽-08, type: ss, server: hkp8.network-cdn-gw-yd.net, port: 48018, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 香港-Pro家宽-09, type: ss, server: hkp9.network-cdn-gw-yd.net, port: 48019, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 香港-Pro家宽-10, type: ss, server: hkp11.network-cdn-gw-yd.net, port: 48020, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 美国-Basic-01, type: ss, server: us06.network-cdn-gw-yd.net, port: 43101, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 美国-Basic-02, type: ss, server: us07.network-cdn-gw-yd.net, port: 43201, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 美国-Basic-03, type: ss, server: us08.network-cdn-gw-yd.net, port: 43207, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 美国-Basic直连-01|gpt|三网优化线路|X3, type: ss, server: us9.network-cdn-gw-yd.net, port: 43203, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 美国-Basic直连-02|gpt|三网优化线路|X3, type: ss, server: us10.network-cdn-gw-yd.net, port: 43205, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 日本-Basic-BGP-01, type: ss, server: jp01.network-cdn-gw-yd.net, port: 48811, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 日本-Basic-BGP-02, type: ss, server: jp02.network-cdn-gw-yd.net, port: 48812, cipher: aes-128-gcm, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 日本-Pro家宽-01|X2, type: ss, server: jp3.network-cdn-gw-yd.net, port: 48803, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 日本-Pro家宽-02|X2, type: ss, server: jp04.network-cdn-gw-yd.net, port: 48804, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 日本-Pro家宽-03|X2, type: ss, server: jp05.network-cdn-gw-yd.net, port: 48805, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 台湾-Basic-BGP-01, type: ss, server: tw1.network-cdn-gw-yd.net, port: 46611, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 台湾-Basic-BGP-02, type: ss, server: tw02.network-cdn-gw-yd.net, port: 46612, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 台湾-Pro家宽-01|X2, type: ss, server: tw03.network-cdn-gw-yd.net, port: 46613, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 台湾-Pro家宽-02|X2, type: ss, server: tw04.network-cdn-gw-yd.net, port: 46614, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 台湾-Pro家宽-03|X2, type: ss, server: tw05.network-cdn-gw-yd.net, port: 46615, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 新加坡-IEPL-Basic专线-01, type: ss, server: sgp01.network-cdn-gw-yd.net, port: 45106, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 新加坡-IEPL-Pro专线-01|gpt|线路, type: ss, server: sgp02.network-cdn-gw-yd.net, port: 45107, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 新加坡-IEPL-Pro专线-02|gpt|线路, type: ss, server: sgp3.network-cdn-gw-yd.net, port: 45108, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 新加坡-IEPL-Pro专线-03|gpt|线路, type: ss, server: sgp4.network-cdn-gw-yd.net, port: 45109, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 新加坡-IEPL-Pro专线-04|gpt|线路, type: ss, server: sgp05.network-cdn-gw-yd.net, port: 45511, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 美国-IEPL-Pro专线-01|gpt|专用线路, type: ss, server: us01.network-cdn-gw-yd.net, port: 44111, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 美国-IEPL-Pro专线-02|gpt|专用线路, type: ss, server: us02.network-cdn-gw-yd.net, port: 44412, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 美国-IEPL-Pro专线-03|gpt|专用线路, type: ss, server: us03.network-cdn-gw-yd.net, port: 44413, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 美国-IEPL-Pro专线-04|gpt|专用线路, type: ss, server: us04.network-cdn-gw-yd.net, port: 44414, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 美国-IEPL-Pro专线-05|gpt|专用线路, type: ss, server: us05.network-cdn-gw-yd.net, port: 44415, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 美国-Pro直连-06|gpt|三网优化线路|X3, type: ss, server: usp01.network-cdn-gw-yd.net, port: 44416, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 美国-Pro直连-07|gpt|三网优化线路|X3, type: ss, server: usp02.network-cdn-gw-yd.net, port: 44417, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 美国-Pro直连-08|gpt|三网优化线路|X3, type: ss, server: usp03.network-cdn-gw-yd.net, port: 44418, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 美国-Pro直连-09|gpt|三网优化线路|X3, type: ss, server: usp04.network-cdn-gw-yd.net, port: 44419, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 美国-Pro直连-10|gpt|三网优化线路|X3, type: ss, server: usp05.network-cdn-gw-yd.net, port: 44411, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 泰国-IEPL-Pro专线-01, type: ss, server: tk.network-cdn-gw-yd.net, port: 41116, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 韩国-IEPL-Basic专线-|X2|, type: ss, server: kr03.network-cdn-gw-yd.net, port: 36220, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 韩国-EIPL-Pro专线-|X2|, type: ss, server: kr01.network-cdn-gw-yd.net, port: 41117, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 德国-IEPL-Pro专线-01, type: ss, server: brd.network-cdn-gw-yd.net, port: 41118, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 越南-IEPL-Basic专线-01, type: ss, server: vn01.network-cdn-gw-yd.net, port: 20011, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 越南-IEPL-Pro专线-02, type: ss, server: vn02.network-cdn-gw-yd.net, port: 20002, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 英国-IEPL-Basic专线-01, type: ss, server: uks1.network-cdn-gw-yd.net, port: 10014, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 英国-IEPL-Pro专线-02, type: ss, server: uks2.network-cdn-gw-yd.net, port: 10015, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 澳大利亚-IEPL-Pro专线-01, type: ss, server: au.network-cdn-gw-yd.net, port: 21383, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 法国-IEPL-Pro专线-01, type: ss, server: fr.network-cdn-gw-yd.net, port: 21384, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 菲律宾-IEPL-Pro专线-01, type: ss, server: ph.network-cdn-gw-yd.net, port: 21385, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 巴西-IEPL-Pro专线-01, type: ss, server: fl.network-cdn-gw-yd.net, port: 43302, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 马来西亚-IEPL-Pro专线-01, type: ss, server: mas.network-cdn-gw-yd.net, port: 43305, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 马来西亚-IEPL-Pro专线-02, type: ss, server: mas1.network-cdn-gw-yd.net, port: 43307, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 印度-IEPL-Pro专线-01|x2|, type: ss, server: in01.network-cdn-gw-yd.net, port: 43304, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 土耳其-IEPL-Pro专线-01, type: ss, server: tr03.network-cdn-gw-yd.net, port: 36222, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 俄罗斯-IEPL-Pro专线-01, type: ss, server: es01.network-cdn-gw-yd.net, port: 50001, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 阿根廷-IEPL-Pro专线-01, type: ss, server: at01.network-cdn-gw-yd.net, port: 50004, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 加拿大-IEPL-Pro专线-01, type: ss, server: ca.network-cdn-gw-yd.net, port: 20007, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
+  - { name: 意大利-IEPL-Pro专线01, type: ss, server: it.network-cdn-gw-yd.net, port: 21386, cipher: chacha20-ietf-poly1305, password: a7055004-8413-4fd1-a697-9cebb9b70c84, udp: true }
