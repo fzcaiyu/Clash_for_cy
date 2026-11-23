@@ -22,3 +22,7 @@ proxies:
   - { name: 🇭🇰~ISP~Bˣ¹, type: vless, server: 103.20.223.175, port: 443, uuid: fa1ef455-fb08-41cb-81da-f3d51ee0d9d5, alterId: 0, cipher: auto, udp: true, flow: null, encryption: none, tls: true, skip-cert-verify: false, servername: hkbn.sviplus.kdns.fr, ech-opts: { enable: true, query-server-name: cloudflare-ech.com }, client-fingerprint: firefox, network: xhttp, xhttp-opts: { path: /yyds, host: hkbn.sviplus.kdns.fr, mode: auto } }
   - { name: 🇭🇰~TJ~HKˣ⁰˙⁰¹, type: trojan, server: cdn.946945.xyz, port: 443, password: fa1ef455-fb08-41cb-81da-f3d51ee0d9d5, udp: true, skip-cert-verify: false, sni: ai.anycast.kdns.fr, ech-opts: { enable: true, query-server-name: cloudflare-ech.com }, client-fingerprint: firefox, network: grpc, grpc-opts: { grpc-service-name: anyyds } }
   - { name: 🇹🇼~HY~TWˣ⁰˙¹, server: tw.node.now.cc, port: 21419, sni: anycast.us.kg, up: 500, down: 1000, skip-cert-verify: true, type: hysteria2, password: fa1ef455-fb08-41cb-81da-f3d51ee0d9d5 }
+
+# HY 云
+
+  - { name: 🇹🇼~HY2~TW, server: tw.node.now.cc, port: 21415, sni: tw.ccddos.link, up: 100, down: 200, skip-cert-verify: true, type: hysteria2, password: 29a3c07d-bd32-4533-bb14-a351c939723e }
