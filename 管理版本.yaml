@@ -502,7 +502,7 @@ proxy-providers:
 
   专用:          #V3
     type: http
-    url: "https://raw.githubusercontent.com/fzcaiyu/Clash_for_cy/refs/heads/main/%E8%8A%82%E7%82%B9%E9%9B%86/%E4%B8%93%E7%94%A8.yaml"
+    url: "https://ghproxy.net/https://raw.githubusercontent.com/fzcaiyu/Clash_for_cy/refs/heads/main/%E8%8A%82%E7%82%B9%E9%9B%86/%E4%B8%93%E7%94%A8.yaml"
     path: Scannet/专用.yaml
     interval: 3600
     health-check:
@@ -512,7 +512,7 @@ proxy-providers:
 
   视频:          #V2
     type: http
-    url: "https://raw.githubusercontent.com/fzcaiyu/Clash_for_cy/refs/heads/main/%E8%8A%82%E7%82%B9%E9%9B%86/%E8%A7%86%E9%A2%91.yaml"
+    url: "https://ghproxy.net/https://raw.githubusercontent.com/fzcaiyu/Clash_for_cy/refs/heads/main/%E8%8A%82%E7%82%B9%E9%9B%86/%E8%A7%86%E9%A2%91.yaml"
     path: Scannet/视频.yaml
     interval: 3600
     health-check:
@@ -522,7 +522,7 @@ proxy-providers:
 
   常规:          #V1
     type: http
-    url: "https://raw.githubusercontent.com/fzcaiyu/Clash_for_cy/refs/heads/main/%E8%8A%82%E7%82%B9%E9%9B%86/%E5%B8%B8%E8%A7%84.yaml"
+    url: "https://ghproxy.net/https://raw.githubusercontent.com/fzcaiyu/Clash_for_cy/refs/heads/main/%E8%8A%82%E7%82%B9%E9%9B%86/%E5%B8%B8%E8%A7%84.yaml"
     path: Scannet/常规.yaml
     interval: 3600
     health-check:
@@ -532,7 +532,7 @@ proxy-providers:
 
   备用:          #V0
     type: http
-    url: "https://raw.githubusercontent.com/fzcaiyu/Clash_for_cy/refs/heads/main/%E8%8A%82%E7%82%B9%E9%9B%86/%E5%A4%87%E7%94%A8.yaml"
+    url: "https://ghproxy.net/https://raw.githubusercontent.com/fzcaiyu/Clash_for_cy/refs/heads/main/%E8%8A%82%E7%82%B9%E9%9B%86/%E5%A4%87%E7%94%A8.yaml"
     path: Scannet/备用.yaml
     interval: 3600
     health-check:
@@ -550,56 +550,56 @@ rule-providers:
   BiliBili:
     behavior: classical
     type: http
-    url: "https://raw.githubusercontent.com/fzcaiyu/Clash_for_cy/refs/heads/main/%E8%A7%84%E5%88%99%E9%9B%86/BiliBili.yaml"
+    url: "https://ghproxy.net/https://raw.githubusercontent.com/fzcaiyu/Clash_for_cy/refs/heads/main/%E8%A7%84%E5%88%99%E9%9B%86/BiliBili.yaml"
     path: Scannet/规则集/BiliBili.yaml
     interval: 86400
 
   Disney:
     behavior: classical
     type: http
-    url: "https://raw.githubusercontent.com/fzcaiyu/Clash_for_cy/refs/heads/main/%E8%A7%84%E5%88%99%E9%9B%86/Disney.yaml"
+    url: "https://ghproxy.net/https://raw.githubusercontent.com/fzcaiyu/Clash_for_cy/refs/heads/main/%E8%A7%84%E5%88%99%E9%9B%86/Disney.yaml"
     path: Scannet/规则集/Disney.yaml
     interval: 86400
 
   Emby:
     behavior: classical
     type: http
-    url: "https://raw.githubusercontent.com/fzcaiyu/Clash_for_cy/refs/heads/main/%E8%A7%84%E5%88%99%E9%9B%86/Emby.yaml"
+    url: "https://ghproxy.net/https://raw.githubusercontent.com/fzcaiyu/Clash_for_cy/refs/heads/main/%E8%A7%84%E5%88%99%E9%9B%86/Emby.yaml"
     path: Scannet/规则集/Emby.yaml
     interval: 86400
 
   HBO:
     behavior: classical
     type: http
-    url: "https://raw.githubusercontent.com/fzcaiyu/Clash_for_cy/refs/heads/main/%E8%A7%84%E5%88%99%E9%9B%86/HBO.yaml"
+    url: "https://ghproxy.net/https://raw.githubusercontent.com/fzcaiyu/Clash_for_cy/refs/heads/main/%E8%A7%84%E5%88%99%E9%9B%86/HBO.yaml"
     path: Scannet/规则集/HBO.yaml
     interval: 86400
 
   Netflix:
     behavior: classical
     type: http
-    url: "https://raw.githubusercontent.com/fzcaiyu/Clash_for_cy/refs/heads/main/%E8%A7%84%E5%88%99%E9%9B%86/Netflix.yaml"
+    url: "https://ghproxy.net/https://raw.githubusercontent.com/fzcaiyu/Clash_for_cy/refs/heads/main/%E8%A7%84%E5%88%99%E9%9B%86/Netflix.yaml"
     path: Scannet/规则集/Netflix.yaml
     interval: 86400
 
   YouTube:
     behavior: classical
     type: http
-    url: "https://raw.githubusercontent.com/fzcaiyu/Clash_for_cy/refs/heads/main/%E8%A7%84%E5%88%99%E9%9B%86/YouTube.yaml"  
+    url: "https://ghproxy.net/https://raw.githubusercontent.com/fzcaiyu/Clash_for_cy/refs/heads/main/%E8%A7%84%E5%88%99%E9%9B%86/YouTube.yaml"  
     path: Scannet/规则集/YouTube.yaml
     interval: 86400
 
   其他外媒:
     behavior: classical
     type: http
-    url: "https://raw.githubusercontent.com/fzcaiyu/Clash_for_cy/refs/heads/main/%E8%A7%84%E5%88%99%E9%9B%86/%E5%85%B6%E4%BB%96%E5%A4%96%E5%AA%92.yaml"
+    url: "https://ghproxy.net/https://raw.githubusercontent.com/fzcaiyu/Clash_for_cy/refs/heads/main/%E8%A7%84%E5%88%99%E9%9B%86/%E5%85%B6%E4%BB%96%E5%A4%96%E5%AA%92.yaml"
     path: Scannet/规则集/其他外媒.yaml
     interval: 86400
 
   智能AI:
     behavior: classical
     type: http
-    url: "https://raw.githubusercontent.com/fzcaiyu/Clash_for_cy/refs/heads/main/%E8%A7%84%E5%88%99%E9%9B%86/%E6%99%BA%E8%83%BDAI.yaml"
+    url: "https://ghproxy.net/https://raw.githubusercontent.com/fzcaiyu/Clash_for_cy/refs/heads/main/%E8%A7%84%E5%88%99%E9%9B%86/%E6%99%BA%E8%83%BDAI.yaml"
     path: Scannet/规则集/智能AI.yaml
     interval: 86400
 
@@ -608,14 +608,14 @@ rule-providers:
   Steam:
     behavior: classical
     type: http
-    url: "https://raw.githubusercontent.com/fzcaiyu/Clash_for_cy/refs/heads/main/%E8%A7%84%E5%88%99%E9%9B%86/Steam.yaml"
+    url: "https://ghproxy.net/https://raw.githubusercontent.com/fzcaiyu/Clash_for_cy/refs/heads/main/%E8%A7%84%E5%88%99%E9%9B%86/Steam.yaml"
     path: Scannet/规则集/Steam.yaml
     interval: 86400
 
   巴哈姆特:
     behavior: classical
     type: http
-    url: "https://raw.githubusercontent.com/fzcaiyu/Clash_for_cy/refs/heads/main/%E8%A7%84%E5%88%99%E9%9B%86/%E5%B7%B4%E5%93%88%E5%A7%86%E7%89%B9.yaml"
+    url: "https://ghproxy.net/https://raw.githubusercontent.com/fzcaiyu/Clash_for_cy/refs/heads/main/%E8%A7%84%E5%88%99%E9%9B%86/%E5%B7%B4%E5%93%88%E5%A7%86%E7%89%B9.yaml"
     path: Scannet/规则集/巴哈姆特.yaml
     interval: 86400
 
@@ -624,49 +624,49 @@ rule-providers:
   Facebook:
     behavior: classical
     type: http
-    url: "https://raw.githubusercontent.com/fzcaiyu/Clash_for_cy/refs/heads/main/%E8%A7%84%E5%88%99%E9%9B%86/Facebook.yaml"
+    url: "https://ghproxy.net/https://raw.githubusercontent.com/fzcaiyu/Clash_for_cy/refs/heads/main/%E8%A7%84%E5%88%99%E9%9B%86/Facebook.yaml"
     path: Scannet/规则集/Facebook.yaml
     interval: 86400
 
   Instagram:
     behavior: classical
     type: http
-    url: "https://raw.githubusercontent.com/fzcaiyu/Clash_for_cy/refs/heads/main/%E8%A7%84%E5%88%99%E9%9B%86/Instagram.yaml"
+    url: "https://ghproxy.net/https://raw.githubusercontent.com/fzcaiyu/Clash_for_cy/refs/heads/main/%E8%A7%84%E5%88%99%E9%9B%86/Instagram.yaml"
     path: Scannet/规则集/Instagram.yaml
     interval: 86400
 
   Line:
     behavior: classical
     type: http
-    url: "https://raw.githubusercontent.com/fzcaiyu/Clash_for_cy/refs/heads/main/%E8%A7%84%E5%88%99%E9%9B%86/Line.yaml"
+    url: "https://ghproxy.net/https://raw.githubusercontent.com/fzcaiyu/Clash_for_cy/refs/heads/main/%E8%A7%84%E5%88%99%E9%9B%86/Line.yaml"
     path: Scannet/规则集/Line.yaml
     interval: 86400
 
   Telegram:
     behavior: classical
     type: http
-    url: "https://raw.githubusercontent.com/fzcaiyu/Clash_for_cy/refs/heads/main/%E8%A7%84%E5%88%99%E9%9B%86/Telegram.yaml"
+    url: "https://ghproxy.net/https://raw.githubusercontent.com/fzcaiyu/Clash_for_cy/refs/heads/main/%E8%A7%84%E5%88%99%E9%9B%86/Telegram.yaml"
     path: Scannet/规则集/Telegram.yaml
     interval: 86400
 
   TikTko:
     behavior: classical
     type: http
-    url: "https://raw.githubusercontent.com/fzcaiyu/Clash_for_cy/refs/heads/main/%E8%A7%84%E5%88%99%E9%9B%86/TikTko.yaml"
+    url: "https://ghproxy.net/https://raw.githubusercontent.com/fzcaiyu/Clash_for_cy/refs/heads/main/%E8%A7%84%E5%88%99%E9%9B%86/TikTko.yaml"
     path: Scannet/规则集/TikTko.yaml
     interval: 86400
 
   Twitter:
     behavior: classical
     type: http
-    url: "https://raw.githubusercontent.com/fzcaiyu/Clash_for_cy/refs/heads/main/%E8%A7%84%E5%88%99%E9%9B%86/Twitter.yaml"
+    url: "https://ghproxy.net/https://raw.githubusercontent.com/fzcaiyu/Clash_for_cy/refs/heads/main/%E8%A7%84%E5%88%99%E9%9B%86/Twitter.yaml"
     path: Scannet/规则集/Twitter.yaml
     interval: 86400
 
   WhatsApp:
     behavior: classical
     type: http
-    url: "https://raw.githubusercontent.com/fzcaiyu/Clash_for_cy/refs/heads/main/%E8%A7%84%E5%88%99%E9%9B%86/WhatsApp.yaml"
+    url: "https://ghproxy.net/https://raw.githubusercontent.com/fzcaiyu/Clash_for_cy/refs/heads/main/%E8%A7%84%E5%88%99%E9%9B%86/WhatsApp.yaml"
     path: Scannet/规则集/WhatsApp.yaml
     interval: 86400
 
@@ -675,21 +675,21 @@ rule-providers:
   海外云服:
     behavior: classical
     type: http
-    url: "https://raw.githubusercontent.com/fzcaiyu/Clash_for_cy/refs/heads/main/%E8%A7%84%E5%88%99%E9%9B%86/%E6%B5%B7%E5%A4%96%E4%BA%91%E6%9C%8D.yaml"
+    url: "https://ghproxy.net/https://raw.githubusercontent.com/fzcaiyu/Clash_for_cy/refs/heads/main/%E8%A7%84%E5%88%99%E9%9B%86/%E6%B5%B7%E5%A4%96%E4%BA%91%E6%9C%8D.yaml"
     path: Scannet/规则集/海外云服.yaml
     interval: 86400
 
   海外媒体:
     behavior: classical
     type: http
-    url: "https://raw.githubusercontent.com/fzcaiyu/Clash_for_cy/refs/heads/main/%E8%A7%84%E5%88%99%E9%9B%86/%E6%B5%B7%E5%A4%96%E5%AA%92%E4%BD%93.yaml"
+    url: "https://ghproxy.net/https://raw.githubusercontent.com/fzcaiyu/Clash_for_cy/refs/heads/main/%E8%A7%84%E5%88%99%E9%9B%86/%E6%B5%B7%E5%A4%96%E5%AA%92%E4%BD%93.yaml"
     path: Scannet/规则集/海外媒体.yaml
     interval: 86400
 
   海外网址:
     behavior: classical
     type: http
-    url: "https://raw.githubusercontent.com/fzcaiyu/Clash_for_cy/refs/heads/main/%E8%A7%84%E5%88%99%E9%9B%86/%E6%B5%B7%E5%A4%96%E7%BD%91%E5%9D%80.yaml"
+    url: "https://ghproxy.net/https://raw.githubusercontent.com/fzcaiyu/Clash_for_cy/refs/heads/main/%E8%A7%84%E5%88%99%E9%9B%86/%E6%B5%B7%E5%A4%96%E7%BD%91%E5%9D%80.yaml"
     path: Scannet/规则集/海外网址.yaml
     interval: 86400
 
@@ -698,21 +698,21 @@ rule-providers:
   恶意劫持:
     behavior: classical
     type: http
-    url: "https://raw.githubusercontent.com/fzcaiyu/Clash_for_cy/refs/heads/main/%E8%A7%84%E5%88%99%E9%9B%86/%E6%81%B6%E6%84%8F%E5%8A%AB%E6%8C%81.yaml"
+    url: "https://ghproxy.net/https://raw.githubusercontent.com/fzcaiyu/Clash_for_cy/refs/heads/main/%E8%A7%84%E5%88%99%E9%9B%86/%E6%81%B6%E6%84%8F%E5%8A%AB%E6%8C%81.yaml"
     path: Scannet/规则集/恶意劫持.yaml
     interval: 86400
 
   恶意广告:
     behavior: classical
     type: http
-    url: "https://raw.githubusercontent.com/fzcaiyu/Clash_for_cy/refs/heads/main/%E8%A7%84%E5%88%99%E9%9B%86/%E6%81%B6%E6%84%8F%E5%B9%BF%E5%91%8A.yaml"
+    url: "https://ghproxy.net/https://raw.githubusercontent.com/fzcaiyu/Clash_for_cy/refs/heads/main/%E8%A7%84%E5%88%99%E9%9B%86/%E6%81%B6%E6%84%8F%E5%B9%BF%E5%91%8A.yaml"
     path: Scannet/规则集/恶意广告.yaml
     interval: 86400
 
   恶意网址:
     behavior: classical
     type: http
-    url: "https://raw.githubusercontent.com/fzcaiyu/Clash_for_cy/refs/heads/main/%E8%A7%84%E5%88%99%E9%9B%86/%E6%81%B6%E6%84%8F%E7%BD%91%E5%9D%80.yaml"
+    url: "https://ghproxy.net/https://raw.githubusercontent.com/fzcaiyu/Clash_for_cy/refs/heads/main/%E8%A7%84%E5%88%99%E9%9B%86/%E6%81%B6%E6%84%8F%E7%BD%91%E5%9D%80.yaml"
     path: Scannet/规则集/恶意网址.yaml
     interval: 86400
 
@@ -721,49 +721,49 @@ rule-providers:
   国内云服:
     behavior: classical
     type: http
-    url: "https://raw.githubusercontent.com/fzcaiyu/Clash_for_cy/refs/heads/main/%E8%A7%84%E5%88%99%E9%9B%86/%E5%9B%BD%E5%86%85%E4%BA%91%E6%9C%8D.yaml"
+    url: "https://ghproxy.net/https://raw.githubusercontent.com/fzcaiyu/Clash_for_cy/refs/heads/main/%E8%A7%84%E5%88%99%E9%9B%86/%E5%9B%BD%E5%86%85%E4%BA%91%E6%9C%8D.yaml"
     path: Scannet/规则集/国内云服.yaml
     interval: 86400
 
   国内程序:
     behavior: classical
     type: http
-    url: "https://raw.githubusercontent.com/fzcaiyu/Clash_for_cy/refs/heads/main/%E8%A7%84%E5%88%99%E9%9B%86/%E5%9B%BD%E5%86%85%E7%A8%8B%E5%BA%8F.yaml"
+    url: "https://ghproxy.net/https://raw.githubusercontent.com/fzcaiyu/Clash_for_cy/refs/heads/main/%E8%A7%84%E5%88%99%E9%9B%86/%E5%9B%BD%E5%86%85%E7%A8%8B%E5%BA%8F.yaml"
     path: Scannet/规则集/国内程序.yaml
     interval: 86400
 
   国内网址:
     behavior: classical
     type: http
-    url: "https://raw.githubusercontent.com/fzcaiyu/Clash_for_cy/refs/heads/main/%E8%A7%84%E5%88%99%E9%9B%86/%E5%9B%BD%E5%86%85%E7%BD%91%E5%9D%80.yaml"
+    url: "https://ghproxy.net/https://raw.githubusercontent.com/fzcaiyu/Clash_for_cy/refs/heads/main/%E8%A7%84%E5%88%99%E9%9B%86/%E5%9B%BD%E5%86%85%E7%BD%91%E5%9D%80.yaml"
     path: Scannet/规则集/网址.yaml
     interval: 86400
 
   局域网IP:
     behavior: classical
     type: http
-    url: "https://raw.githubusercontent.com/fzcaiyu/Clash_for_cy/refs/heads/main/%E8%A7%84%E5%88%99%E9%9B%86/%E5%B1%80%E5%9F%9F%E7%BD%91IP.yaml"
+    url: "https://ghproxy.net/https://raw.githubusercontent.com/fzcaiyu/Clash_for_cy/refs/heads/main/%E8%A7%84%E5%88%99%E9%9B%86/%E5%B1%80%E5%9F%9F%E7%BD%91IP.yaml"
     path: Scannet/规则集/局域网IP.yaml
     interval: 86400
 
   微软服务:
     behavior: classical
     type: http
-    url: "https://raw.githubusercontent.com/fzcaiyu/Clash_for_cy/refs/heads/main/%E8%A7%84%E5%88%99%E9%9B%86/%E5%BE%AE%E8%BD%AF%E6%9C%8D%E5%8A%A1.yaml"
+    url: "https://ghproxy.net/https://raw.githubusercontent.com/fzcaiyu/Clash_for_cy/refs/heads/main/%E8%A7%84%E5%88%99%E9%9B%86/%E5%BE%AE%E8%BD%AF%E6%9C%8D%E5%8A%A1.yaml"
     path: Scannet/规则集/微软服务.yaml
     interval: 86400
 
   苹果服务:
     behavior: classical
     type: http
-    url: "https://raw.githubusercontent.com/fzcaiyu/Clash_for_cy/refs/heads/main/%E8%A7%84%E5%88%99%E9%9B%86/%E8%8B%B9%E6%9E%9C%E6%9C%8D%E5%8A%A1.yaml"
+    url: "https://ghproxy.net/https://raw.githubusercontent.com/fzcaiyu/Clash_for_cy/refs/heads/main/%E8%A7%84%E5%88%99%E9%9B%86/%E8%8B%B9%E6%9E%9C%E6%9C%8D%E5%8A%A1.yaml"
     path: Scannet/规则集/苹果服务.yaml
     interval: 86400
 
   谷歌服务:
     behavior: classical
     type: http
-    url: "https://raw.githubusercontent.com/fzcaiyu/Clash_for_cy/refs/heads/main/%E8%A7%84%E5%88%99%E9%9B%86/%E8%B0%B7%E6%AD%8C%E6%9C%8D%E5%8A%A1.yaml"
+    url: "https://ghproxy.net/https://raw.githubusercontent.com/fzcaiyu/Clash_for_cy/refs/heads/main/%E8%A7%84%E5%88%99%E9%9B%86/%E8%B0%B7%E6%AD%8C%E6%9C%8D%E5%8A%A1.yaml"
     path: Scannet/规则集/谷歌服务.yaml
     interval: 86400
 
